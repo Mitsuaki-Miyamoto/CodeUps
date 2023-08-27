@@ -11,7 +11,7 @@
 }
 
 .swiper-slide {
-   
+   height: inherit;
 
 }
 
@@ -24,6 +24,8 @@
 .swiper-slide img {
     height: inherit;
     min-height: inherit;
+    // aspect-ratio: 1440 / 768;
+    object-fit: cover;
 }
 
 

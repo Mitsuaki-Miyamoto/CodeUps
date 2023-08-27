@@ -4,7 +4,8 @@
     background: $green;
     color: $white;
     width: 100%;
-    max-height: rem(740);
+    height: rem(740);
+    max-height: 100%;
     @include mq("md") {
         max-height: rem(600);
     }
@@ -14,16 +15,15 @@
     padding-top: rem(43);
     padding-left: rem(15);
     padding-right: rem(15);
-    
-    height: inherit;
+    height: rem(659);
 
     @include mq("md") {
-        padding: rem(80) rem(180) rem(45);
+        padding-top: rem(80);
+        padding-bottom: rem(45);
     }
 }
 
 .footer__body {
-    padding-bottom: rem(37);
     height: inherit;
 }
 
@@ -68,10 +68,15 @@
     @include mq("md") {
         width: rem(32);
     }
-
 }
 
-.footer__nav {}
+.footer__facebook a img:hover {
+    opacity: 0.7;
+}
+
+.footer__instagram a img:hover {
+    opacity: 0.7;
+}
 
 
 .footer__copyright {

@@ -43,17 +43,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       // スライドの表示枚数：768px以上の場合
       768: {
         slidesPerView: 3.5,
+        spaceBetween: 40,
+        // effect: 'coverflow'
       }
     },
-    // spaceBetween: 30,
+    spaceBetween: 24,
     loop: true,
     speed: 800,
     // centeredSlides : true,
-    autoplay: {
+    // autoplay: {
     // 自動再生
     delay: 3000, // 1秒後に次のスライド
     disableOnInteraction: true, // 矢印をクリックして自動再生を止める
-    },
+    // },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

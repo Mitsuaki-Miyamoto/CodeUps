@@ -1,28 +1,75 @@
 @use "global" as *;
 
 .blog {
-    
+
     @include mq("md") {
-        background: url(/assets/images/common/blog-bg999.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: top center;
+        position: relative;
+        // background: url(/assets/images/common/blog-bg999.jpg);
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        // background-position: top center;
     }
 }
 
-.blog__inner {
-    
+.blog__backgroundImage {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    max-height: rem(500);
+}
+
+
+.blog__backgroundImage img {
+    max-height: inherit;
+    display: inline-block;
 
 }
 
-.blog__bg {
+.blog::after {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        background-image: url(/assets/images/common/blog-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 60%;
+        right: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: -2;
+    }
 }
+
+.blog__cards::before {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        background-image: url(/assets/images/common/blog-bg-fish1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 20% center;
+        height: 25%;
+        top: rem(31);
+        z-index: -1;
+        height: 24%;
+        width: 28%;
+    }
+}
+// .blog__cards a {
+//     display: block;
+// }
+
+.blog__inner {}
+
+.blog__bg {}
 
 .blog__header.section-header {
 
     @include mq("md") {
         color: $white;
-        
+
     }
 }
 
@@ -42,6 +89,7 @@
 
 .blog__cards {
     margin-top: rem(29);
+
     @include mq("md") {
         display: flex;
         flex-wrap: wrap;
@@ -51,8 +99,7 @@
 
 .blog__card {
     background: $white;
-    margin-right: auto;
-    margin-left: auto;
+
     @include mq("md") {
         max-width: calc(33.333% - 40px * 2 / 3);
         width: 100%;

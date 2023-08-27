@@ -7,8 +7,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: rem(90);
+    height: rem(80);
     transition: 0.3s;
+    @include mq("md") {
+        height: rem(90);
+    }
 }
 
 /* スクロールしたらヘッダーメニューのフォントカラー変更 */
@@ -96,8 +99,7 @@
 }
 
 .header-nav__item a:hover:after {
-    transform: scale(0.9, 0.9);
-
+    transform: scale(0.9, 1);
 }
 
 

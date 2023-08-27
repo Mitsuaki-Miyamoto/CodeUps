@@ -1,37 +1,53 @@
 @use "global" as *;
 
 .footer-nav {
-    
+    height: rem(234);
 
 }
 
 .footer-nav__items {
     display: flex;
     flex-flow: column wrap;
-    flex-grow: 1; /* 残りのスペースを均等に分配 */
-    align-items: stretch; /* 要素の高さを親要素に合わせる */
-    height: rem(458);
-    margin-top: rem(40);
+    flex-grow: 1;
+    /* 残りのスペースを均等に分配 */
+    align-items: stretch;
+    /* 要素の高さを親要素に合わせる */
+    height: rem(457);
+    margin-top: rem(36);
+
     @include mq("md") {
-        height: rem(200);
-        margin-top: rem(22);
+        height: rem(234);
+        margin-top: rem(24);
     }
 }
 
 .footer-nav__item {
     margin-top: rem(38);
-    margin-left: rem(20);
+    // margin-left: rem(30);
+
     @include mq("md") {
-        margin-top: rem(0);
+        margin-top: rem(40);
     }
 }
 
-
-
-.footer-nav__item:first-child {
+.footer-nav__item:nth-child(1),
+.footer-nav__item:nth-child(5){
     margin-top: 0;
+}
+
+
+.footer-nav__item:nth-child(1),
+.footer-nav__item:nth-child(3),
+.footer-nav__item:nth-child(5),
+.footer-nav__item:nth-child(7){
     @include mq("md") {
-       
+        margin-top: 0;
+    }
+}
+
+.footer-nav__item:nth-child(n+3){
+    @include mq("md") {
+        margin-left: rem(70);
     }
 }
 
@@ -47,6 +63,7 @@
     color: $white;
 }
 
+
 .footer-nav__head:not(:first-child) {
     margin-top: rem(40);
 }
@@ -54,8 +71,8 @@
 .footer-nav__head::before {
     content: url(/assets/images/common/star-fish.png);
     transform: scale(0.5);
-    top:rem(-1);
-    left:rem(-29);
+    top: rem(-1);
+    left: rem(-29);
     width: rem(20);
     height: rem(20);
     display: block;
@@ -70,8 +87,13 @@
 
 /* 5つ目以降の .footer-nav__head 要素に margin-left を適用 */
 .footer-nav__item {
-    margin-left: 20px;
+    margin-left: rem(23);
 }
+
+.footer-nav__item:nth-child(n+5) {
+    margin-left: rem(40);
+}
+
 .footer-nav__head:nth-child(n+5) {
     margin-left: 26px;
 }
@@ -83,10 +105,17 @@
 .footer-nav__item a {}
 
 .footer-nav__list {
-    margin-top: rem(15);
+    margin-top: rem(16);
 
     @include mq("md") {
         margin-top: rem(18);
     }
 }
 
+.footer-nav__item a:hover {
+    opacity: 0.7;
+}
+
+.footer-nav__list a:hover {
+    opacity: 0.7;
+}

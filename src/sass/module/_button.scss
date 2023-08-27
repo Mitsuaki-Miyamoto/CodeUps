@@ -56,14 +56,18 @@
     background-size: cover;
     content: "";
     display: inline-block;
-    height: 0.38rem;
+    height: 0.5rem;
     position: absolute;
-    right: 2.5rem;
-    top: 46%;
+    right: 2.1rem;
+    top: 44%;
     transform: translateY(-50%);
-    width: 2.5rem;
+    width: 2.8rem;
     z-index: 1;
 }
+
+// .button span:hover::before {
+//     display: none;
+// }
 
 .button span::after {
     background-image: url(/assets/images/common/button-active.png);
@@ -72,13 +76,13 @@
     background-size: cover;
     content: "";
     display: inline-block;
-    height: 0.38rem;
+    height: 0.5rem;
     opacity: 1;
     position: absolute;
-    right: 2.5rem;
+    right: 2.1rem;
     top: 47%;
     transform: translateY(-50%);
-    width: 2.5rem;
+    width: 2.8rem;
 }
 
 .button:hover {

@@ -2,17 +2,16 @@
 
 .contact {
     text-align: center;
-    padding: rem(80) rem(31) rem(100);
-    background-image: url(/assets/images/common/contact-fish.png);
+    padding-top: rem(80);
+    padding-bottom: rem(100);
     background-position: right 9px top 56px;
     background-repeat: no-repeat;
     background-size: 31%;
 
     @include mq("md") {
-        padding-top: rem(139);
         text-align: center;
-        padding: rem(80) rem(31) rem(100);
-        background-image: url(/assets/images/common/contact-fish.png);
+        padding-top: rem(80);
+        padding-bottom: rem(100);
         background-position: right 58px top 101px;
         background-repeat: no-repeat;
         background-size: 20%;
@@ -23,6 +22,7 @@
 
 .contact__wrapper {
     margin: auto;
+    position: relative;
 
     @include mq("md") {
         display: flex;
@@ -35,16 +35,31 @@
     }
 }
 
+.contact__wrapper::after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/images/common/contact-fish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: calc(300 / 1080) *100%;
+    right: 5%;
+
+    @include mq("md") {
+        height: 30%;
+        right: -2%;
+        top: -9%;
+        width: min(21vw, 25%);
+    }
+}
+
 .contact__address {
     @include mq("md") {
-        // padding-right: rem(80);
         width: 48%;
         margin-top: rem(80);
         margin-bottom: rem(80);
     }
 }
-
-
 
 .contact__form {
     @include mq("md") {
@@ -59,8 +74,6 @@
 .contact__header {
     margin-top: rem(40);
     line-height: 1;
-
-
 }
 
 .section-header__main--large {
@@ -85,7 +98,6 @@
     @include mq("md") {}
 
 }
-
 
 .contact__button {
     text-align: center;

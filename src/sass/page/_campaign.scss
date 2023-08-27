@@ -12,6 +12,7 @@
 
 .campaign__inner {
     margin: auto;
+    position: relative;
 }
 
 .campaign__body {
@@ -30,10 +31,10 @@
 .campaign__card {}
 
 .campaign__card:not(:first-child) {
-    margin-left: rem(24);
+    // margin-left: rem(24);
 
     @include mq("md") {
-        margin-left: rem(40);
+        // margin-left: rem(40);
     }
 
 }
@@ -45,10 +46,10 @@
     position: absolute;
     width: 240px;
     top: rem(11);
-    right: 189px;
+    // right: 189px;
     height: 80px;
     @include mq("md") {
-        right: rem(190);
+        right: rem(25);
     }
 }
 
