@@ -38,24 +38,24 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   //Campaignスライダー
   let campaign__body = new Swiper('.swiper-container', {
-    slidesPerView: 1.2,
-    breakpoints: {
-      // スライドの表示枚数：768px以上の場合
-      768: {
-        slidesPerView: 3.5,
-        spaceBetween: 40,
-        // effect: 'coverflow'
-      }
-    },
+    slidesPerView: 'auto',
     spaceBetween: 24,
     loop: true,
     speed: 800,
-    // centeredSlides : true,
-    // autoplay: {
-    // 自動再生
-    delay: 3000, // 1秒後に次のスライド
-    disableOnInteraction: true, // 矢印をクリックして自動再生を止める
-    // },
+    autoplay: {
+    delay: 3000,
+    // 矢印をクリックして自動再生を止める
+    disableOnInteraction: true,
+    },
+
+    breakpoints: {
+      // スライドの表示枚数：768px以上の場合
+      768: {
+        slidesPerView: 'auto',
+        spaceBetween: 40
+    },
+  },
+    
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
