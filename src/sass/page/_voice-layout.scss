@@ -4,6 +4,6 @@
 .voice-layout {
     margin-top: rem(80);
     @include mq("md") {
-        margin-top: rem(-130);
+        margin-top: rem(40);
     }
 }

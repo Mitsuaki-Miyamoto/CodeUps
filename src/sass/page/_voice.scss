@@ -5,7 +5,7 @@
 
 
     @include mq("md") {
-
+        padding-top: rem(96);
     }
 
 }
@@ -15,7 +15,7 @@
     padding-bottom: rem(80);
 
     @include mq("md") {
-        padding-top: rem(262);
+        // padding-top: rem(262);
         padding-bottom: rem(135);
     }
 }
@@ -29,10 +29,10 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 84%;
-        right: 5%;
-        top: 15%;
-        width: 90%;
+        height: 91%;
+        right: 0;
+        top: -3%;
+        width: 100%;
     }
 }
 
@@ -43,10 +43,10 @@
 .voice__header {}
 
 .voice__content {
-    margin-top: rem(40);
+    margin-top: rem(44);
 
     @include mq("md") {
-        margin-top: rem(44);
+        margin-top: rem(27);
         display: flex;
         flex-wrap: wrap;
     }
@@ -86,7 +86,7 @@
 
 .voice__button {
     text-align: center;
-    margin-top: rem(40);
+    margin-top: rem(44);
 
     @include mq("md") {
         margin-top: rem(80);

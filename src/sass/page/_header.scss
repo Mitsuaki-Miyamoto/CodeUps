@@ -27,6 +27,10 @@
     display: flex;
     margin: 0 auto;
     height: inherit;
+    @include mq("md") {
+        padding-left: rem(40);
+        padding-right: rem(40);
+    }
 }
 
 .header__logo {
@@ -113,6 +117,10 @@
     font-size: rem(10);
 }
 
+// .header-nav__item:nth-child(7) span{
+//     width: 100%;
+// }
+
 
 .header-nav__items.u-desktop {
     display: flex;
@@ -150,16 +158,16 @@
 }
 
 .header__hamburger span:first-child {
-    top: rem(32);
+    top: rem(28);
 }
 
 .header__hamburger span:nth-child(2) {
-    top: rem(44);
+    top: rem(39);
     transition: opacity 0.3s;
 }
 
 .header__hamburger span:nth-child(3) {
-    top: rem(56);
+    top: rem(51);
 }
 
 .header__hamburger.is-active span:first-child {

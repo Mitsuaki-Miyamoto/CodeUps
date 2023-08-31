@@ -2,7 +2,6 @@
 
 .footer-nav {
     height: rem(234);
-
 }
 
 .footer-nav__items {
@@ -23,7 +22,6 @@
 
 .footer-nav__item {
     margin-top: rem(38);
-    // margin-left: rem(30);
 
     @include mq("md") {
         margin-top: rem(40);
@@ -35,6 +33,10 @@
     margin-top: 0;
 }
 
+.footer-nav__item:nth-child(8) a{
+    font-size: rem(14);
+    
+}
 
 .footer-nav__item:nth-child(1),
 .footer-nav__item:nth-child(3),
@@ -83,9 +85,6 @@
     margin-top: 0px;
 }
 
-
-
-/* 5つ目以降の .footer-nav__head 要素に margin-left を適用 */
 .footer-nav__item {
     margin-left: rem(23);
 }
@@ -95,8 +94,9 @@
 }
 
 .footer-nav__head:nth-child(n+5) {
-    margin-left: 26px;
+    margin-left: rem(26);
 }
+
 
 .footer-nav__head ul li a {
     margin-left: 20px;

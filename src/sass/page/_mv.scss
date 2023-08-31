@@ -19,7 +19,7 @@
 .mv__body{
     z-index: 1;
     position:absolute;
-    top: 51%;
+    top: 50%;
     left: 53%;
     transform: translate(-50%, -50%);
     color: $white;
@@ -27,7 +27,7 @@
     text-align: center;
     @include mq("md") {
         top: 51%;
-        left: 49.5%;
+        left: 51.5%;
         line-height: 1.25;
 
     }

@@ -20,13 +20,14 @@
 }
 
 .address__body {
-    padding-top: rem(25);
+    padding-top: rem(22);
 
     @include mq("md") {
         display: flex;
         border-top: 1px solid $green;
         margin-right: rem(37);
         margin-left: rem(37);
+        padding-top: rem(22);
     }
 }
 
@@ -46,7 +47,7 @@
     width: 146px;
     margin: auto;
     @include mq("md") {
-        padding-top: rem(7);
+        padding-top: rem(3);
     }
 }
 
@@ -57,11 +58,17 @@
 .address__map {
     margin-top: rem(16);
     @include mq("md") {
+        margin-top: rem(6);
         margin-left: rem(21);
     }
 }
 
 .address__map iframe {
-    max-width: 273px;
+    max-width: 295px;
     width: 100%;
+
+    @include mq("md") {
+        max-width: 273px;
+        width: 100%;
+    }
 }

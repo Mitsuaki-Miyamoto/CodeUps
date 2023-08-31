@@ -2,7 +2,7 @@
 
 .campaign {
     position: relative;
-    margin-top: rem(43);
+    margin-top: rem(38);
 
     @include mq("md") {
         margin-top: rem(110);
@@ -46,10 +46,9 @@
     position: absolute;
     width: 240px;
     top: rem(11);
-    // right: 189px;
     height: 80px;
     @include mq("md") {
-        right: rem(25);
+        right: rem(35);
     }
 }
 
