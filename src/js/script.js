@@ -42,11 +42,11 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     spaceBetween: 24,
     loop: true,
     speed: 800,
-    // autoplay: {
-    // delay: 3000,
+    autoplay: {
+    delay: 3000,
     // 矢印をクリックして自動再生を止める
     disableOnInteraction: true,
-    // },
+    },
 
     breakpoints: {
       // スライドの表示枚数：768px以上の場合
