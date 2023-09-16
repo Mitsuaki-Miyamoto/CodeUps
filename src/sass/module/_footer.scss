@@ -4,28 +4,24 @@
     background: $green;
     color: $white;
     width: 100%;
-    height: rem(740);
-    max-height: 100%;
+    padding-top: rem(50);
+    padding-bottom: rem(56);
+
     @include mq("md") {
-        max-height: rem(600);
+        padding-top: rem(80);
+        padding-bottom: rem(80);
     }
 }
 
 .footer__inner {
-    padding-top: rem(50);
-    padding-left: rem(15);
-    padding-right: rem(15);
-    height: rem(659);
 
     @include mq("md") {
-        padding-top: rem(80);
-        padding-bottom: rem(45);
-        height: rem(460);
+
     }
 }
 
 .footer__body {
-    height: inherit;
+
 }
 
 .footer__head {
@@ -87,11 +83,12 @@
     text-align: center;
     font-family: $english-font-family;
     letter-spacing: 0.08em;
-    margin-top: rem(8);
+    margin-top: rem(40);
 
     @include mq("md") {
         font-size: rem(14);
         line-height: 1.85;
         font-family: $english-font-family;
+        margin-top: rem(41);
     }
 }

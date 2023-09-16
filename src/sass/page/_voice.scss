@@ -2,12 +2,6 @@
 
 .voice {
     position: relative;
-
-
-    @include mq("md") {
-        padding-top: rem(96);
-    }
-
 }
 
 .voice__inner {
@@ -15,7 +9,6 @@
     padding-bottom: rem(80);
 
     @include mq("md") {
-        // padding-top: rem(262);
         padding-bottom: rem(135);
     }
 }
@@ -25,19 +18,33 @@
     @include mq("md") {
         content: "";
         position: absolute;
-        background-image: url(/assets/images/common/voice-bg-group.png);
+        background-image: url(/assets/images/common/voice-fish.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 91%;
-        right: 0;
+        height: 17%;
+        left: calc(50% - min(48.5vw, 40rem));
         top: -3%;
-        width: 100%;
+        width: rem(300);
     }
 }
 
-
-.voice__inner::after {}
+.voice::after {
+        content: "";
+        position: absolute;
+        background-image: url(/assets/images/common/voice-tatsu.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 17%;
+        right: calc(50% - min(48.5vw, 33.7rem));
+        top: 74%;
+        width: rem(71);
+        display: none;
+        @include mq("md") {
+            display: block;
+        }
+}
 
 
 .voice__header {}

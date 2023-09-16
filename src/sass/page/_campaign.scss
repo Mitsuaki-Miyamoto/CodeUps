@@ -2,12 +2,6 @@
 
 .campaign {
     position: relative;
-    margin-top: rem(38);
-
-    @include mq("md") {
-        margin-top: rem(110);
-    }
-
 }
 
 .campaign__inner {
@@ -31,11 +25,6 @@
 .campaign__card {}
 
 .campaign__card:not(:first-child) {
-    // margin-left: rem(24);
-
-    @include mq("md") {
-        // margin-left: rem(40);
-    }
 
 }
 

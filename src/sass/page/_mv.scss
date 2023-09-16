@@ -20,14 +20,14 @@
     z-index: 1;
     position:absolute;
     top: 50%;
-    left: 53%;
+    left: 50%;
     transform: translate(-50%, -50%);
     color: $white;
     font-family: $english-font-family;
     text-align: center;
     @include mq("md") {
         top: 51%;
-        left: 51.5%;
+        left: 50%;
         line-height: 1.25;
 
     }
@@ -40,7 +40,8 @@
 
     @include mq("md") {
         font-size: rem(80);
-        letter-spacing: rem(43.2);
+        letter-spacing: 0.5em;
+        text-indent: 0.5em;
         line-height: 125%;
     }
  }

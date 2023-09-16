@@ -1,12 +1,12 @@
 @use "global" as *;
 
-.price-top {
-    background-color: $green-bg;
+.price-top-layout {
+    padding-top: rem(80);
+    padding-bottom: rem(84);
 
     @include mq("md") {
-        background-position: 10% 97%;
-        background-repeat: no-repeat;
-        background-size: 30% 18%;
+        padding-top: rem(100);
+        padding-bottom: rem(100);
     }
 }
 

@@ -4,10 +4,6 @@
 
     @include mq("md") {
         position: relative;
-        // background: url(/assets/images/common/blog-bg999.jpg);
-        // background-repeat: no-repeat;
-        // background-size: contain;
-        // background-position: top center;
     }
 }
 
@@ -58,9 +54,6 @@
         left: 7%;
     }
 }
-// .blog__cards a {
-//     display: block;
-// }
 
 .blog__inner {}
 

@@ -95,10 +95,10 @@ box.each(function(){
     var color = $(this).find($('.js-color')),
     image = $(this).find('img');
     var counter = 0;
- 
+
     image.css('opacity','0');
     color.css('width','0%');
-    
+
     //inviewを使って背景色が画面に現れたら処理をする
     color.on('inview', function(){
         if(counter == 0){

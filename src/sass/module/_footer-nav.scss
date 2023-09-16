@@ -1,60 +1,60 @@
 @use "global" as *;
 
 .footer-nav {
-    height: rem(234);
-}
-
-.footer-nav__items {
+    color: $white;
     display: flex;
-    flex-flow: column wrap;
-    flex-grow: 1;
-    /* 残りのスペースを均等に分配 */
-    align-items: stretch;
-    /* 要素の高さを親要素に合わせる */
-    height: rem(457);
-    margin-top: rem(36);
+    line-height: 1.125;
+    margin-top: rem(40);
+    justify-content: flex-end;
 
     @include mq("md") {
-        height: rem(234);
-        margin-top: rem(24);
+        margin-top: rem(18);
+        justify-content: space-around;
+    }
+}
+
+.footer-nav__left {
+    display: block;
+    width: 44%;
+
+    @include mq("md") {
+        column-gap: rem(41);
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 15.125rem;
+        row-gap: rem(16);
+        display: flex;
+        width: 48%;
+    }
+}
+
+.footer-nav__right {
+    display: block;
+    width: 44%;
+    margin-left: rem(10);
+    @include mq("md") {
+        column-gap: rem(48);
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 15.125rem;
+        row-gap: rem(16);
+        width: 48%;
+        display: flex;
     }
 }
 
 .footer-nav__item {
-    margin-top: rem(38);
+    // margin-top: rem(38);
 
     @include mq("md") {
-        margin-top: rem(40);
-    }
-}
-
-.footer-nav__item:nth-child(1),
-.footer-nav__item:nth-child(5){
-    margin-top: 0;
-}
-
-.footer-nav__item:nth-child(8) a{
-    font-size: rem(14);
-    
-}
-
-.footer-nav__item:nth-child(1),
-.footer-nav__item:nth-child(3),
-.footer-nav__item:nth-child(5),
-.footer-nav__item:nth-child(7){
-    @include mq("md") {
-        margin-top: 0;
+        // margin-top: rem(40);
     }
 }
 
 .footer-nav__item:nth-child(n+3){
     @include mq("md") {
-        margin-left: rem(70);
+        // margin-left: rem(70);
     }
-}
-
-.footer-nav__item li {
-    font-weight: $regular;
 }
 
 .footer-nav__head {
@@ -65,7 +65,6 @@
     color: $white;
 }
 
-
 .footer-nav__head:not(:first-child) {
     margin-top: rem(40);
 }
@@ -73,7 +72,7 @@
 .footer-nav__head::before {
     content: url(/assets/images/common/star-fish.png);
     transform: scale(0.5);
-    top: rem(-1);
+    top: rem(5.5);
     left: rem(-29);
     width: rem(20);
     height: rem(20);
@@ -81,35 +80,25 @@
     position: absolute;
 }
 
-.footer-nav__item:nth-child(5) {
-    margin-top: 0px;
-}
-
-.footer-nav__item {
-    margin-left: rem(23);
-}
-
-.footer-nav__item:nth-child(n+5) {
-    margin-left: rem(40);
-}
-
-.footer-nav__head:nth-child(n+5) {
-    margin-left: rem(26);
-}
-
-
-.footer-nav__head ul li a {
-    margin-left: 20px;
-}
-
-.footer-nav__item a {}
-
 .footer-nav__list {
-    margin-top: rem(16);
+    font-weight: $regular;
 
     @include mq("md") {
-        margin-top: rem(18);
+
     }
+}
+
+.footer-nav__head a {
+    padding-top: rem(10);
+    padding-bottom: rem(10);
+    display: inline-block;
+    width: 100%;
+}
+.footer-nav__list a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%;
 }
 
 .footer-nav__item a:hover {

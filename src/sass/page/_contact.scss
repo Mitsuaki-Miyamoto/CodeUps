@@ -2,16 +2,12 @@
 
 .contact {
     text-align: center;
-    padding-top: rem(80);
-    padding-bottom: rem(100);
     background-position: right 9px top 56px;
     background-repeat: no-repeat;
     background-size: 31%;
 
     @include mq("md") {
         text-align: center;
-        padding-top: rem(140);
-        padding-bottom: rem(100);
         background-position: right 58px top 101px;
         background-repeat: no-repeat;
         background-size: 20%;

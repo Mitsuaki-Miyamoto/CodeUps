@@ -29,12 +29,11 @@
     height: inherit;
     @include mq("md") {
         padding-left: rem(40);
-        padding-right: rem(40);
+        padding-right: min(40rem, 0.5vw);
     }
 }
 
 .header__logo {
-    // margin-right: auto;
     height: inherit;
     width: rem(102);
 
@@ -77,12 +76,13 @@
 }
 
 .header-nav__item a {
-    padding-left: rem(20.5);
-    padding-right: rem(20.5);
-    padding-bottom: rem(16);
+    padding-right: min(1.4vw, 1.25rem);
+    padding-left: min(1.4vw, 1.25rem);
     height: inherit;
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header-nav__item a::after {
@@ -108,19 +108,10 @@
 
 
 .header-nav__item span {
-    position: absolute;
     content: "";
-    top: 66%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     width: 100%;
     font-size: rem(10);
 }
-
-// .header-nav__item:nth-child(7) span{
-//     width: 100%;
-// }
-
 
 .header-nav__items.u-desktop {
     display: flex;

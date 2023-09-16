@@ -3,10 +3,10 @@
 .voice-upper {
     display: flex;
     width: 100%;
+
     @include mq("md") {
         width: 100%;
     }
-
 }
 
 .voice-upper__text {
@@ -20,6 +20,7 @@
     font-size: rem(12);
     font-weight: $regular;
     border-bottom: 1px solid #408F95;
+
     @include mq("md") {
         display: block;
     }
@@ -27,18 +28,17 @@
 
 .voice-upper__wrap {
     display: block;
+
     @include mq("md") {
         display: flex;
         justify-content: space-between;
         align-items: end;
-        height: rem(52);
+        padding-top: rem(26);
         padding-left: rem(8);
     }
 }
 
-.voice-upper__age {
-
-}
+.voice-upper__age {}
 
 .voice-upper__tag {
     color: $green;
@@ -56,12 +56,12 @@
     display: inline-block;
     font-size: rem(16);
     padding-top: rem(5);
+
     @include mq("md") {
         margin-top: rem(14);
         font-size: rem(24);
         padding-left: rem(7);
     }
-
 }
 
 .voice-upper-image {
@@ -69,12 +69,12 @@
     overflow: hidden;
     width: 100%;
     margin-left: rem(13);
+
     @include mq("md") {
         aspect-ratio: 300/200;
         margin-left: rem(16);
         width: 67%;
     }
-
 }
 
 .voice-upper-image img {
