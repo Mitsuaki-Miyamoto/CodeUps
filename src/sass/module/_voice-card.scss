@@ -9,6 +9,10 @@
     }
 }
 
+.voice-card a {
+
+}
+
 .voice-card a:hover {
     opacity: 0.6;
     transition: 0.3s;
@@ -21,11 +25,9 @@
 .voice-card__text {
     font-size: rem(16);
     font-weight: $regular;
-    padding-top: rem(16);
-    padding-bottom: rem(6);
+    margin-top: rem(16);
     @include mq("md") {
-        padding: rem(39) rem(8);
+        margin-top: rem(39);
         line-height: 1.5;
-        padding-bottom: rem(2);
     }
 }

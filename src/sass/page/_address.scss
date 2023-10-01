@@ -9,14 +9,21 @@
     display: block;
 }
 
-.address__logo img {
+.address__logo {
     width: rem(174);
-    display: block;
     margin: auto;
-
     @include mq("md") {
         width: rem(205);
     }
+}
+
+
+
+.address__logo img {
+    // width: rem(174);
+    display: block;
+    margin: auto;
+
 }
 
 .address__body {

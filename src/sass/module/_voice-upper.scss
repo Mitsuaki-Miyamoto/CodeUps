@@ -3,6 +3,7 @@
 .voice-upper {
     display: flex;
     width: 100%;
+    align-items: flex-end;
 
     @include mq("md") {
         width: 100%;
@@ -28,13 +29,14 @@
 
 .voice-upper__wrap {
     display: block;
+    
 
     @include mq("md") {
         display: flex;
         justify-content: space-between;
         align-items: end;
-        padding-top: rem(26);
-        padding-left: rem(8);
+        // padding-top: rem(26);
+        // padding-left: rem(8);
     }
 }
 
@@ -55,12 +57,12 @@
 .voice-upper__sub-title {
     display: inline-block;
     font-size: rem(16);
-    padding-top: rem(5);
+    // padding-top: rem(5);
 
     @include mq("md") {
-        margin-top: rem(14);
+        // margin-top: rem(14);
         font-size: rem(24);
-        padding-left: rem(7);
+        // padding-left: rem(7);
     }
 }
 

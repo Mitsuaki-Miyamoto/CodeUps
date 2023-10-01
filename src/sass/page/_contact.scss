@@ -27,6 +27,8 @@
         width: 100%;
         max-width: 1080px;
         justify-content: space-around;
+        padding-top: rem(80);
+        padding-bottom: rem(80);
 
     }
 }
@@ -54,12 +56,12 @@
 .contact__address {
     @include mq("md") {
         width: 48%;
-        margin-top: rem(80);
-        margin-bottom: rem(80);
     }
 }
 
 .contact__form {
+    padding-top: rem(15);
+    padding-bottom: rem(15);
     @include mq("md") {
         width: 46%;
         display: grid;
@@ -82,11 +84,11 @@
     font-size: rem(80);
     font-weight: $regular;
     font-family: $english-font-family;
-    line-height: 0.75;
+    line-height: 1;
 }
 
 .contact__sub1 {
-    margin-top: rem(4);
+    // margin-top: rem(4);
 
     @include mq("md") {
         margin-bottom: 0;

@@ -19,14 +19,13 @@
     @include mq("md") {
         display: flex;
         flex-direction: row-reverse;
-        margin-top: rem(13);
+        margin-top: rem(40);
         width: 100%;
         position: relative;
     }
 }
 
 .price-top__image {
-    margin-top: rem(24);
     overflow: hidden;
     width: 100%;
 
@@ -74,10 +73,10 @@
 }
 
 .price-top__category:first-child {
-    margin-top: rem(37);
+    margin-top: 0;
 
     @include mq("md") {
-        margin-top: rem(25);
+        margin-top: 0;
     }
 }
 
@@ -108,6 +107,7 @@
     line-height: 1.71429;
     text-align: right;
     width: 24.6666666667%;
+    width: calc(100% - min(20vw, 200px));
     display: inline-block;
 
     @include mq("md") {

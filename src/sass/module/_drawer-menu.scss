@@ -12,6 +12,8 @@
     background-color: $green;
     overflow-y: scroll;
     color: $white;
+    // overscroll-behavior: none;
+    // overflow-y: hidden;
 }
 
 .drawer-menu__inner {
@@ -29,12 +31,11 @@
     display: inline-block;
     margin-top: rem(23);
     margin-left: rem(16);
+    position: fixed;
 }
 
 
-.drawer-menu__image a {
-    
-}
+.drawer-menu__image a {}
 
 .drawer-menu__items {
     display: flex;
@@ -42,8 +43,9 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    
+    margin-top: rem(105);
 }
+
 
 .drawer-menu__left {
     max-width: rem(144);
@@ -64,9 +66,7 @@
     width: 100%;
 }
 
-.drawer-menu__item:not(:first-child) {
-   
-}
+.drawer-menu__item:not(:first-child) {}
 
 
 .drawer-menu__item a {
@@ -83,16 +83,22 @@
     line-height: 112.5%;
 }
 
+.drawer-menu__head-campaign,
+.drawer-menu__head-voice {
+    margin-top: 0;
+}
+
 .drawer-menu__head::before {
     content: url(/assets/images/common/star-fish.png);
     transform: scale(0.5);
-    top:rem(-3);
-    left:rem(-29);
+    top: rem(-3);
+    left: rem(-29);
     width: rem(20);
     height: rem(20);
     display: block;
     position: absolute;
 }
+
 
 .drawer-menu__list {
     margin-top: rem(24);
@@ -101,5 +107,3 @@
     font-weight: $regular;
     line-height: 1.1;
 }
-
-

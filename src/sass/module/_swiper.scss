@@ -49,7 +49,6 @@
 
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
     @include mq("md") {
-        right: -9px;
         left: auto;
     }
 }
@@ -69,7 +68,6 @@
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
 
     @include mq("lg") {
-        right: -9px;
         left: auto;
     }
 }

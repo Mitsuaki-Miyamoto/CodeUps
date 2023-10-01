@@ -6,10 +6,10 @@
 
 .voice__inner {
     position: relative;
-    padding-bottom: rem(80);
+    // padding-bottom: rem(80);
 
     @include mq("md") {
-        padding-bottom: rem(135);
+        // padding-bottom: rem(135);
     }
 }
 
@@ -36,9 +36,9 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
-        height: 17%;
+        height: 26.5%;
         right: calc(50% - min(48.5vw, 33.7rem));
-        top: 74%;
+        top: 84%;
         width: rem(71);
         display: none;
         @include mq("md") {
