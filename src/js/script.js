@@ -1,32 +1,22 @@
 
 jQuery(function ($) {
   // この中であればWordPressでも「$」が使用可能になる
-  // ドロワーの状態を追跡するフラグ
-  let isDrawerOpen = false;
-
-  // クリック可能な要素をキャッシュ
-  // const $hamburger = $(".js-hamburger");
-  // const $drawer = $(".js-drawer");
-
+  
   // ハンバーガーメニュー
   $(".js-hamburger, .js-drawer").click(function () {
     $(".js-hamburger").toggleClass("is-active");
     $(".js-drawer").fadeToggle();
-
+    
+    // ドロワーの状態を追跡するフラグ
+    let isDrawerOpen = false;
     if ($(".js-hamburger").hasClass("is-active")) {
       // ドロワーが表示された場合
       $("body").css("overflow", "hidden");
       isDrawerOpen = true;
     } else {
-      // ドロワーが非表示の場合
-      if (!isDrawerOpen) {
-        // ドロワーが閉じられ、他にスクロール無効化の要因がない場合、スクロールを有効にする
+      // ドロワーが閉じられ、他にスクロール無効化の要因がない場合、スクロールを有効にする
         $("body").css("overflow", "auto");
-      }
       isDrawerOpen = false;
-      
-      // ドロワーを閉じた後にhiddenスタイルを削除
-      $("body").css("overflow", "visible");
     }
   });
 
