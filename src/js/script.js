@@ -1,15 +1,19 @@
 
 jQuery(function ($) {
   // この中であればWordPressでも「$」が使用可能になる
-// ドロワーの状態を追跡するフラグ
+  // ドロワーの状態を追跡するフラグ
   let isDrawerOpen = false;
+
+  // クリック可能な要素をキャッシュ
+  // const $hamburger = $(".js-hamburger");
+  // const $drawer = $(".js-drawer");
 
   // ハンバーガーメニュー
   $(".js-hamburger, .js-drawer").click(function () {
     $(".js-hamburger").toggleClass("is-active");
     $(".js-drawer").fadeToggle();
 
-    if ($(".js-drawer").is(":visible")) {
+    if ($(".js-hamburger").hasClass("is-active")) {
       // ドロワーが表示された場合
       $("body").css("overflow", "hidden");
       isDrawerOpen = true;
@@ -20,6 +24,9 @@ jQuery(function ($) {
         $("body").css("overflow", "auto");
       }
       isDrawerOpen = false;
+      
+      // ドロワーを閉じた後にhiddenスタイルを削除
+      $("body").css("overflow", "visible");
     }
   });
 
