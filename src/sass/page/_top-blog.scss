@@ -1,13 +1,15 @@
 @use "global" as *;
 
-.blog {
+.top-blog {
+    padding-top: rem(75);
 
     @include mq("md") {
         position: relative;
+        padding-top: rem(97);
     }
 }
 
-.blog__backgroundImage {
+.top-blog__backgroundImage {
     z-index: -1;
     position: absolute;
     top: 0;
@@ -15,13 +17,13 @@
 }
 
 
-.blog__backgroundImage img {
+.top-blog__backgroundImage img {
     max-height: inherit;
     display: inline-block;
 
 }
 
-.blog::after {
+.top-blog::after {
     @include mq("md") {
         position: absolute;
         content: "";
@@ -38,7 +40,7 @@
     }
 }
 
-.blog__cards::before {
+.top-blog__cards::before {
     @include mq("md") {
         position: absolute;
         content: "";
@@ -55,11 +57,11 @@
     }
 }
 
-.blog__inner {}
+.top-blog__inner {}
 
-.blog__bg {}
+.top-blog__bg {}
 
-.blog__header.section-header {
+.top-blog__header.section-header {
 
     @include mq("md") {
         color: $white;
@@ -67,61 +69,62 @@
     }
 }
 
-.blog__header.section-header::first-letter {
+.top-blog__header.section-header::first-letter {
     @include mq("md") {
         color: $white;
     }
 }
 
 
-.blog__sub.section-header__sub {
+.top-blog__sub.section-header__sub {
     @include mq("md") {
         color: $white;
     }
 }
 
 
-.blog__cards {
+.top-blog__cards {
     margin-top: rem(29);
 
     @include mq("md") {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.5rem;
         flex-wrap: wrap;
         margin-top: rem(80);
         justify-content: center;
     }
 }
 
-.blog__card {
+.top-blog__card {
     background: $white;
 
     @include mq("md") {
-        max-width: calc(33.333% - 40px * 2 / 3);
         width: 100%;
         display: block;
     }
 }
 
-.blog-card+.blog-card {
-    @include mq("md") {
-        margin-left: rem(40);
-    }
-}
+// .top-blog-card+.top-blog-card {
+//     @include mq("md") {
+//         margin-left: rem(40);
+//     }
+// }
 
-.blog__card.blog-card:nth-of-type(3n+1) {
-    @include mq("md") {
-        margin-left: 0;
-    }
-}
+// .top-blog__card.top-blog-card:nth-of-type(3n+1) {
+//     @include mq("md") {
+//         margin-left: 0;
+//     }
+// }
 
-.blog__card.blog-card:nth-of-type(n+4) {
+.top-blog__card.top-blog-card:nth-of-type(n+4) {
     @include mq("md") {
         margin-top: 34px;
     }
 }
 
 
-.blog__card:not(:first-child) {
+.top-blog__card:not(:first-child) {
     margin-top: rem(40);
 
     @include mq("md") {
@@ -130,11 +133,12 @@
 
 }
 
-.blog-card__body {}
+.top-blog-card__body {}
 
-.blog__button {
+.top-blog__button {
     text-align: center;
     margin-top: rem(40);
+
     @include mq("md") {
         margin-top: rem(80);
     }

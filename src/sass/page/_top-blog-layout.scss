@@ -1,10 +1,8 @@
-
 @use "global" as *;
 
-.blog-layout {
-    padding-top: rem(75);
+.top-blog-layout {
+
     @include mq("md") {
         margin-top: 0;
-        padding-top: rem(97);
     }
 }

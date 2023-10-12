@@ -43,20 +43,6 @@
     }
 }
 
-.footer-nav__item {
-    // margin-top: rem(38);
-
-    @include mq("md") {
-        // margin-top: rem(40);
-    }
-}
-
-.footer-nav__item:nth-child(n+3){
-    @include mq("md") {
-        // margin-left: rem(70);
-    }
-}
-
 .footer-nav__head {
     font-size: rem(16);
     font-weight: $bold;

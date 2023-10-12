@@ -1,31 +1,29 @@
 @use "global" as *;
 
-.voice-card {
+.top-voice-card {
     padding: rem(16) rem(16);
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+
     @include mq("md") {
         width: rem(520);
         padding: rem(21) rem(19);
     }
 }
 
-.voice-card a {
+.top-voice-card a {}
 
-}
-
-.voice-card a:hover {
+.top-voice-card a:hover {
     opacity: 0.6;
     transition: 0.3s;
 }
 
-.voice-card__upper {
+.top-voice-card__upper {}
 
-}
-
-.voice-card__text {
+.top-voice-card__text {
     font-size: rem(16);
     font-weight: $regular;
     margin-top: rem(16);
+
     @include mq("md") {
         margin-top: rem(39);
         line-height: 1.5;

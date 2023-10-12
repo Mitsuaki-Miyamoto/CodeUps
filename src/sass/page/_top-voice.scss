@@ -1,19 +1,14 @@
 @use "global" as *;
 
-.voice {
+.top-voice {
     position: relative;
 }
 
-.voice__inner {
+.top-voice__inner {
     position: relative;
-    // padding-bottom: rem(80);
-
-    @include mq("md") {
-        // padding-bottom: rem(135);
-    }
 }
 
-.voice::before {
+.top-voice::before {
 
     @include mq("md") {
         content: "";
@@ -29,27 +24,28 @@
     }
 }
 
-.voice::after {
-        content: "";
-        position: absolute;
-        background-image: url(/assets/images/common/voice-tatsu.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: 26.5%;
-        right: calc(50% - min(48.5vw, 33.7rem));
-        top: 84%;
-        width: rem(71);
-        display: none;
-        @include mq("md") {
-            display: block;
-        }
+.top-voice::after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/images/common/voice-tatsu.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 26.5%;
+    right: calc(50% - min(48.5vw, 33.7rem));
+    top: 84%;
+    width: rem(71);
+    display: none;
+
+    @include mq("md") {
+        display: block;
+    }
 }
 
 
-.voice__header {}
+.top-voice__header {}
 
-.voice__content {
+.top-voice__content {
     margin-top: rem(44);
 
     @include mq("md") {
@@ -59,7 +55,7 @@
     }
 }
 
-.voice__card {
+.top-voice__card {
     margin-right: auto;
     margin-left: auto;
 
@@ -70,7 +66,7 @@
     }
 }
 
-.voice__card+.voice__card {
+.top-voice__card+.top-voice__card {
     margin-top: rem(40);
 
     @include mq("md") {
@@ -79,19 +75,19 @@
     }
 }
 
-.voice__card.voice-card:nth-of-type(2n+1) {
+.top-voice__card.top-voice-card:nth-of-type(2n+1) {
     @include mq("md") {
         margin-left: 0;
     }
 }
 
-.voice__card.voice__card.voice-card:nth-of-type(n+3) {
+.top-voice__card.top-voice__card.top-voice-card:nth-of-type(n+3) {
     @include mq("md") {
         margin-top: rem(40);
     }
 }
 
-.voice__button {
+.top-voice__button {
     text-align: center;
     margin-top: rem(44);
 

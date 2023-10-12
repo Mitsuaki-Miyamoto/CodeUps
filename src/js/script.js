@@ -44,11 +44,24 @@ jQuery(function ($) {
     loop: true,
     effect: "fade",
     speed: 3000,
+    autoplay: {
+      delay: 3000, // 画像が自動的にスライドするまでの遅延時間
+    },
     allowTouchMove: false,
   });
 
-  // Campaignスライダー
-  let campaign__body = new Swiper(".swiper-container", {
+  document.addEventListener("DOMContentLoaded", function() {
+  let mvSlider = new Swiper(".swiper", {
+    loop: true,
+    effect: "fade",
+    speed: 3000,
+    allowTouchMove: false,
+  });
+});
+
+
+  // top-campaignスライダー
+  let topCampaign__body = new Swiper(".swiper-container", {
     slidesPerView: "auto",
     spaceBetween: 24,
     loop: true,

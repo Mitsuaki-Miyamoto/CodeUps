@@ -24,7 +24,6 @@
 .swiper-slide img {
     height: inherit;
     min-height: inherit;
-    // aspect-ratio: 1440 / 768;
     object-fit: cover;
 }
 
@@ -62,12 +61,4 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
-
-    @include mq("lg") {
-        left: auto;
-    }
 }

@@ -1,17 +1,16 @@
 @use "global" as *;
 
-.blog-card {
+.top-blog-card {
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 
-.blog-card a:hover {
+.top-blog-card a:hover {
     opacity: 0.7;
     transition: 0.3s;
 }
 
-.blog-card__body {
-    // padding: rem(16);
+.top-blog-card__body {
     padding-top: rem(16);
     padding-left: rem(22);
     padding-right: rem(22);
@@ -23,18 +22,18 @@
     }
 }
 
-.blog-card__image {
+.top-blog-card__image {
     aspect-ratio: 300/200;
     overflow: hidden;
 }
 
-.blog-card__image img {
+.top-blog-card__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.blog-card__info {
+.top-blog-card__info {
     font-weight: $normal;
     color: $green-text;
     margin-top: rem(17);
@@ -45,16 +44,16 @@
 
 }
 
-.blog-card__date {
+.top-blog-card__date {
     font-size: rem(12);
     font-family: $english-font-family;
 }
 
-.blog-card__title {
+.top-blog-card__title {
     font-size: rem(16);
 }
 
-.blog-card__text {
+.top-blog-card__text {
     margin-top: rem(16);
 
 }

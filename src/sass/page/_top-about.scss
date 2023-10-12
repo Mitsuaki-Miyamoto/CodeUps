@@ -1,26 +1,25 @@
 @use "global" as *;
 
-.about {}
+.top-about {}
 
-.about__inner {
+.top-about__inner {
     width: 100%;
 
     @include mq("md") {
-        padding-bottom: 40px;
         max-width: rem(1080);
         width: 100%;
     }
 }
 
-.about__header {}
+.top-about__header {}
 
-.about__main {
+.top-about__main {
     text-transform: none;
 }
 
-.about__sub {}
+.top-about__sub {}
 
-.about__wrapper {
+.top-about__wrapper {
     margin-top: rem(24);
     position: relative;
 
@@ -29,7 +28,7 @@
     }
 }
 
-.about__images {
+.top-about__images {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -41,9 +40,8 @@
 
 
 
-.about__backgroundImage01 {
+.top-about__backgroundImage01 {
     width: 38%;
-    // position: absolute;
     z-index: 2;
     margin-bottom: rem(18);
 
@@ -52,7 +50,7 @@
     }
 }
 
-.about__backgroundImage01 img {
+.top-about__backgroundImage01 img {
     aspect-ratio: 186 / 280;
     object-fit: cover;
     width: 100%;
@@ -64,17 +62,15 @@
     }
 }
 
-.about__backgroundImage02 {
+.top-about__backgroundImage02 {
     width: 83%;
     margin-left: rem(-200);
-    
 
-    @include mq("md") {
 
-    }
+    @include mq("md") {}
 }
 
-.about__backgroundImage02 img {
+.top-about__backgroundImage02 img {
     object-fit: cover;
     aspect-ratio: 280 / 186;
     width: 100%;
@@ -84,15 +80,13 @@
     }
 }
 
-.about__wrapper::after {
+.top-about__wrapper::after {
 
     @include mq("md") {
         position: absolute;
         content: "";
         right: calc(50% - min(48vw, rem(650)));
         bottom: rem(-70);
-        // top: 95%;
-        // transform: translate(-5%, -32%);
         display: inline-block;
         background-image: url(/assets/images/common/about-us3.png);
         background-repeat: no-repeat;
@@ -103,7 +97,7 @@
     }
 }
 
-.about__wrapper-inner {
+.top-about__wrapper-inner {
     margin-top: rem(40);
 
     @include mq("md") {
@@ -118,7 +112,7 @@
     }
 }
 
-.about__texts {
+.top-about__texts {
     color: $green;
 
     @include mq("md") {
@@ -127,7 +121,7 @@
     }
 }
 
-.about__subtitle {
+.top-about__subtitle {
     font-size: rem(40);
     z-index: 1;
     font-weight: $regular;
@@ -144,7 +138,7 @@
     }
 }
 
-.about__text-button {
+.top-about__text-button {
     text-align: center;
 
     @include mq("md") {
@@ -153,7 +147,7 @@
     }
 }
 
-.about__text {
+.top-about__text {
     text-align: left;
     font-size: rem(16);
     font-weight: $regular;
@@ -167,10 +161,9 @@
     }
 }
 
-.about__text h3 {
-}
+.top-about__text h3 {}
 
 
-.about__button {
+.top-about__button {
     margin-top: rem(40);
 }
