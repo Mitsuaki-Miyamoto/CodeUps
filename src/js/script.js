@@ -20,6 +20,28 @@ jQuery(function ($) {
     }
   });
 
+
+$(function () {
+  // ヘッダーの高さ分だけコンテンツを下げる
+  const height = $(".js-header").height();
+  $("main").css("margin-top", height);
+
+  // ページ内スクロール
+  $(function () {
+    // ヘッダーの高さ取得
+    const headerHeight = $(".js-header").height();
+    $('a[href^="#"]').click(function () {
+      const speed = 500;
+      let href = $(this).attr("href");
+      let target = $(href == "#" || href == "" ? "html" : href);
+      // ヘッダーの高さ分下げる
+      let position = target.offset().top - headerHeight;
+      $("body,html").animate({ scrollTop: position }, speed, "swing");
+      return false;
+    });
+  });
+});
+
   // resizeイベント
   $(window).resize(function () {
     if (window.matchMedia("(min-width: 768px)").matches) {
@@ -40,7 +62,7 @@ jQuery(function ($) {
   }
 
   // MVスライダー
-  let mv__slider = new Swiper(".swiper", {
+  let mv__slider = new Swiper(".js-mv-swiper", {
     loop: true,
     effect: "fade",
     speed: 3000,
@@ -61,7 +83,7 @@ jQuery(function ($) {
 
 
   // top-campaignスライダー
-  let topCampaign__body = new Swiper(".swiper-container", {
+  let topCampaign__body = new Swiper(".js-swiper-container", {
     slidesPerView: "auto",
     spaceBetween: 24,
     loop: true,

@@ -75,14 +75,6 @@
     }
 }
 
-
-.top-blog__sub.section-header__sub {
-    @include mq("md") {
-        color: $white;
-    }
-}
-
-
 .top-blog__cards {
     margin-top: rem(29);
 

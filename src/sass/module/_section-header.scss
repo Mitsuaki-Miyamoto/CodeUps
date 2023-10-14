@@ -11,7 +11,6 @@
     color: $green;
 }
 
-
 .section-header__main {
     font-family: $english-font-family;
     font-size: rem(32);
@@ -19,10 +18,46 @@
     @include mq("md") {
         font-size: rem(40);
     }
-
 }
 
 .section-header__sub {
     font-size: rem(12);
     color: $green;
+    font-style: $normal;
+    font-weight: $regular;
+}
+
+.section-header__main--large {
+    font-size: rem(80);
+    font-weight: $regular;
+    font-family: $english-font-family;
+    line-height: 1;
+}
+
+.section-header__main--about {
+    text-transform: none;
+}
+
+.section-header__sub--white {
+    @include mq("md") {
+        color: $white;
+    }
+}
+
+
+.section-header__sub--line1 {
+    font-weight: $regular;
+
+    @include mq("md") {
+        margin-bottom: 0;
+    }
+}
+
+.section-header__sub--line2 {
+    margin-top: rem(15);
+    letter-spacing: 0.13em;
+
+    @include mq("md") {
+        margin-top: rem(16);
+    }
 }

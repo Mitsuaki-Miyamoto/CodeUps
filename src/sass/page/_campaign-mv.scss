@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.campaign-mv {
+    position: relative;
+}
+
+.campaign-mv-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    color: $white;
+    font-family: Lato;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: $regular;
+
+    @include mq("md") {
+        font-size: rem(80);
+        line-height: 1;
+    }
+
+}
+
+.campaign-mv__inner {}
+
+.campaign-mv__image {}
+
+.campaign-mv__image img {}

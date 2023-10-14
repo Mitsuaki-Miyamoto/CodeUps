@@ -62,6 +62,7 @@
 .contact__form {
     padding-top: rem(15);
     padding-bottom: rem(15);
+
     @include mq("md") {
         width: 46%;
         display: grid;
@@ -78,31 +79,6 @@
     @include mq("md") {
         margin-top: rem(2);
     }
-}
-
-.section-header__main--large {
-    font-size: rem(80);
-    font-weight: $regular;
-    font-family: $english-font-family;
-    line-height: 1;
-}
-
-.contact__sub1 {
-    font-weight: $regular;
-
-    @include mq("md") {
-        margin-bottom: 0;
-    }
-}
-
-.contact__sub2 {
-    margin-top: rem(15);
-    letter-spacing: 0.13em;
-
-    @include mq("md") {
-        margin-top: rem(16);
-    }
-
 }
 
 .contact__button {

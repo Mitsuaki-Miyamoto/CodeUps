@@ -31,9 +31,9 @@
 .top-campaign__swiper-buttons {
     max-width: rem(300);
     position: absolute;
-    width: 240px;
+    width: rem(240);
     top: rem(11);
-    height: 80px;
+    height: rem(80);
 
     @include mq("md") {
         right: rem(35);
