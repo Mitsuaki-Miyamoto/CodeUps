@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.pagination {
+    display: grid;
+    grid-auto-rows: minmax(rem(38), auto);
+    grid-template-columns: repeat(6, 1fr);
+    cursor: pointer;
+    max-width: rem(344);
+    gap: rem(12);
+    @include mq("md") {
+        grid-template-columns: repeat(8, 1fr);
+        max-width: rem(450);
+    }
+}
+
+.pagination__prev,
+.pagination__next {
+    width: rem(38);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid $green;
+}
+
+.pagination__prev {
+    background-image: url(/assets/images/common/pagination-prev.svg);
+    background-repeat: no-repeat;
+    background-size: rem(38) rem(44);
+    background-position: center center;
+    margin-right: rem(28);
+}
+.pagination__next {
+    background-image: url(/assets/images/common/pagination-next.svg);
+    background-repeat: no-repeat;
+    background-size: rem(38) rem(44);
+    background-position: center center;
+    margin-left: rem(28);
+}
+
+.pagination__page {
+    color: $green;
+    font-family: Lato;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: $bold;
+    margin: auto;
+    border: 1px solid $green;
+    padding: rem(6) rem(14);
+}
+
+.pagination__page--is-active {
+    color: $white;
+    background-color: $green;
+}
+.pagination__next {}

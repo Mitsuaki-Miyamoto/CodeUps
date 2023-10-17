@@ -22,10 +22,6 @@ jQuery(function ($) {
 
 
 $(function () {
-  // ヘッダーの高さ分だけコンテンツを下げる
-  const height = $(".js-header").height();
-  $("main").css("margin-top", height);
-
   // ページ内スクロール
   $(function () {
     // ヘッダーの高さ取得
@@ -157,3 +153,72 @@ $(function () {
     });
   });
 });
+
+//モーダル(About us下層ページ)
+$(function(){
+  if (window.matchMedia('(min-width:768px)').matches) {
+		/* ウィンドウサイズ769以上の処理を記述 */
+
+jQuery(".js-modal-open1").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal1")[0].showModal();
+});
+
+jQuery(".js-modal-close").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal1")[0].close();
+});
+
+jQuery(".js-modal-open2").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal2")[0].showModal();
+});
+jQuery(".js-modal-close").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal2")[0].close();
+});
+
+jQuery(".js-modal-open3").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal3")[0].showModal();
+});
+jQuery(".js-modal-close").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal3")[0].close();
+});
+
+jQuery(".js-modal-open4").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal4")[0].showModal();
+});
+jQuery(".js-modal-close").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal4")[0].close();
+});
+
+jQuery(".js-modal-open5").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal5")[0].showModal();
+});
+jQuery(".js-modal-close").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal5")[0].close();
+});
+
+jQuery(".js-modal-open6").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal6")[0].showModal();
+});
+jQuery(".js-modal-close").on("click", function(e) {
+  e.preventDefault();
+  jQuery("#js-about-modal6")[0].close();
+});
+
+}})
+
+
+// MicroModal.init({
+//   disableScroll: true,
+//   awaitOpenAnimation: true,
+//   awaitCloseAnimation: true
+// });

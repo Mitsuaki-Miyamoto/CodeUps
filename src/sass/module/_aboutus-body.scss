@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.aboutus-body {}
+
+.aboutus-body__inner {}
+
+.aboutus-body__breadcrumb {
+    margin-top: rem(10);
+}
+
+.aboutus-body__wrapper {
+    @include mq("md") {
+        margin-top: rem(178);
+    }
+}
+
+.aboutus-body__wrapper::before {
+    @include mq("md") {
+        position: absolute;
+        content: "";
+        right: calc(50% - min(46vw, rem(538)));
+        bottom: rem(-182);
+        display: inline-block;
+        background-image: url(/assets/images/common/contact-fish.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center center;
+        width: 18.5%;
+        height: 27%;
+        z-index: 1;
+    }
+}
+
+.aboutus-body__wrapper::after {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 8%;
+    position: absolute;
+    top: 6%;
+    width: 7.5rem;
+
+    @include mq("md") {
+        height: 12%;
+        left: calc(50% - min(48.5vw, 39rem));
+        top: -10%;
+        width: 18.75rem;
+    }
+}
+
+.aboutus-body__wrapper-page::after {
+    @include mq("md") {
+        height: 21%;
+    }
+}

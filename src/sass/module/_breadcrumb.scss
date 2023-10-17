@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.breadcrumb {
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+}

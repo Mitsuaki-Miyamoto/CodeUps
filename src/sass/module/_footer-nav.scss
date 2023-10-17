@@ -87,6 +87,22 @@
     width: 100%;
 }
 
+.footer-nav__item:nth-child(2),
+.footer-nav__item:nth-child(3),
+.footer-nav__item:nth-child(4),
+.footer-nav__item:nth-child(6),
+.footer-nav__item:nth-child(7),
+.footer-nav__item:nth-child(8),
+.footer-nav__item:nth-child(9),
+.footer-nav__item:nth-child(10) {
+  margin-top: 24px;
+
+  @include mq("md") {
+        margin-top: 0;
+  }
+}
+
+
 .footer-nav__item a:hover {
     opacity: 0.7;
 }
