@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.main {
+    position: relative;
+}
+
+.main::before {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    width: 7.5rem;
+    top: -0.5%;
+    height: 1%;
+    @include mq("md") {
+        top: -4%;
+        height: 8%;
+        width: 19.5rem;
+        left: -13%;
+
+    }
+}
+
+.main__body {
+
+}
+
+.main__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: rem(40);
+    @include mq("md") {
+        grid-template-columns: 1fr 1fr;
+        column-gap:rem(40);
+        row-gap: rem(80);
+    }
+}
+
+.main__card {
+    background-color: $white;
+    z-index: 1;
+
+}
+
+.pagination {
+    margin-top: rem(60);
+    margin-left: auto;
+    margin-right: auto;
+    // grid-template-columns: 1fr 1fr;
+    // gap: rem(32);
+}
+
+.pagination.pagination--blog {
+    grid-template-columns: 1fr 1fr;
+    gap: rem(32);
+    margin-top: rem(32);
+    @include mq("md") {
+        margin-top: rem(70);
+    }
+}
+
+

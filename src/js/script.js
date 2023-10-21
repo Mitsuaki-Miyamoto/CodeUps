@@ -159,28 +159,42 @@ $(function(){
   if (window.matchMedia('(min-width:768px)').matches) {
 		/* ウィンドウサイズ769以上の処理を記述 */
 
+
+
 jQuery(".js-modal-open1").on("click", function(e) {
   e.preventDefault();
+  
   jQuery("#js-about-modal1")[0].showModal();
+  // モーダルを開いたときに背景を固定
+  document.body.style.overflow = 'hidden';
 });
-
 jQuery(".js-modal-close").on("click", function(e) {
   e.preventDefault();
   jQuery("#js-about-modal1")[0].close();
+  // モーダルを閉じたときに背景の固定を解除
+  document.body.style.overflow = '';
 });
 
 jQuery(".js-modal-open2").on("click", function(e) {
   e.preventDefault();
   jQuery("#js-about-modal2")[0].showModal();
+  // モーダルを開いたときに背景を固定
+  document.body.style.overflow = 'hidden';
 });
 jQuery(".js-modal-close").on("click", function(e) {
   e.preventDefault();
   jQuery("#js-about-modal2")[0].close();
+  // モーダルを閉じたときに背景の固定を解除
+  // document.body.style.overflow = '';
 });
+
+
 
 jQuery(".js-modal-open3").on("click", function(e) {
   e.preventDefault();
   jQuery("#js-about-modal3")[0].showModal();
+  // モーダルを開いたときに背景を固定
+  document.body.style.overflow = 'hidden';
 });
 jQuery(".js-modal-close").on("click", function(e) {
   e.preventDefault();
@@ -190,6 +204,8 @@ jQuery(".js-modal-close").on("click", function(e) {
 jQuery(".js-modal-open4").on("click", function(e) {
   e.preventDefault();
   jQuery("#js-about-modal4")[0].showModal();
+  // モーダルを開いたときに背景を固定
+document.body.style.overflow = 'hidden';
 });
 jQuery(".js-modal-close").on("click", function(e) {
   e.preventDefault();
@@ -199,6 +215,8 @@ jQuery(".js-modal-close").on("click", function(e) {
 jQuery(".js-modal-open5").on("click", function(e) {
   e.preventDefault();
   jQuery("#js-about-modal5")[0].showModal();
+  // モーダルを開いたときに背景を固定
+  document.body.style.overflow = 'hidden';
 });
 jQuery(".js-modal-close").on("click", function(e) {
   e.preventDefault();
@@ -208,6 +226,8 @@ jQuery(".js-modal-close").on("click", function(e) {
 jQuery(".js-modal-open6").on("click", function(e) {
   e.preventDefault();
   jQuery("#js-about-modal6")[0].showModal();
+  // モーダルを開いたときに背景を固定
+  document.body.style.overflow = 'hidden';
 });
 jQuery(".js-modal-close").on("click", function(e) {
   e.preventDefault();
@@ -216,9 +236,57 @@ jQuery(".js-modal-close").on("click", function(e) {
 
 }})
 
+// // タブ
+document.addEventListener('DOMContentLoaded', function(){
+  const tabList = document.querySelectorAll('.js-tab__item');
+  const tabContent = document.querySelectorAll('.js-tab__contents-item');
 
-// MicroModal.init({
-//   disableScroll: true,
-//   awaitOpenAnimation: true,
-//   awaitCloseAnimation: true
-// });
+  // 初期状態ではすべての.tab__contents-itemを非表示にする
+  for (let i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = 'none';
+  }
+
+  // タブに対してクリックイベントを適用
+  for(let i = 0; i < tabList.length; i++) {
+    tabList[i].addEventListener('click', tabSwitch);
+  }
+
+  // 初期表示の設定
+  // 最初のタブのコンテンツを表示
+  tabContent[0].style.display = 'block';
+
+  // タブをクリックすると実行する関数
+  function tabSwitch(){
+    // すべての.tab__contents-itemを非表示にする
+    for (let i = 0; i < tabContent.length; i++) {
+      tabContent[i].style.display = 'none';
+    }
+
+    // activeクラスを削除
+    const activeElements = document.querySelectorAll('.active');
+    if (activeElements.length > 0) {
+      activeElements[0].classList.remove('active');
+    }
+    
+    // クリックしたタブにactiveクラスを付与
+    this.classList.add('active');
+
+    // クリックしたタブに関連する.tab__contents-itemを表示
+    const index = Array.from(tabList).indexOf(this);
+    tabContent[index].style.display = 'block';
+  }
+});
+
+
+
+jQuery(function ($) {
+  // 最初にすべての兄弟要素を閉じる
+  $('.js-toggle').siblings().hide();
+
+  $('.js-toggle').on('click', function () {
+    /* クリックでコンテンツを開閉 */
+    $(this).siblings().slideToggle(200);
+    /* 矢印の向きを変更 */
+    $(this).toggleClass('open');
+  });
+});

@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.side-archive {
+    position: relative;
+    color: var(--green, #0D2936);
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+    border-left: rem(8) solid $green;
+    height: rem(50);
+
+    cursor: pointer;
+}
+
+.side-archive__head::before {
+    background-image: url(/assets/images/common/head-icon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 4.5rem;
+    left: clamp(1.188rem, -2.313rem + 3.13vw, 1.5rem);
+    position: absolute;
+    top: rem(-15);
+    width: rem(50);
+}
+
+.side-archive__head {
+    padding-left: rem(75);
+
+}
+
+.side-archive__wrap:first-child {
+    // margin-top: rem(40);
+}
+
+.side-archive__year {
+
+}
+
+.side-archive__month {
+
+}

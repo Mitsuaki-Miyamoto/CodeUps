@@ -38,8 +38,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="./assets/js/jquery.inview.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script> -->
+
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -138,36 +137,183 @@
     </div>
   </header>
   <main>
-    <section class="aboutus-mv">
-      <h1 class="aboutus-mv__title">About&nbsp;us</h1>
-      <div class="aboutus-mv__inner">
-        <div class="aboutus-mv__image">
+    <section class="blog-page-mv">
+      <h1 class="blog-page-mv__title">blog</h1>
+      <div class="blog-page-mv__inner">
+        <div class="blog-page-mv__image">
           <picture>
-            <source srcset="./assets/images/common/aboutus-lower-pc.jpg" media="(min-width:768px)">
-            <img src="./assets/images/common/aboutus-mv-sp.jpg" alt="黄色い魚が2匹泳いでいる様子">
+            <source srcset="./assets/images/common/blog-mv.jpg" media="(min-width:768px)">
+            <img src="./assets/images/common/blog-mv-sp.jpg" alt="ダイバーがたくさんの魚の中を泳いでいる様子">
           </picture>
         </div>
       </div>
     </section>
 
-    <section class="aboutus-body">
-      <div class="aboutus-body__inner inner">
-        <div class="aboutus-body__breadcrumb breadcrumb">TOP > 私たちについて</div>
-        <div class="aboutus-body__wrapper about">
-          <div class="about__images">
-            <div class="about__backgroundImage01 about__backgroundImage01--page">
-              <img src="./assets/images/common/about-us1.jpg" alt="屋根の上にあるシーサーの写真">
+    <section class="blog blog-layout">
+      <div class="blog__inner inner">
+        <div class="blog__breadcrumb breadcrumb">TOP > ブログ詳細</div>
+        <div class="blog__wrapper blog-page">
+
+          <!-- メインコンテンツ -->
+          <div class="blog-page__body">
+            <time class="blog-page__date" datetime="2023-11-17">2023.11/17</time>
+            <h2 class="blog-page__title">ライセンス取得</h2>
+            <ul class="blog-page__cards">
+              <li class="blog-page__card">
+                <div class="blog-page__image">
+                  <img src="./assets/images/common/blog--page.jpg" alt="イソギンチャクが写っている様子">
+                </div>
+                <p class="blog-page__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+              </li>
+              <li class="blog-page__card">
+                <div class="blog-page__image">
+                  <img src="./assets/images/common/blog--page.jpg" alt="イソギンチャクが写っている様子">
+                </div>
+                <p class="blog-page__text">
+                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                </p>
+              </li>
+            </ul>
+
+            <ul class="blog-page__lists">
+              <li class="blog-page__list">リスト1</li>
+              <li class="blog-page__list">リスト2</li>
+              <li class="blog-page__list">リスト3</li>
+            </ul>
+
+            <div class="blog-page__text-bottom">
+              <p>
+                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+              </p>
             </div>
-            <div class="about__backgroundImage02 about__backgroundImage02--page">
-              <img src="./assets/images/common/about-us2.jpg" alt="黄色い魚が2匹泳いでいる様子">
+            <!-- ページネーション -->
+            <div class="main__pagination pagination pagination--blog">
+              <div class="pagination__prev"></div>
+              <div class="pagination__next"></div>
             </div>
+
           </div>
-          <div class="about__wrapper-inner">
-            <div class="about__texts">
-              <h3 class="about__subtitle about__subtitle--page">Dive into<br> the Ocean</h3>
-              <div class="about__text-button about__text-button--page">
-                <p class="about__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+
+          <!-- サイドバー -->
+          <div class="blog__side">
+            <!-- 人気記事 -->
+            <div class="blog__popular side-popular">
+              <div class="side-popular__head">人気記事</div>
+              <ul class="side-popular__articles">
+                <li class="side-popular__article">
+                  <div class="side-popular__image"><img src="./assets/images/common/aboutus-lower-gallery4-pc.jpg"
+                      alt=""></div>
+                  <div class="side-popular__texts">
+                    <time class="side-popular__date" datetime="2023-11-17">2023.11/17</time>
+                    <div class="side-popular__title">ライセンス取得</div>
+                  </div>
+                </li>
+                <li class="side-popular__article">
+                  <div class="side-popular__image"><img src="./assets/images/common/blog2.jpg" alt=""></div>
+                  <div class="side-popular__texts">
+                    <time class="side-popular__date" datetime="2023-11-17">2023.11/17</time>
+                    <div class="side-popular__title">ウミガメと泳ぐ</div>
+                  </div>
+                </li>
+                <li class="side-popular__article">
+                  <div class="side-popular__image"><img src="./assets/images/common/blog3.jpg" alt=""></div>
+                  <div class="side-popular__texts">
+                    <time class="side-popular__date" datetime="2023-11-17">2023.11/17</time>
+                    <div class="side-popular__title">カクレクマノミ</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- 口コミ -->
+            <div class="blog__reviews side-reviews">
+              <div class="side-reviews__head side-reviews__head--blog">口コミ</div>
+              <ul class="side-reviews__wrap">
+                <li class="side-reviews__card reviews-card">
+                  <a href="#">
+                    <div class="reviews-card__body">
+                      <div class="reviews-card__image">
+                        <img src="./assets/images/common/side-reviews.jpg" alt="イソギンチャクが写っている様子">
+                      </div>
+                      <div class="reviews-card__age">30代(カップル)</div>
+                      <h3 class="reviews-card__title">ここにタイトルが入ります。ここにタイトル</h3>
+                      <div class="reviews-card__button">
+                        <a href="#" class="button"><span>View more</span></a>
+                      </div>
+                    </div>
+
+                  </a>
+                </li>
+              </ul>
+              <!-- キャンペーン -->
+              <div class="blog__campaign side-campaign">
+                <div class="side-campaign__head">キャンペーン</div>
+                <ul class="side-campaign__cards">
+                  <li class="side-campaign__card">
+                    <a class="side-campaign__container" href="#">
+                      <div class="side-campaign__image">
+                        <img src="./assets/images/common/campaign_1.jpg" alt="海中を綺麗な魚が泳いでいる様子">
+                      </div>
+                      <div class="side-campaign__body">
+                        <h3 class="side-campaign__title">ライセンス取得</h3>
+                        <div class="side-campaign__content">
+                          <div class="side-campaign__kinds">全部コミコミ(お一人様)</div>
+                          <div class="side-campaign__price price">
+                            <div class="price__before price__before--blog">¥56,000</div>
+                            <div class="price__after price__after--blog">¥46,000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="side-campaign__card">
+                    <a class="side-campaign__container" href="#">
+                      <div class="side-campaign__image">
+                        <img src="./assets/images/common/campaign_2.jpg" alt="海中を綺麗な魚が泳いでいる様子">
+                      </div>
+                      <div class="side-campaign__body">
+                        <h3 class="side-campaign__title">貸切体験ダイビング</h3>
+                        <div class="side-campaign__content">
+                          <div class="side-campaign__kinds">全部コミコミ(お一人様)</div>
+                          <div class="side-campaign__price price">
+                            <div class="price__before price__before--blog">¥24,000</div>
+                            <div class="price__after price__after--blog">¥18,000</div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <div class="side-campaign__button">
+                  <a href="#" class="button"><span>Contact us</span></a>
+                </div>
+              </div>
+
+              <!-- アーカイブ -->
+              <div class="blog__archive side-archive">
+                <div class="side-archive__head">アーカイブ</div>
+                <div class="side-archive__wrap toggle">
+                  <div class="toggle__year toggle__year--first js-toggle">2023</div>
+                  <div class="toggle__month"><a href="">3月</a></div>
+                  <div class="toggle__month"><a href="">2月</a></div>
+                  <div class="toggle__month"><a href="">1月</a></div>
+                </div>
+                <div class="side-archive__wrap toggle">
+                  <div class="toggle__year toggle__year--second js-toggle">2022</div>
+                  <div class="toggle__month"><a href="">12月</a></div>
+                  <div class="toggle__month"><a href="">11月</a></div>
+                  <div class="toggle__month"><a href="">10月</a></div>
+                  <div class="toggle__month"><a href="">9月</a></div>
+                  <div class="toggle__month"><a href="">8月</a></div>
+                  <div class="toggle__month"><a href="">7月</a></div>
+                  <div class="toggle__month"><a href="">6月</a></div>
+                  <div class="toggle__month"><a href="">5月</a></div>
+                  <div class="toggle__month"><a href="">4月</a></div>
+                  <div class="toggle__month"><a href="">3月</a></div>
+                  <div class="toggle__month"><a href="">2月</a></div>
+                  <div class="toggle__month"><a href="">1月</a></div>
+                </div>
               </div>
             </div>
           </div>
@@ -176,65 +322,7 @@
     </section>
 
 
-
-
-    <section class="about-gallery layout-about-gallery">
-      <div class="about-gallery__inner inner">
-        <div class="about-gallery__header section-header">
-          <p class="section-header__main">gallery</p>
-          <h2 class="section-header__sub">フォト</h2>
-          <div class="about-gallery__body">
-            <ul class="about-gallery__imagesWrapper1">
-              <li class="about-gallery__image1 js-modal-open1">
-                <img src="./assets/images/common/price-pc.jpg" alt="">
-              </li>
-              <li class="about-gallery__image2 js-modal-open2">
-                <img src="./assets/images/common/about-us-image2.jpg" alt="">
-              </li>
-              <li class="about-gallery__image3 js-modal-open3">
-                <img src="./assets/images/common/aboutus-lower-gallery3-pc.jpg" alt="">
-              </li>
-            </ul>
-
-            <ul class="about-gallery__imagesWrapper2">
-              <li class="about-gallery__image4 js-modal-open4">
-                <img src="./assets/images/common/aboutus-lower-gallery4-pc.jpg" alt="">
-              </li>
-              <li class="about-gallery__image5 js-modal-open5">
-                <img src="./assets/images/common/aboutus-lower-gallery5-pc.jpg" alt="">
-              </li>
-              <li class="about-gallery__image6 js-modal-open6">
-                <img src="./assets/images/common/aboutus-lower-gallery6-pc.jpg" alt="">
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- モーダル -->
-        <dialog id="js-about-modal1" class="about-gallery__modal1 js-modal-close">
-          <div class="modal-content">
-            <img src="./assets/images/common/price-pc.jpg" alt="">
-
-          </div>
-        </dialog>
-        <dialog id="js-about-modal2" class="about-gallery__modal2 js-modal-close">
-              <img src="./assets/images/common/campaign_2.jpg" alt="">
-        </dialog>
-        <dialog id="js-about-modal3" class="about-gallery__modal3 js-modal-close">
-              <img src="./assets/images/common/aboutus-lower-gallery3-pc.jpg" alt="">
-        </dialog>
-        <dialog id="js-about-modal4" class="about-gallery__modal4 js-modal-close">
-              <img src="./assets/images/common/aboutus-lower-gallery4-pc.jpg" alt="">
-        </dialog>
-        <dialog id="js-about-modal5" class="about-gallery__modal5 js-modal-close">
-              <img src="./assets/images/common/aboutus-lower-gallery5-pc.jpg" alt="">
-        </dialog>
-        <dialog id="js-about-modal6" class="about-gallery__modal6 js-modal-close">
-              <img src="./assets/images/common/aboutus-lower-gallery6-pc.jpg" alt="">
-        </dialog>
-    </section>
-
-    <section id="contact" class="contact contact-layout contact-layout--lower">
+    <section id="contact" class="contact contact-layout contact-layout--side">
       <div class="contact__inner inner">
         <div class="contact__wrapper">
           <div class="contact__address address">
@@ -359,4 +447,6 @@
       </div>
     </div>
   </footer>
-  </main>
+</body>
+
+</html>

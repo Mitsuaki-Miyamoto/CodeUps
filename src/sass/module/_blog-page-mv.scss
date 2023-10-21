@@ -1,8 +1,12 @@
 @use "global" as *;
 
-.mv-title {
+.blog-page-mv {
+    
+}
+
+.blog-page-mv__title {
     position: absolute;
-    top: 50%;
+    top: 22%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-transform: capitalize;
@@ -11,19 +15,26 @@
     font-size: rem(40);
     font-style: normal;
     font-weight: $regular;
+    z-index: 1;
 
     @include mq("md") {
         font-size: rem(80);
         line-height: 1;
-        top: 40%;
+        top: 16%;
     }
 }
 
-.mv-title.mv-title--about {
-    text-transform: none;
-    top: 30%;
+.blog-page-mv__inner {
+    position: relative;
+}
 
+.blog-page-mv__image {
     @include mq("md") {
-        top: 24%;
+        height: 548px;
+    }
+}
+.blog-page-mv__image picture img {
+    @include mq("md") {
+        height: rem(548);
     }
 }

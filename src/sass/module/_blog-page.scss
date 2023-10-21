@@ -1,0 +1,96 @@
+@use "global" as *;
+
+.blog-page {}
+
+.blog-page__body {
+    position: relative;
+}
+
+
+.blog-page__body::before {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 5%;
+    position: absolute;
+    top: -2%;
+    width: 7.5rem;
+}
+
+.blog-page__date {
+    font-family: Gotu;
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: $regular;
+}
+
+.blog-page__title {
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: $normal;
+    line-height: normal;
+    border-bottom: 1px solid $green;
+    padding-bottom: rem(4);
+
+    @include mq("md") {
+        font-size: rem(32);
+    }
+}
+
+.blog-page__cards {
+    margin-top: rem(24);
+
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+
+.blog-page__card:not(:first-child) {
+    margin-top: rem(24);
+
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+
+
+.blog-page__image {}
+
+.blog-page__text {
+    margin-top: rem(24);
+
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+.blog-page__text-bottom {
+    margin-top: rem(24);
+
+    @include mq("md") {
+        margin-top: rem(30);
+    }
+}
+
+.blog-page__lists {
+    margin-top: rem(24);
+
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+
+.blog-page__list {
+    margin-top: rem(7);
+    line-height: 1.5;
+}
+
+.blog-page__list::before {
+    content: "";
+    background-image: url(/assets/images/common/hitode-icon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-left: 26px;
+}

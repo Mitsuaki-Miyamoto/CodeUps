@@ -34,6 +34,12 @@
     }
 }
 
+.price__before--blog {
+    @include mq("md") {
+        font-size: rem(20);
+    }
+}
+
 .price__after {
     color: $green;
     font-size: rem(32);
@@ -49,8 +55,10 @@
     }
 }
 
-.price__after--wide {
+.price__after--blog {
     @include mq("md") {
-        margin-left: rem(42);
+        font-size: rem(32);
+        margin-left: rem(14);
     }
 }
+

@@ -44,20 +44,20 @@
 .about-gallery__image1 {
     @include mq("md") {
         grid-row: 1 / 3;
-        grid-column: 1/5;
+        grid-column: 1/6;
     }
 }
 
 .about-gallery__image2 {
     @include mq("md") {
-        grid-column: 5/11;
+        grid-column: 6/11;
     }
 }
 
 .about-gallery__image3 {
     @include mq("md") {
         grid-row: 2 / 3;
-        grid-column: 5/11;
+        grid-column: 6/11;
     }
 }
 
@@ -83,12 +83,12 @@
 }
 
 // モーダル
-.about-gallery__modal1, 
-.about-gallery__modal2, 
-.about-gallery__modal3, 
-.about-gallery__modal4, 
-.about-gallery__modal5, 
-.about-gallery__modal6::backdrop{
+.about-gallery__modal1::backdrop,
+.about-gallery__modal2::backdrop,
+.about-gallery__modal3::backdrop,
+.about-gallery__modal4::backdrop,
+.about-gallery__modal5::backdrop,
+.about-gallery__modal6::backdrop {
     
     @include mq("md") {
         background: rgba(32, 32, 32, 0.80);
@@ -104,5 +104,8 @@
         transition: 0.3s;
         width: 100%;
     }
+}
 
+.about-gallery__modal2 {
+    width: auto;
 }

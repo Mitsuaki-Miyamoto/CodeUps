@@ -1,17 +1,64 @@
 @use "global" as *;
 
 
-.top-campaign-card {
-    max-width: rem(280);
+.side-campaign {}
+
+
+.side-campaign__head {
+    position: relative;
+    color: var(--green, #0D2936);
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+    border-left: rem(8) solid $green;
+    padding-left: rem(75);
+    height: rem(50);
+    display: flex;
+    align-items: center;
+}
+
+.side-campaign__head::before {
+    background-image: url(/assets/images/common/head-icon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: rem(50);
+    left: clamp(1.188rem, -2.313rem + 3.13vw, 1.5rem);
+    position: absolute;
+    // top: rem(-12);
+    top: 0;
+    width: rem(50);
+}
+
+.side-campaign__cards {
+    text-align: center;
+    margin-top: rem(16);
+}
+
+.side-campaign__card:not(:first-child) {
+    margin-top: rem(40);
+}
+
+.side-campaign__card {
+    // max-width: rem(280);
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+    margin-left: auto;
+    margin-right: auto;
 
     @include mq("md") {
         max-width: rem(334);
     }
 }
 
+
+.side-campaign__container {}
+
+
+
 //Campaign下層ページのカード
-.top-campaign-card--wide {
+.side-campaign--wide {
     // max-width: rem(584);
     max-width: clamp(17.5rem, 12.045rem + 27.27vw, 32.5rem);
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
@@ -22,43 +69,39 @@
     }
 }
 
-.top-campaign-card a:hover {
+.side-campaign a:hover {
     opacity: 0.7;
     transition: 0.3s;
 }
 
-.top-campaign-card__image {
-    aspect-ratio: 280/188;
+.side-campaign__image {
+    aspect-ratio: 294/188;
     overflow: hidden;
-
-    @include mq("md") {
-        aspect-ratio: 334/223;
-    }
 }
 
-.top-campaign-card__image--wide {
-    // width: clamp(17.5rem, 11.445rem + 27.27vw, 32.5rem);
+.side-campaign__image--wide {
+    width: clamp(17.5rem, 11.445rem + 27.27vw, 32.5rem);
 }
 
-a .top-campaign-card__image img {
+a .side-campaign__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.top-campaign-card__container {
+.side-campaign__container {
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.top-campaign-card__container--heightAuto {
+.side-campaign__container--heightAuto {
     height: auto;
 }
 
-.top-campaign-card__body {
-    padding-top: rem(20);
-    padding-bottom: rem(5);
+.side-campaign__body {
+    padding-top: rem(10);
+    padding-bottom: rem(16);
     padding-left: rem(16);
     padding-right: rem(16);
     display: flex;
@@ -66,12 +109,12 @@ a .top-campaign-card__image img {
     flex-grow: 1;
 
     @include mq("md") {
-        padding-top: rem(27);
-
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }
 
-.top-campaign-card__body--wide {
+.side-campaign__body--wide {
     padding-top: rem(10);
 
     @include mq("md") {
@@ -85,7 +128,7 @@ a .top-campaign-card__image img {
 
 
 
-.top-campaign-card__tag {
+.side-campaign__tag {
     border: 1px solid $green;
     display: inline;
     color: $green;
@@ -100,7 +143,7 @@ a .top-campaign-card__image img {
     }
 }
 
-.top-campaign-card__title {
+.side-campaign__title {
     font-size: rem(16);
     font-weight: $normal;
     margin-top: rem(7);
@@ -110,12 +153,14 @@ a .top-campaign-card__image img {
     flex-grow: 1;
 
     @include mq("md") {
-        margin-top: rem(0);
-        margin-top: rem(13);
+        margin-top: rem(20);
+        width: rem(248);
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-.top-campaign-card__title--wide {
+.side-campaign__title--wide {
     margin-top: rem(5);
 
     @include mq("md") {
@@ -128,22 +173,23 @@ a .top-campaign-card__image img {
     }
 }
 
-.top-campaign-card__content {
-    padding: rem(8) rem(21);
+.side-campaign__content {
+    // padding: rem(8) rem(21);
     text-align: center;
+    margin-top: rem(8);
+    margin-right: rem(20);
+    margin-left: rem(20);
 
-    @include mq("md") {
-        padding: rem(17) rem(21);
-    }
+    @include mq("md") {}
 }
 
-.top-campaign-card__content--wide {
+.side-campaign__content--wide {
     @include mq("md") {
         padding: rem(25) 0;
     }
 }
 
-.top-campaign-card__kinds {
+.side-campaign__kinds {
     font-size: rem(14);
     font-weight: $regular;
     color: $green-text;
@@ -156,16 +202,12 @@ a .top-campaign-card__image img {
     }
 }
 
-.top-campaign-card__price {}
-
-.top-campaign-card__text--wide {
-    font-size: rem(16);
-    font-style: normal;
-    font-weight: $regular;
-    line-height: 1.5;
+.side-campaign__price {
+    justify-content: center;
+    margin-top: 0;
 }
 
-.top-campaign-card__info {
+.side-campaign__info {
     @include mq("md") {
         margin-top: rem(32);
         color: $green;
@@ -175,23 +217,20 @@ a .top-campaign-card__image img {
     }
 }
 
-.top-campaign-card__date {
+.side-campaign__date {
     text-align: center;
     font-family: Lato;
     font-style: normal;
     font-weight: $bold;
 }
 
-.top-campaign-card__subtext {
+.side-campaign__subtext {
     font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
 }
 
-.top-campaign-card__button {
-    margin-top: rem(16);
-}
-
-.top-campaign-card__button--lowerPage {
-    margin-top: rem(13);
+.side-campaign__button {
+    margin-top: rem(40);
+    text-align: center;
 }

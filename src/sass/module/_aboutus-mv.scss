@@ -1,11 +1,26 @@
 @use "global" as *;
 
 .aboutus-mv {
+    position: relative;
 
 }
 
 .aboutus-mv__title {
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    font-family: Lato;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: $regular;
+
+    @include mq("md") {
+        font-size: rem(80);
+        line-height: 1;
+        top: 60%;
+    }
 
 }
 

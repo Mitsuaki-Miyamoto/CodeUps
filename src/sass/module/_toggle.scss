@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.toggle {
+    font-weight: normal;
+    color: $green;
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    background: white;
+    z-index: 1;
+    position: relative;
+}
+
+.toggle__year {
+    display: block;
+    position: relative;
+    margin: 0;
+    // padding: 0.625em 0.625em 0.625em 2em;
+    cursor: pointer;
+    padding-left: rem(24);
+}
+
+.toggle__year::before {
+    border-style: solid;
+    border-width: 12px 0 12px 16.8px;
+    border-color: transparent transparent transparent $green;
+    width: rem(24);
+    height: rem(24);
+    top: rem(5);
+    left: rem(0);
+    content: "";
+    position: absolute;
+}
+
+/* クリック時のスタイル */
+.toggle__year.open::before {
+    border-width: 20.8px 12px 0 12px;
+    border-color: $green transparent transparent transparent;
+    top: rem(8);
+    left: rem(-5);
+}
+
+
+.toggle__year--first {
+    margin-top: rem(40);
+}
+.toggle__year--second {
+    margin-top: rem(10);
+}
+
+.toggle__month {
+    display: none;
+    padding-left: rem(50);
+    position: relative;
+    line-height: 1.5;
+}
+
+.toggle__month::before {
+    border-style: solid;
+    border-width: 11px 0 11px 16px;
+    border-color: transparent transparent transparent $green;
+    width: rem(24);
+    height: rem(24);
+    top: rem(5);
+    left: rem(23);
+    content: "";
+    position: absolute;
+}

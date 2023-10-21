@@ -10,7 +10,7 @@
 
 .aboutus-body__wrapper {
     @include mq("md") {
-        margin-top: rem(178);
+        margin-top: rem(145);
     }
 }
 
@@ -18,15 +18,15 @@
     @include mq("md") {
         position: absolute;
         content: "";
-        right: calc(50% - min(46vw, rem(538)));
+        right: calc(50% - min(46vw, rem(634)));
         bottom: rem(-182);
         display: inline-block;
         background-image: url(/assets/images/common/contact-fish.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center center;
-        width: 18.5%;
-        height: 27%;
+        width: 27.5%;
+        height: 22%;
         z-index: 1;
     }
 }
@@ -43,15 +43,9 @@
     width: 7.5rem;
 
     @include mq("md") {
-        height: 12%;
+        height: 21%;
         left: calc(50% - min(48.5vw, 39rem));
         top: -10%;
         width: 18.75rem;
-    }
-}
-
-.aboutus-body__wrapper-page::after {
-    @include mq("md") {
-        height: 21%;
     }
 }

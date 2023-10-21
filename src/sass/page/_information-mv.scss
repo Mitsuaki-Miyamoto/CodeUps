@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.information-mv {
+    position: relative;
+    
+    @include mq("md") {
+        height: rem(548);
+    }
+
+}
+
+.information-mv__title.mv-title {
+    @include mq("md") {
+        top: 59%;
+    }
+
+}
+
+.information-mv__inner {
+    @include mq("md") {
+        height: inherit;
+    }
+}
+
+.information-body__breadcrumb {
+    margin-top: rem(9);
+}
+
+.information-mv__image {
+    @include mq("md") {
+        height: inherit;
+    }
+
+}
+
+.information-mv__image img {
+    @include mq("md") {
+        height: rem(548);
+    }
+}
