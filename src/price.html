@@ -39,7 +39,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="./assets/js/jquery.inview.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -138,192 +137,159 @@
     </div>
   </header>
   <main>
-    <section class="blog-page-mv">
-      <h1 class="blog-page-mv__title">blog</h1>
-      <div class="blog-page-mv__inner">
-        <div class="blog-page-mv__image">
+    <section class="price-mv">
+      <h1 class="price-mv__title">price</h1>
+      <div class="price-mv__inner">
+        <div class="price-mv__image">
           <picture>
-            <source srcset="./assets/images/common/blog-mv.jpg" media="(min-width:768px)">
-            <img src="./assets/images/common/blog-mv-sp.jpg" alt="ダイバーがたくさんの魚の中を泳いでいる様子">
+            <source srcset="./assets/images/common/price-mv.jpg" media="(min-width:768px)">
+            <img src="./assets/images/common/price-mv-sp.jpg" alt="黄色い魚が2匹泳いでいる様子">
           </picture>
         </div>
       </div>
     </section>
 
-    <section class="blog blog-layout">
-      <div class="blog__inner inner">
-        <div class="blog__breadcrumb breadcrumb">TOP > ブログ詳細</div>
-        <div class="blog__wrapper blog-page">
+    <section class="price-body">
+      <div class="price-body__inner inner">
+        <div class="price-body__breadcreamb">TOP > 料金一覧</div>
 
-          <!-- メインコンテンツ -->
-          <div class="blog-page__body">
-            <time class="blog-page__date" datetime="2023-11-17">2023.11/17</time>
-            <h2 class="blog-page__title">ライセンス取得</h2>
-            <ul class="blog-page__cards">
-              <li class="blog-page__card">
-                <div class="blog-page__image">
-                  <img src="./assets/images/common/blog--page.jpg" alt="イソギンチャクが写っている様子">
-                </div>
-                <p class="blog-page__text">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                </p>
-              </li>
-              <li class="blog-page__card">
-                <div class="blog-page__image">
-                  <img src="./assets/images/common/blog--page.jpg" alt="イソギンチャクが写っている様子">
-                </div>
-                <p class="blog-page__text">
-                  ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                </p>
-              </li>
-            </ul>
+        <!-- テーブル(SP) -->
+        <table class="price-body__table price-table u-mobile">
+          <tbody class="price-table__body">
+            <tr>
+              <td class="price-table__category" colspan="2"><p class="price-table__head">ライセンス講習</p></td>
+            </tr>
+            <tr>
+              <td class="price-table__course">オープンウォーター<br>ダイバーコース</td>
+              <td class="price-table__price">¥50,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">アドバンスド<br>オープンウォーターコース</td>
+              <td class="price-table__price">¥60,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">レスキュー＋EFRコース</td>
+              <td class="price-table__price">¥70,000</td>
+            </tr>
+          </tbody>
 
-            <ul class="blog-page__lists">
-              <li class="blog-page__list">リスト1</li>
-              <li class="blog-page__list">リスト2</li>
-              <li class="blog-page__list">リスト3</li>
-            </ul>
+          <tbody class="price-table__body">
+            <tr>
+              <td class="price-table__category" colspan="2"><p class="price-table__head">体験ダイビング</p></td>
+            </tr>
+            <tr>
+              <td class="price-table__course">ビーチ体験ダイビング<br>(半日)</td>
+              <td class="price-table__price">¥7,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">ビーチ体験ダイビング<br>(1日)</td>
+              <td class="price-table__price">¥14,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">ボート体験ダイビング<br>(半日)</td>
+              <td class="price-table__price">¥10,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">ボート体験ダイビング<br>(1日)</td>
+              <td class="price-table__price">¥18,000</td>
+            </tr>
+          </tbody>
+          <tbody class="price-table__body">
+            <tr>
+              <td class="price-table__category" colspan="2"><p class="price-table__head">ライセンス講習</p></td>
+            </tr>
+            <tr>
+              <td class="price-table__course">ビーチダイビング<br>(2ダイブ)</td>
+              <td class="price-table__price">¥14,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">ボートダイビング<br>(2ダイブ)</td>
+              <td class="price-table__price">¥18,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">スペシャルダイビング<br>(2ダイブ)</td>
+              <td class="price-table__price">¥24,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">ナイトダイビング<br>(1ダイブ)</td>
+              <td class="price-table__price">¥10,000</td>
+            </tr>
+          </tbody>
+          <tbody class="price-table__body">
+            <tr>
+              <td class="price-table__category" colspan="2"><p class="price-table__head">スペシャルダイビング</p></td>
+            </tr>
+            <tr>
+              <td class="price-table__course">貸切ダイビング<br>(2ダイブ)</td>
+              <td class="price-table__price">¥7,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">1日ダイビング<br>(3ダイブ)</td>
+              <td class="price-table__price">¥32,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">ナイトダイビング<br>(2ダイブ)</td>
+              <td class="price-table__price">¥14,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">ボート体験ダイビング<br>(1日)</td>
+              <td class="price-table__price">¥18,000</td>
+            </tr>
+          </tbody>
+        </table>
 
-            <div class="blog-page__text-bottom">
-              <p>
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-              </p>
-            </div>
-            <!-- ページネーション -->
-            <div class="main__pagination pagination pagination--blog">
-              <div class="pagination__prev"></div>
-              <div class="pagination__next"></div>
-            </div>
+        <!-- テーブル(PC) -->
+        <table class="price-body__table price-table u-desktop">
+          <tbody>
+            <tr>
+              <td class="price-table__category" rowspan="3">ライセンス講習</td>
+              <td class="price-table__course">オープンウォーターダイバーコース</td>
+              <td class="price-table__price">¥50,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">アドバンスドオープンウォーターコース</td>
+              <td class="price-table__price">¥60,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">レスキュー＋EFRコース</td>
+              <td class="price-table__price">¥70,000</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td class="price-table__category" rowspan="3">ライセンス講習</td>
+              <td class="price-table__course">オープンウォーターダイバーコース</td>
+              <td class="price-table__price">¥50,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">アドバンスドオープンウォーターコース</td>
+              <td class="price-table__price">¥60,000</td>
+            </tr>
+            <tr>
+              <td class="price-table__course">レスキュー＋EFRコース</td>
+              <td class="price-table__price">¥70,000</td>
+            </tr>
+          </tbody>
+          
+        </table>
 
-          </div>
 
-          <!-- サイドバー -->
-          <div class="blog__side">
-            <!-- 人気記事 -->
-            <div class="blog__popular side-popular">
-              <div class="side-popular__head">人気記事</div>
-              <ul class="side-popular__articles">
-                <li class="side-popular__article">
-                  <div class="side-popular__image"><img src="./assets/images/common/aboutus-lower-gallery4-pc.jpg"
-                      alt=""></div>
-                  <div class="side-popular__texts">
-                    <time class="side-popular__date" datetime="2023-11-17">2023.11/17</time>
-                    <div class="side-popular__title">ライセンス取得</div>
-                  </div>
-                </li>
-                <li class="side-popular__article">
-                  <div class="side-popular__image"><img src="./assets/images/common/blog2.jpg" alt=""></div>
-                  <div class="side-popular__texts">
-                    <time class="side-popular__date" datetime="2023-11-17">2023.11/17</time>
-                    <div class="side-popular__title">ウミガメと泳ぐ</div>
-                  </div>
-                </li>
-                <li class="side-popular__article">
-                  <div class="side-popular__image"><img src="./assets/images/common/blog3.jpg" alt=""></div>
-                  <div class="side-popular__texts">
-                    <time class="side-popular__date" datetime="2023-11-17">2023.11/17</time>
-                    <div class="side-popular__title">カクレクマノミ</div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <!-- 口コミ -->
-            <div class="blog__reviews side-reviews">
-              <div class="side-reviews__head side-reviews__head--blog">口コミ</div>
-              <ul class="side-reviews__wrap">
-                <li class="side-reviews__card reviews-card">
-                  <a href="#">
-                    <div class="reviews-card__body">
-                      <div class="reviews-card__image">
-                        <img src="./assets/images/common/side-reviews.jpg" alt="イソギンチャクが写っている様子">
-                      </div>
-                      <div class="reviews-card__age">30代(カップル)</div>
-                      <h3 class="reviews-card__title">ここにタイトルが入ります。ここにタイトル</h3>
-                      <div class="reviews-card__button">
-                        <a href="#" class="button"><span>View more</span></a>
-                      </div>
-                    </div>
 
-                  </a>
-                </li>
-              </ul>
-              <!-- キャンペーン -->
-              <div class="blog__campaign side-campaign">
-                <div class="side-campaign__head">キャンペーン</div>
-                <ul class="side-campaign__cards">
-                  <li class="side-campaign__card">
-                    <a class="side-campaign__container" href="#">
-                      <div class="side-campaign__image">
-                        <img src="./assets/images/common/campaign_1.jpg" alt="海中を綺麗な魚が泳いでいる様子">
-                      </div>
-                      <div class="side-campaign__body">
-                        <h3 class="side-campaign__title">ライセンス取得</h3>
-                        <div class="side-campaign__content">
-                          <div class="side-campaign__kinds">全部コミコミ(お一人様)</div>
-                          <div class="side-campaign__price price">
-                            <div class="price__before price__before--blog">¥56,000</div>
-                            <div class="price__after price__after--blog">¥46,000</div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="side-campaign__card">
-                    <a class="side-campaign__container" href="#">
-                      <div class="side-campaign__image">
-                        <img src="./assets/images/common/campaign_2.jpg" alt="海中を綺麗な魚が泳いでいる様子">
-                      </div>
-                      <div class="side-campaign__body">
-                        <h3 class="side-campaign__title">貸切体験ダイビング</h3>
-                        <div class="side-campaign__content">
-                          <div class="side-campaign__kinds">全部コミコミ(お一人様)</div>
-                          <div class="side-campaign__price price">
-                            <div class="price__before price__before--blog">¥24,000</div>
-                            <div class="price__after price__after--blog">¥18,000</div>
-                          </div>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-                <div class="side-campaign__button">
-                  <a href="#" class="button"><span>Contact us</span></a>
-                </div>
-              </div>
-
-              <!-- アーカイブ -->
-              <div class="blog__archive side-archive">
-                <div class="side-archive__head">アーカイブ</div>
-                <div class="side-archive__wrap toggle">
-                  <div class="toggle__year toggle__year--first js-toggle">2023</div>
-                  <div class="toggle__month"><a href="">3月</a></div>
-                  <div class="toggle__month"><a href="">2月</a></div>
-                  <div class="toggle__month"><a href="">1月</a></div>
-                </div>
-                <div class="side-archive__wrap toggle">
-                  <div class="toggle__year toggle__year--second js-toggle">2022</div>
-                  <div class="toggle__month"><a href="">12月</a></div>
-                  <div class="toggle__month"><a href="">11月</a></div>
-                  <div class="toggle__month"><a href="">10月</a></div>
-                  <div class="toggle__month"><a href="">9月</a></div>
-                  <div class="toggle__month"><a href="">8月</a></div>
-                  <div class="toggle__month"><a href="">7月</a></div>
-                  <div class="toggle__month"><a href="">6月</a></div>
-                  <div class="toggle__month"><a href="">5月</a></div>
-                  <div class="toggle__month"><a href="">4月</a></div>
-                  <div class="toggle__month"><a href="">3月</a></div>
-                  <div class="toggle__month"><a href="">2月</a></div>
-                  <div class="toggle__month"><a href="">1月</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="voice-body__pagination pagination">
+          <div class="pagination__prev"></div>
+          <div class="pagination__page pagination__page--is-active">1</div>
+          <div class="pagination__page">2</div>
+          <div class="pagination__page">3</div>
+          <div class="pagination__page">4</div>
+          <div class="pagination__page u-desktop">5</div>
+          <div class="pagination__page u-desktop">6</div>
+          <div class="pagination__next"></div>
         </div>
+
       </div>
     </section>
 
-
-    <section id="contact" class="contact contact-layout contact-layout--side">
+    <section id="contact" class="contact contact-layout contact-layout--lower">
       <div class="contact__inner inner">
         <div class="contact__wrapper">
           <div class="contact__address address">
@@ -448,6 +414,4 @@
       </div>
     </div>
   </footer>
-</body>
-
-</html>
+  </main>

@@ -1,0 +1,106 @@
+@use "global" as *;
+
+.voice-body {
+    position: relative;
+}
+
+.voice-body::after{
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    width: 7.5rem;
+    top: -3%;
+    height: 10%;
+
+    @include mq("md") {
+        top: 6%;
+        height: 8%;
+        width: 19.5rem;
+        left: 7%;
+    }
+}
+
+
+.voice-body__tabs {
+    margin-top: rem(52);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: rem(16);
+    column-gap: rem(21);
+    place-items: center;
+
+    @include mq("md") {
+        margin-top: rem(152);
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: rem(32);
+        max-width: rem(730);
+    }
+}
+
+.voice-body__tab {
+    width: rem(162);
+    color: $green;
+    border: 1px solid;
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: $regular;
+    display: inline;
+    cursor: pointer;
+    text-align: center;
+    padding: rem(6.5);
+}
+
+.voice-body__tab--active {
+    width: rem(162);
+    background-color: $green;
+    color: $white;
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: $regular;
+    display: inline;
+    cursor: pointer;
+    text-align: center;
+}
+
+.voice-body__cards {
+    margin-top: rem(40);
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: rem(40);
+    column-gap: rem(40);
+    position: relative;
+
+    @include mq("md") {
+        grid-template-columns: 1fr 1fr;
+        row-gap: rem(80);
+    }
+}
+
+
+.voice__cards::before {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    content: "";
+    position: absolute;
+    width: rem(120);
+    height: 5%;
+    top: -10%;
+
+    @include mq("md") {
+        width: rem(300);
+        top: -10%;
+        height: 12%;
+        left: calc(50% - min(48.5vw, 39rem));
+    }
+}
+
+.voice-body__pagination {
+    margin-top: rem(80);
+    margin-left: auto;
+    margin-right: auto;
+}

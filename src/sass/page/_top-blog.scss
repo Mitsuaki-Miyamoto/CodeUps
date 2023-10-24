@@ -88,42 +88,6 @@
     }
 }
 
-.top-blog__card {
-    background: $white;
-
-    @include mq("md") {
-        width: 100%;
-        display: block;
-    }
-}
-
-// .top-blog-card+.top-blog-card {
-//     @include mq("md") {
-//         margin-left: rem(40);
-//     }
-// }
-
-// .top-blog__card.top-blog-card:nth-of-type(3n+1) {
-//     @include mq("md") {
-//         margin-left: 0;
-//     }
-// }
-
-.top-blog__card.top-blog-card:nth-of-type(n+4) {
-    @include mq("md") {
-        margin-top: 34px;
-    }
-}
-
-
-.top-blog__card:not(:first-child) {
-    margin-top: rem(40);
-
-    @include mq("md") {
-        margin-top: 0;
-    }
-
-}
 
 
 .top-blog__button {

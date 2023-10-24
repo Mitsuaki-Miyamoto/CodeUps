@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.voice-mv {
+    position: relative;
+}
+
+.voice-mv__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    color: $white;
+    font-family: Lato;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: $regular;
+
+    @include mq("md") {
+        font-size: rem(80);
+        line-height: 1;
+        top: 60%;
+    }
+}

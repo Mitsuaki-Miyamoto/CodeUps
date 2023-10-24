@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.price-body {
+    position: relative;
+}
+
+.price-body::after{
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    width: 7.5rem;
+    top: -3%;
+    height: 10%;
+
+    @include mq("md") {
+        top: 6%;
+        height: 8%;
+        width: 19.5rem;
+        left: 7%;
+    }
+}
+
+.price-body__inner {
+    display: grid;
+}
+
+.price-body__table {
+    margin-top: rem(52);
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+
+.price-body__image {
+    margin-top: rem(100);
+}
+
+

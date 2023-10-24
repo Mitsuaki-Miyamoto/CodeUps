@@ -48,3 +48,33 @@
  .mv__subtitle {
     letter-spacing: 0.05em;
  }
+
+ .mv {
+    .swiper {
+        height: 100vh;
+        min-height: rem(667);
+    }
+
+    .swiper-wrapper {
+        height: inherit;
+
+    }
+
+    .swiper-slide {
+        height: inherit;
+
+    }
+
+    .swiper-slide picture {
+        height: inherit;
+        min-height: rem(858);
+
+    }
+
+    .swiper-slide img {
+        height: inherit;
+        min-height: inherit;
+        object-fit: cover;
+    }
+}
+

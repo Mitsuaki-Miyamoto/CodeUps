@@ -1,0 +1,91 @@
+@use "global" as *;
+
+
+.price-table {
+    border-collapse: collapse;
+    display: grid;
+}
+
+.price-table__body:not(:first-child) {
+    margin-top: rem(40);
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+
+.price-table__category {
+    background-color: $green;
+    color: $white;
+    align-items: center;
+    text-align: center;
+    padding: rem(8);
+    // position: relative;
+
+    @include mq("md") {
+        padding: rem(40);
+        height: rem(178);
+        vertical-align: baseline;
+        // position: relative;
+    }
+}
+
+.price-table__head {
+    position: relative;
+}
+
+.price-table__head::before {
+    background-image: url(/assets/images/common/tab-icon-active1.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: 48%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    width: rem(24);
+    height: rem(24);
+    display: inline;
+
+    @include mq("md") {
+        width: rem(64);
+        height: rem(64);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.price-table__image img {
+    width: auto;
+}
+
+.price-table__course {
+    border: 1px solid $green;
+    border-collapse: collapse;
+    padding: 3px;
+    width: clamp(15rem, 12.727rem + 11.36vw, 21.25rem);
+    text-align: center;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: $regular;
+    color: #0D2936;
+    line-height: 1.5;
+    padding: rem(7) 0;
+}
+
+.price-table__price {
+    border: 1px solid $green;
+    border-collapse: collapse;
+    padding: 3px;
+    width: clamp(6.625rem, 5.352rem + 6.36vw, 10.125rem);
+    text-align: right;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: $regular;
+    color: #0D2936;
+    line-height: 1.5;
+    padding-right: rem(6);
+
+}

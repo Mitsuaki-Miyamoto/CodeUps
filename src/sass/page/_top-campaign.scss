@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.top-campaign {
+    position: relative;
+}
+
+.top-campaign__inner {
+    margin: auto;
+    position: relative;
+}
+
+.top-campaign__body {
+    margin-top: rem(25);
+    overflow: hidden;
+    padding-bottom: rem(7);
+    margin-right: calc(50% - 50vw);
+
+    @include mq("md") {
+        margin-top: rem(39);
+    }
+}
+
+.top-campaign__cards {}
+
+.top-campaign__card {}
+
+.top-campaign__card:not(:first-child) {}
+
+.top-campaign-card__image img {}
+
+.top-campaign__swiper-buttons {
+    max-width: rem(300);
+    position: absolute;
+    width: rem(240);
+    top: rem(11);
+    height: rem(80);
+
+    @include mq("md") {
+        right: rem(35);
+    }
+}
+
+.top-campaign__button {
+    text-align: center;
+    margin-top: rem(30);
+
+    @include mq("md") {
+        margin-top: rem(71);
+    }
+}
+
+.top-campaign {
+    .swiper-button-prev::after {
+        width: rem(80);
+        height: rem(80);
+        background: url(/assets/images/common/swiper-prev.png);
+        background-repeat: no-repeat;
+        background-size: 80px 80px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-button-prev,.swiper-button-next{
+        color: transparent;
+        width: rem(80);
+    }
+
+    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+        @include mq("md") {
+            left: auto;
+        }
+    }
+
+    .swiper-button-next::after {
+        width: rem(80);
+        height: rem(80);
+        background: url(/assets/images/common/swiper-next.png);
+        background-repeat: no-repeat;
+        background-size: 80px 80px;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

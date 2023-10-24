@@ -55,38 +55,6 @@
     }
 }
 
-.top-voice__card {
-    margin-right: auto;
-    margin-left: auto;
-
-    @include mq("md") {
-        max-width: calc(50% - 40px * 1 / 2);
-        width: 100%;
-        display: block;
-    }
-}
-
-.top-voice__card+.top-voice__card {
-    margin-top: rem(40);
-
-    @include mq("md") {
-        margin-left: rem(40);
-        margin-top: 0;
-    }
-}
-
-.top-voice__card.top-voice-card:nth-of-type(2n+1) {
-    @include mq("md") {
-        margin-left: 0;
-    }
-}
-
-.top-voice__card.top-voice__card.top-voice-card:nth-of-type(n+3) {
-    @include mq("md") {
-        margin-top: rem(40);
-    }
-}
-
 .top-voice__button {
     text-align: center;
     margin-top: rem(44);
