@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.contact-mv {
+    
+}
+.contact-mv__inner {
+    position: relative;
+}
+
+.contact-mv__title {
+
+}
+
+.contact-mv__image img {
+    
+    @include mq("md") {
+        height: rem(548);
+    }
+}

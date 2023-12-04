@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.faq-mv {
+  
+}
+
+.faq-mv__inner {
+    position: relative;
+}
+
+.faq-mv__image picture img {
+    
+}
+
+.faq-body__breadcreamb {
+    margin-top: rem(6);
+}
+
+.faq-mv__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: $white;
+    font-family: Lato;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: $regular;
+
+    @include mq("md") {
+        font-size: rem(80);
+        line-height: 1;
+        top: 60%;
+    }
+
+}
+
+.faq-mv__image {}
+
+.faq-body__breadcreamb {
+    position: relative;
+
+}
+
+.faq-body__breadcreamb::after {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 400%;
+    left: calc(50% - min(49vw, 38.875rem));
+    position: absolute;
+    top: 120%;
+    width: 8.5rem;
+
+    @include mq("md") {
+        height: 566%;
+        top: 418%;
+        width: 19.5rem
+    }
+
+}

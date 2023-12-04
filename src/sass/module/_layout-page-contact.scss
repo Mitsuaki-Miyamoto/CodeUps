@@ -1,0 +1,41 @@
+@use "global" as *;
+
+.layout-page-contact {
+    margin-top: rem(50);
+    position: relative;
+
+    @include mq("md") {
+        margin-top: rem(132);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.layout-page-contact::after {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 9%;
+    left: 0;
+    position: absolute;
+    top: -4%;
+    width: 7.5rem;
+    z-index: -1;
+
+    @include mq("md") {
+        height: 14%;
+        left: calc(50% - min(49vw, 38.875rem));
+        top: -6%;
+        width: 19.5rem;
+    }
+}
+
+.layout-page-contact.layout-page-contact__error::after {
+    top: -11%;
+}
+
+.layout-page-contact.layout-page-contact__error {
+    margin-top: rem(28);
+}

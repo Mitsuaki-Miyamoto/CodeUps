@@ -4,9 +4,6 @@
     width: 100%;
     background: rgba(13, 41, 54, 0.68);
     z-index: 100;
-    position: fixed;
-    top: 0;
-    left: 0;
     height: rem(80);
     transition: 0.3s;
     @include mq("md") {
@@ -27,6 +24,7 @@
     display: flex;
     margin: 0 auto;
     height: inherit;
+    // background: $green;
     @include mq("md") {
         padding-left: rem(40);
         padding-right: min(40rem, 0.5vw);
@@ -71,7 +69,7 @@
     height: inherit;
 }
 
-.header-nav__item--faq {
+.header-nav__item.header-nav__item--faq {
     text-transform: uppercase;
 }
 
@@ -181,7 +179,26 @@
 }
 
 .header__hamburger.is-active span:nth-child(3) {
-    top: rem(53);
+    top: clamp(51px, 3.001rem + 2.56vw, 53px);
     background-color: $white;
     transform: translateY(-20px) rotate(-39deg);
 }
+
+
+// @media (max-width: 320px) {
+//     .header__hamburger {
+//         right: rem(5); /* 右側の余白を小さくする */
+//     }
+ 
+//     .header__hamburger span {
+//         top: rem(14); /* 各スパンの上部の位置を調整する */
+//     }
+ 
+//     .header__hamburger.is-active span:first-child {
+//         top: rem(7); /* アクティブ時の最初のスパンの上部の位置を調整する */
+//     }
+ 
+//     .header__hamburger.is-active span:nth-child(3) {
+//         top: rem(50); /* アクティブ時の3番目のスパンの上部の位置を調整する */
+//     }
+//  }

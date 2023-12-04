@@ -1,0 +1,102 @@
+@use "global" as *;
+
+.accordion {
+    max-width: rem(700);
+    width: 100%;
+}
+
+.accordion__title {
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: rem(16);
+    background-color: $green;
+
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+
+    @include mq("md") {
+        font-size: rem(20);
+        padding-top: rem(26);
+        padding-bottom: rem(26);
+        padding-left: rem(40);
+    }
+}
+
+.accordion__content {
+    display: none;
+    padding: rem(19) rem(16);
+    border: 1px solid $green;
+
+    @include mq("md") {
+        margin-top: rem(16);
+        padding: rem(38);
+    }
+}
+
+.accordion__content p {
+    font-weight: $regular;
+    font-style: normal;
+}
+
+.accordion__item:not(:first-child) {
+    margin-top: rem(38);
+}
+
+/* 矢印 */
+.accordion__title {
+    position: relative;
+}
+
+.accordion__title::after {
+    content: "";
+    display: block;
+    height: 8px;
+    position: absolute;
+    transform: rotate(180deg);
+    transition: transform .3s ease-in-out, top .3s ease-in-out;
+    background-color: $white;
+    width: 1px;
+    height: 28px;
+    top: 29%;
+    right: 30px;
+    @include mq("md") {
+        top: 31%;
+        right: rem(55);
+        height: rem(32);
+    }
+}
+
+.accordion__title.open::after {
+    top: 20%;
+    transform: rotate(90deg);
+
+    @include mq("md") {
+        top: 35%;
+    }
+}
+
+
+.accordion__title::before {
+    position: absolute;
+    content: "";
+    background-color: $white;
+    height: 1px;
+    top: 50%;
+    width: 28px;
+    right: 17px;
+    transform: translateY(-50%);
+    @include mq("md") {
+        width: rem(32);
+        right: rem(40);
+    }
+
+}
+
+.accordion__title.open::before {
+    display: none;
+    transition: transform .3s;
+
+}

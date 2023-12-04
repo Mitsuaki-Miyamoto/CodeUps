@@ -1,0 +1,116 @@
+@use "global" as *;
+
+.pagenavi__inner {
+    margin: auto;
+    max-width: rem(334);
+    width: 100%;
+    grid-gap: 0.75rem;
+    display: grid;
+    gap: 0.75rem;
+    grid-auto-rows: minmax(2.375rem, auto);
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 21.5rem;
+    
+    @include mq(md){
+        padding: 0 rem(25);
+        max-width: rem(450);
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+.pagenavi__inner a{
+    transition: 0.3s ease-in-out;
+
+}
+
+.pagenavi__inner a:hover{
+    transition: 0.3s ease-in-out;
+    background-color: $green;
+    color: $white;
+}
+
+.pagenavi__inner.pagenavi__inner--prev-next{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pagenavi .wp-pagenavi {
+	clear: both;
+	text-align: center;
+}
+
+.previouspostslink {
+    margin-right: rem(40);
+    display: block;
+}
+
+.previouspostslink,
+.current,
+.page {
+    cursor: pointer;
+}
+.pagenavi__inner a:first-child {
+    margin-right: rem(28);
+}
+.pagenavi__inner a:last-child {
+    margin-left: rem(28);
+}
+
+.current,
+.previouspostslink,
+.nextpostslink,
+.page {
+    color: $green;
+    font-family: Lato;
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: $bold;
+    margin: auto;
+    border: 1px solid $green;
+    padding: rem(6) rem(14);
+}
+
+.current {
+    background-color: $green;
+    color: $white;
+    cursor: auto;
+}
+
+.previouspostslink,
+.nextpostslink {
+    padding: rem(6) rem(6);
+    position: relative;
+    padding: rem(19);
+}
+
+.previouspostslink::before,
+.nextpostslink::after {
+    position: absolute;
+    content: "";
+    border-right: 1px solid $green;
+    border-top: 1px solid $green;
+    display: inline-block;
+    height: 0.7em;
+    margin-bottom: 0.125rem;
+    transition: border-color 0.3s ease-in-out;
+    width: 0.7em;
+    transform: translate(-50%, -50%);
+}
+
+.previouspostslink::before {
+    rotate: 225deg;
+    top: 18%;
+    left: 49%;
+}
+
+.nextpostslink::after {
+    rotate: 45deg;
+    top: 57%;
+    left: 30%;
+
+}
+
+.previouspostslink:hover::before,
+.nextpostslink:hover::after {
+    border-right: 1px solid $white;
+    border-top: 1px solid $white;
+}

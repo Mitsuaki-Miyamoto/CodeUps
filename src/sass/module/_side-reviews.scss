@@ -1,48 +1,15 @@
 @use "global" as *;
 
-.side-reviews {
 
-}
-
-.side-reviews__head {
-    position: relative;
-    color: var(--green, #0D2936);
-    font-size: rem(24);
-    font-style: normal;
-    font-weight: $regular;
-    line-height: normal;
-    border-left: rem(8) solid $green;
-    padding-left: rem(75);
-    height: rem(50);
-}
-
-.side-reviews__head--blog {
-    padding-left: rem(84);
-    display: flex;
-    align-items: center;
-}
-
-.side-reviews__head::before {
-    background-image: url(/assets/images/common/head-icon.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
-    height: 4.5rem;
-    left: clamp(1.188rem, -2.313rem + 3.13vw, 1.5rem);
-    position: absolute;
-    top: rem(-15);
-    width: rem(50);
-    @include mq("md") {
-        width: rem(50);
-        top: rem(-15);
-    }
-}
 
 .side-reviews__wrap {
-    margin-top: rem(6);
+    margin-top: rem(23);
+    margin-left: auto;
+    margin-right: auto;
+    @include mq("md") {
+        margin-top: rem(22);
+    }
+
 }
 
-.side-reviews__card {
-
-}
+.side-reviews__card {}

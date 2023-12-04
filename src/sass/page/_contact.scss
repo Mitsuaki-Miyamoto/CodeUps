@@ -14,7 +14,10 @@
     }
 }
 
-.contact__inner {}
+.contact__inner.inner {
+    padding-left: rem(40);
+    padding-right: rem(40);
+}
 
 .contact__wrapper {
     margin: auto;
@@ -60,14 +63,14 @@
 }
 
 .contact__form {
-    padding-top: rem(15);
-    padding-bottom: rem(15);
+    margin-top: rem(40);
 
     @include mq("md") {
         width: 46%;
         display: grid;
         grid-gap: 90px;
         border-left: 1px solid #408F95;
+        padding-top: rem(15);
 
     }
 }
@@ -75,15 +78,10 @@
 .contact__header {
     margin-top: rem(56);
     line-height: 1;
-
-    @include mq("md") {
-        margin-top: rem(2);
-    }
 }
 
 .contact__header--lower {
-    margin-top: rem(34);
-
+    margin-top: 0;
 }
 
 .contact__button {

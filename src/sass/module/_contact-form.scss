@@ -1,0 +1,165 @@
+@use "global" as *;
+
+.contact-form {
+    letter-spacing: 0.05em;
+
+    @include mq("md") {
+        max-width: 700px;
+    }
+}
+
+.contact-form__item {
+    // margin-top: rem(24);
+    padding-bottom: rem(20);
+    border-bottom: 1px dashed $green;
+
+    @include mq("md") {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: rem(40);
+    }
+}
+
+.contact-form__item:not(:first-child){
+    margin-top: rem(24);
+}
+
+.contact-form__item.contact-form__item--tel {
+    padding-bottom: rem(24);
+
+    @include mq("md") {
+        padding-bottom: rem(40);
+    }
+}
+
+.contact-form__item.contact-form__item--question {
+    padding-bottom: rem(24);
+
+    @include mq("md") {
+        padding-bottom: rem(40);
+        align-items: normal;
+    }
+}
+
+.contact-form__item:first-child {
+    padding-top: 0;
+}
+
+.contact-form__item dd {
+    margin-top: rem(14);
+
+    @include mq("md") {
+        display: grid;
+        row-gap: rem(4);
+        width: rem(480);
+    }
+}
+
+.contact-form__radio {
+    margin-top: rem(5);
+    display: flex;
+    flex-direction: column;
+    gap: rem(4);
+
+    @include mq("md") {
+        display: block;
+        gap: 0;
+    }
+}
+
+.contact-form dl :not(:first-child) {
+    // margin-top: rem(16);
+}
+
+.contact-form__radio {
+    margin-top: rem(5);
+}
+
+.contact-form__dl:not(:first-child) {
+    margin-top: rem(30);
+}
+
+.contact-form__item dt {
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0;
+}
+
+.contact-form__item dt span {
+    background: #C94800;
+    color: $white;
+    font-size: rem(12);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+    letter-spacing: 4.8px;
+    padding-left: rem(16);
+    padding-right: rem(16);
+    padding-top: rem(2);
+    padding-bottom: rem(2);
+    margin-left: rem(10);
+}
+
+::placeholder {
+    color: $green-bg;
+    font-weight: $regular;
+}
+
+[type=checkbox]+span.contact-form__privacy-checkbox::before {
+    width: rem(22);
+    height: rem(22);
+    top: 50%;
+}
+
+[type=checkbox]+span.contact-form__privacy-checkbox::after {
+    top: 45% !important;
+    left: 1% !important;
+    width: 0.7875rem;
+}
+
+[type=checkbox]+span.contact-form__privacy-checkbox {
+    line-height: 1.5;
+    padding-left: rem(30);
+    font-size: rem(14);
+    margin-left: rem(30);
+    margin-right: rem(18);
+}
+
+.contact-form__button {
+    margin-top: rem(24);
+    text-align: center;
+    color: $white;
+
+    @include mq("md") {
+        margin-top: rem(42);
+    }
+}
+
+.contact-form__item.contact-form__item--layout {
+    margin-top: rem(40);
+    border-bottom: none;
+    padding-bottom: 0;
+
+    @include mq("md") {
+        justify-content: center;
+        margin-top: rem(62);
+    }
+}
+
+.contact-form__error {
+   
+}
+
+.contact-form__error input{
+    background: rgba(201, 72, 0, 0.20);
+    border: 1px solid #C94800;
+    font-family: Noto Sans JP;
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+}
+
+.contact-form__error input::placeholder {
+    color: $white;
+}

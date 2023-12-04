@@ -39,16 +39,14 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="./assets/js/jquery.inview.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script> -->
   <script defer src="./assets/js/script.js"></script>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header-layout">
     <div class="header__inner">
       <div class="header__logo">
-        <a href="index.html"><img src="./assets/images/common/logo.png" alt="CodeUps"></a>
+        <a href="index.html"><img src="./assets/images/common/CodeUps.svg" alt="CodeUps"></a>
       </div>
       <nav class="header__nav u-desktop">
         <ul class="header-nav__items u-desktop">
@@ -74,17 +72,11 @@
 
       <!-- ドロワー -->
       <div class="header__drawer drawer-menu js-drawer u-mobile">
-        <div class="header__drawer-header">
-          <div class="drawer-menu__image">
-            <a href=""><img src="./assets/images/common/logo.png" alt="CodeUps"></a>
-          </div>
-
-        </div>
         <div class="drawer-menu__inner">
           <div class="drawer-menu__items">
             <div class="drawer-menu__left">
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head drawer-menu__head-top-campaign" href="#top-campaign">キャンペーン</a>
+                <a class="drawer-menu__head drawer-menu__head--margin" href="campaign.html">キャンペーン</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス取得</a></li>
                   <li class="drawer-menu__list"><a href="#">貸切体験ダイビング</a></li>
@@ -92,10 +84,10 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-about">私たちについて</a>
+                <a class="drawer-menu__head" href="aboutus.html">私たちについて</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-information">ダイビング情報</a>
+                <a class="drawer-menu__head" href="information.html">ダイビング情報</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス講習</a></li>
                   <li class="drawer-menu__list"><a href="#">体験ダイビング</a></li>
@@ -103,17 +95,17 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-blog">ブログ</a>
+                <a class="drawer-menu__head" href="blog.html">ブログ</a>
               </div>
             </div>
             <div class="drawer-menu__right">
 
 
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head drawer-menu__head-top-voice" href="#top-voice">お客様の声</a>
+                <a class="drawer-menu__head drawer-menu__head--margin" href="voice.html">お客様の声</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-price">料金一覧</a>
+                <a class="drawer-menu__head" href="price.html">料金一覧</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス講習</a></li>
                   <li class="drawer-menu__list"><a href="#">体験ダイビング</a></li>
@@ -121,10 +113,10 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">よくある質問</a>
+                <a class="drawer-menu__head" href="faq.html">よくある質問</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">プライバシー<br>ポリシー</a>
+                <a class="drawer-menu__head" href="price.html">プライバシー<br class="u-mobile">ポリシー</a>
               </div>
               <div class="drawer-menu__item">
                 <a class="drawer-menu__head" href="#">利用規約</a>
@@ -139,61 +131,83 @@
     </div>
   </header>
   <main>
-    <section class="information-mv">
-      <h1 class="information-mv__title mv-title">information</h1>
-      <div class="information-mv__inner">
-        <div class="information-mv__image">
-          <picture>
-            <source srcset="./assets/images/common/information-page-pc-mv.jpg" media="(min-width:768px)">
-            <img src="./assets/images/common/information-page-sp-mv.jpg" alt="ダイバーがたくさんの魚の中を泳いでいる様子">
-          </picture>
-        </div>
+
+    <!-- 下層ページのメインビュー -->
+    <section class="sub-mv sub-mv--information">
+      <div class="sub-mv__inner">
+        <h1 class="sub-mv__title">information</h1>
       </div>
     </section>
 
-    <section class="information-body">
+    <!-- パンくず -->
+    <div class="breadcrumb breadcrumb-layout">
+      <div class="breadcrumb__inner inner">
+        <!-- Breadcrumb NavXTで出力される部分 ここから -->
+        <span>
+          <a href="#">
+            <span>TOP</span>
+          </a>
+        </span>
+        &nbsp;&gt;&nbsp;
+        <span>
+          <span class="current-item">ダイビング情報</span>
+        </span>
+        <!-- Breadcrumb NavXTで出力される部分 ここまで -->
+      </div>
+    </div>
+
+    <section class="information-body information-body-layout">
       <div class="information-body__inner inner">
-        <div class="information-body__breadcrumb breadcrumb">TOP > ダイビング情報</div>
         <div class="information-body__wrapper">
           <!-- タブ -->
-          <div class="information-body__tab tab">
-            <ul class="tab__items">
-              <li class="tab__item1 js-tab__item active">ライセンス講習</li>
-              <li class="tab__item2 js-tab__item">ファン<br class="u-mobile">ダイビング</li>
-              <li class="tab__item3 js-tab__item">体験<br class="u-mobile">ダイビング</li>
+          <div class="information-body__tab tab-information">
+            <ul class="tab-information__items">
+              <li class="tab-information__item1 js-information-tab active">ライセンス<br class="u-mobile">講習</li>
+              <li class="tab-information__item2 js-information-tab">ファン<br class="u-mobile">ダイビング</li>
+              <li class="tab-information__item3 js-information-tab">体験<br class="u-mobile">ダイビング</li>
             </ul>
             <!-- タブコンテンツ -->
-            <div class="tab__contents">
-              <div class="tab__contents-item js-tab__contents-item show">
-                <div class="tab__inner">
-                  <div class="tab__body">
-                    <div class="tab__wrap">
-                      <h2 class="tab__title">ライセンス講習</h2>
-                      <p class="tab__text">泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！</p>
+            <div class="tab-information__contents">
+              <div class="tab-information__contents-item js-information-contents show">
+                <div class="tab-information__inner">
+                  <div class="tab-information__body">
+                    <div class="tab-information__wrap">
+                      <h2 class="tab-information__title">ライセンス講習</h2>
+                      <p class="tab-information__text">
+                        泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！
+                      </p>
                     </div>
-                    <div class="tab__image"><img src="./assets/images/common/information-sp-page1.jpg" alt=""></div>
+                    <div class="tab-information__image"><img src="./assets/images/common/information-sp-page1.jpg"
+                        alt="海に浮いたダイバーを上空から撮影した様子"></div>
                   </div>
                 </div>
               </div>
-              <div class="tab__contents-item js-tab__contents-item show">
-                <div class="tab__inner">
-                  <div class="tab__body">
-                    <div class="tab__wrap">
-                      <h2 class="tab__title">ファンダイビング</h2>
-                      <p class="tab__text">ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！</p>
+              <div class="tab-information__contents-item js-information-contents show">
+                <div class="tab-information__inner">
+                  <div class="tab-information__body">
+                    <div class="tab-information__wrap">
+                      <h2 class="tab-information__title">ファンダイビング</h2>
+                      <p class="tab-information__text">
+                        ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+                      </p>
                     </div>
-                    <div class="tab__image"><img src="./assets/images/common/aboutus-lower-gallery5-pc.jpg" alt=""></div>
+                    <div class="tab-information__image"><img src="./assets/images/common/aboutus-lower-gallery5-pc.jpg"
+                        alt="子魚の魚群">
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="tab__contents-item js-tab__contents-item show">
-                <div class="tab__inner">
-                  <div class="tab__body">
-                    <div class="tab__wrap">
-                      <h2 class="tab__title">体験ダイビング</h2>
-                      <p class="tab__text">ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！</p>
+              <div class="tab-information__contents-item js-information-contents show">
+                <div class="tab-information__inner">
+                  <div class="tab-information__body">
+                    <div class="tab-information__wrap">
+                      <h2 class="tab-information__title">体験ダイビング</h2>
+                      <p class="tab-information__text">
+                        ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポイントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海岸」等もご用意！
+                      </p>
                     </div>
-                    <div class="tab__image"><img src="./assets/images/common/information-sp-page3.jpg" alt=""></div>
+                    <div class="tab-information__image"><img src="./assets/images/common/information-sp-page3.jpg"
+                        alt="魚が２匹仲良く泳いでいる様子"></div>
                   </div>
                 </div>
               </div>
@@ -226,7 +240,7 @@
           </div>
           <div class="contact__form">
             <div class="contact__header section-header contact__header--lower">
-              <p class="section-header__main--large">contact</p>
+              <p class="section-header__main section-header__main--large">contact</p>
               <h2 class="section-header__sub section-header__sub--line1">お問合せ</h2>
               <p class="section-header__sub section-header__sub--line2">ご予約・お問い合わせはコチラ</p>
             </div>
@@ -241,18 +255,18 @@
     <div class="page-to-top js-page-top"></div>
 
   </main>
-  <footer class="footer footer-layout footer-layout--lower">
+  <footer class="footer footer-layout">
     <div class="footer__inner inner">
       <div class="footer__body">
         <div class="footer__head">
           <a class="footer__logo">
-            <img src="./assets/images/common/logo.png" alt="CodeUps">
+            <img src="./assets/images/common/CodeUps-footer.svg" alt="CodeUps">
           </a>
           <ul class="footer__sns">
-            <li class="footer__facebook"><a href="#" target="_blank"><img src="./assets/images/common/facebook.svg"
-                  alt="facebook"></a></li>
-            <li class="footer__instagram"><a href="#" target="_blank"><img src="./assets/images/common/instagram.svg"
-                  alt="instagram"></a></li>
+            <li class="footer__facebook"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                  src="./assets/images/common/facebook.svg" alt="facebook"></a></li>
+            <li class="footer__instagram"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                  src="./assets/images/common/instagram.svg" alt="instagram"></a></li>
           </ul>
         </div>
         <nav class="footer__nav footer-nav">
@@ -305,7 +319,7 @@
             </div>
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">プライバシー<br>ポリシー</a></li>
+                <li class="footer-nav__head"><a href="#">プライバシー<br class="u-mobile">ポリシー</a></li>
               </ul>
             </div>
             <div class="footer-nav__item">
@@ -327,4 +341,6 @@
       </div>
     </div>
   </footer>
-  </main>
+</body>
+
+</html>

@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.main {
+.blog-body {
     position: relative;
 }
 
-.main::before {
+.blog-body::before {
     background-image: url(/assets/images/common/campaign-fish.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -14,51 +14,71 @@
     width: 7.5rem;
     top: -0.5%;
     height: 1%;
+    left: calc(50% - min(48.5vw, 39rem));
+
     @include mq("md") {
         top: -4%;
         height: 8%;
         width: 19.5rem;
-        left: -13%;
-
     }
 }
 
-.main__body {
-
+.blog-body__inner {
+    @include mq("md") {
+        display: grid;
+        grid-template-columns: 65% 27%;
+        gap: rem(80);
+    }
 }
 
-.main__cards {
+.blog-body__cards {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: rem(40);
+
     @include mq("md") {
         grid-template-columns: 1fr 1fr;
-        column-gap:rem(40);
+        column-gap: rem(40);
         row-gap: rem(80);
     }
 }
 
-.main__card {
+.blog-body__card {
     background-color: $white;
     z-index: 1;
 
 }
 
-.pagination {
-    margin-top: rem(60);
+.blog-body__side {
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    // grid-template-columns: 1fr 1fr;
-    // gap: rem(32);
-}
+    width:clamp(18.375rem, 11.42rem + 34.77vw, 37.5rem);
 
-.pagination.pagination--blog {
-    grid-template-columns: 1fr 1fr;
-    gap: rem(32);
-    margin-top: rem(32);
     @include mq("md") {
-        margin-top: rem(70);
+        max-width: rem(294);
     }
 }
 
+.blog-body__popular{
+    margin-top: rem(80);
+    @include mq("md") {
+        margin-top: 0;
+    }
+}
 
+.blog-body__reviews {
+    margin-top: rem(80);
+
+    @include mq("md") {
+        margin-top: rem(95);
+    }
+}
+
+.blog-body__campaign {
+    margin-top: rem(60);
+}
+
+.blog-body__archive {
+    margin-top: rem(80);
+}

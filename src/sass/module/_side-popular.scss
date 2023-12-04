@@ -1,45 +1,16 @@
 @use "global" as *;
 
-.side-popular {}
-
-.side-popular__head {
-    color: var(--green, #0D2936);
-    font-size: rem(24);
-    font-style: normal;
-    font-weight: $regular;
-    line-height: normal;
-    border-left: rem(8) solid $green;
-    position: relative;
-    padding-left: rem(75);
-    height: rem(50);
-    display: flex;
-    align-items: center;
-}
-
-.side-popular__head::before {
-    background-image: url(/assets/images/common/head-icon.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
-    // height: auto;
-    height: 4.5rem;
-    left: clamp(0.96rem, -2.313rem + 3.13vw, 1.5rem);
-    position: absolute;
-    top: rem(-15);
-    // width: 4rem;
-    width: rem(55);
-
-}
-
 .side-popular__articles {
     margin-top: rem(25);
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: rem(32);
+    row-gap: rem(24);
+    // width: 94%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.side-popular__article {
+.side-popular__article a{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: rem(16);
@@ -47,11 +18,27 @@
     padding: rem(16);
 }
 
-.side-popular__image {}
+.side-popular__article a:hover .side-popular__image img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
-.side-popular__image img {}
+.side-popular__article a:hover {
+    opacity: 0.7;
+}
 
-.side-popular__texts {}
+.side-popular__image {
+    overflow: hidden;
+    width: 100%;
+}
+
+.side-popular__image img{
+    transition: 0.5s;
+    height: 100%;
+    aspect-ratio: 121/90;
+    object-fit: cover;
+    width: 100%;
+}
 
 .side-popular__date {
     color: var(--green, #0D2936);
@@ -60,11 +47,8 @@
     font-style: normal;
     font-weight: $normal;
 
-
     @include mq("md") {
-        
         font-weight: $regular;
-        
     }
 }
 

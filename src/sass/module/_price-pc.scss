@@ -1,67 +1,68 @@
 @use "global" as *;
 
 
-.price-table {
+.table-pc {
     border-collapse: collapse;
-    display: grid;
+
+    @include mq("md") {}
 }
 
-.price-table__body:not(:first-child) {
-    margin-top: rem(40);
+.table-pc__body:not(:first-child) {
+
     @include mq("md") {
         margin-top: rem(80);
+
     }
 }
 
-.price-table__category {
-    background-color: $green;
-    color: $white;
-    align-items: center;
-    text-align: center;
-    padding: rem(8);
-    // position: relative;
-
+.table-pc__category {
     @include mq("md") {
-        padding: rem(40);
+        background-color: $green;
+        color: $white;
         height: rem(178);
         vertical-align: baseline;
-        // position: relative;
+        width: rem(200);
+        text-align: center;
+        vertical-align: middle;
+        position: relative;
     }
 }
 
-.price-table__head {
-    position: relative;
-}
-
-.price-table__head::before {
-    background-image: url(/assets/images/common/tab-icon-active1.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    content: "";
+.table-pc__head {
     position: absolute;
-    top: 48%;
-    left: 28%;
+    top: 40%;
+    display: block;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: rem(24);
-    height: rem(24);
-    display: inline;
+    width: 100%;
 
     @include mq("md") {
+        top: 30%;
+    }
+}
+
+.table-pc__head::before {
+    @include mq("md") {
+        background-image: url(/assets/images/common/tab-icon-active1.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        content: "";
+        display: inline;
         width: rem(64);
         height: rem(64);
         position: absolute;
-        top: 50%;
+        top: 290%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 }
 
-.price-table__image img {
+.table-pc__image img {
     width: auto;
 }
 
-.price-table__course {
+.table-pc__course {
     border: 1px solid $green;
     border-collapse: collapse;
     padding: 3px;
@@ -73,9 +74,15 @@
     color: #0D2936;
     line-height: 1.5;
     padding: rem(7) 0;
+
+    @include mq("md") {
+        text-align: left;
+        padding-left: rem(15);
+        height: rem(60);
+    }
 }
 
-.price-table__price {
+.table-pc__price {
     border: 1px solid $green;
     border-collapse: collapse;
     padding: 3px;
@@ -88,4 +95,12 @@
     line-height: 1.5;
     padding-right: rem(6);
 
+    @include mq("md") {
+        padding-right: rem(17);
+    }
+
+}
+
+tbody {
+    // margin-top: rem(40);
 }

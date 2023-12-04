@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.contact-error {}
+
+.contact-error__inner {}
+
+.contact-error__message {
+    margin-top: rem(52);
+    color: #C94800;
+    font-family: Noto Sans JP;
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: normal;
+    text-align: center;
+
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+
+.contact-error__text {
+    text-align: left;
+    display: inline-block;
+    padding-left: 1em;
+    text-indent: -1em;
+}

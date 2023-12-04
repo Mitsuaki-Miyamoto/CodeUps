@@ -39,16 +39,14 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="./assets/js/jquery.inview.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script> -->
   <script defer src="./assets/js/script.js"></script>
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header-layout">
     <div class="header__inner">
       <div class="header__logo">
-        <a href="index.html"><img src="./assets/images/common/logo.png" alt="CodeUps"></a>
+        <a href="index.html"><img src="./assets/images/common/CodeUps.svg" alt="CodeUps"></a>
       </div>
       <nav class="header__nav u-desktop">
         <ul class="header-nav__items u-desktop">
@@ -58,7 +56,7 @@
           <li class="header-nav__item"><a href="blog.html">blog<span>ブログ</span></a></li>
           <li class="header-nav__item"><a href="voice.html">voice<span>お客様の声</span></a></li>
           <li class="header-nav__item"><a href="price.html">price<span>料金一覧</span></a></li>
-          <li class="header-nav__item header-nav__item--faq"><a href="#contact">faq<span>よくある質問</span></a>
+          <li class="header-nav__item header-nav__item--faq"><a href="#">faq<span>よくある質問</span></a>
           </li>
           <li class="header-nav__item"><a href="">contact<span>お問合せ</span></a></li>
         </ul>
@@ -84,7 +82,7 @@
           <div class="drawer-menu__items">
             <div class="drawer-menu__left">
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head drawer-menu__head-top-campaign" href="#top-campaign">キャンペーン</a>
+                <a class="drawer-menu__head drawer-menu__head-top-campaign" href="campaign.html">キャンペーン</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス取得</a></li>
                   <li class="drawer-menu__list"><a href="#">貸切体験ダイビング</a></li>
@@ -92,10 +90,10 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-about">私たちについて</a>
+                <a class="drawer-menu__head" href="aboutus.html">私たちについて</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-information">ダイビング情報</a>
+                <a class="drawer-menu__head" href="information.html">ダイビング情報</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス講習</a></li>
                   <li class="drawer-menu__list"><a href="#">体験ダイビング</a></li>
@@ -103,17 +101,17 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-blog">ブログ</a>
+                <a class="drawer-menu__head" href="blog.html">ブログ</a>
               </div>
             </div>
             <div class="drawer-menu__right">
 
 
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head drawer-menu__head-top-voice" href="#top-voice">お客様の声</a>
+                <a class="drawer-menu__head drawer-menu__head-top-voice" href="voice.html">お客様の声</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-price">料金一覧</a>
+                <a class="drawer-menu__head" href="price.html">料金一覧</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス講習</a></li>
                   <li class="drawer-menu__list"><a href="#">体験ダイビング</a></li>
@@ -121,16 +119,16 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">よくある質問</a>
+                <a class="drawer-menu__head" href="faq.html">よくある質問</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">プライバシー<br>ポリシー</a>
+                <a class="drawer-menu__head" href="privacy-policy.html">プライバシー<br class="u-mobile">ポリシー</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">利用規約</a>
+                <a class="drawer-menu__head" href="term-of-service.html">利用規約</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">お問い合わせ</a>
+                <a class="drawer-menu__head" href="contact.html">お問い合わせ</a>
               </div>
             </div>
           </div>
@@ -139,21 +137,33 @@
     </div>
   </header>
   <main>
-    <section class="aboutus-mv">
-      <h1 class="aboutus-mv__title">About&nbsp;us</h1>
-      <div class="aboutus-mv__inner">
-        <div class="aboutus-mv__image">
-          <picture>
-            <source srcset="./assets/images/common/aboutus-lower-pc.jpg" media="(min-width:768px)">
-            <img src="./assets/images/common/aboutus-mv-sp.jpg" alt="黄色い魚が2匹泳いでいる様子">
-          </picture>
-        </div>
+    <!-- 下層ページのメインビュー -->
+    <section class="sub-mv sub-mv--aboutus">
+      <div class="sub-mv__inner">
+        <h1 class="sub-mv__title sub-mv__title--aboutus">About&nbsp;us</h1>
       </div>
     </section>
 
-    <section class="aboutus-body">
+    <!-- パンくず -->
+    <div class="breadcrumb breadcrumb-layout">
+      <div class="breadcrumb__inner inner">
+        <!-- Breadcrumb NavXTで出力される部分 ここから -->
+        <span>
+          <a href="#">
+            <span>TOP</span>
+          </a>
+        </span>
+        &nbsp;&gt;&nbsp;
+        <span>
+          <span class="current-item">私たちについて</span>
+        </span>
+        <!-- Breadcrumb NavXTで出力される部分 ここまで -->
+      </div>
+    </div>
+
+    <!-- メインコンテンツ -->
+    <section class="aboutus-body aboutus-body-layout">
       <div class="aboutus-body__inner inner">
-        <div class="aboutus-body__breadcrumb breadcrumb">TOP > 私たちについて</div>
         <div class="aboutus-body__wrapper about">
           <div class="about__images">
             <div class="about__backgroundImage01 about__backgroundImage01--page">
@@ -176,36 +186,30 @@
       </div>
     </section>
 
-
-
-
     <section class="about-gallery layout-about-gallery">
       <div class="about-gallery__inner inner">
         <div class="about-gallery__header section-header">
           <p class="section-header__main">gallery</p>
           <h2 class="section-header__sub">フォト</h2>
           <div class="about-gallery__body">
-            <ul class="about-gallery__imagesWrapper1">
-              <li class="about-gallery__image1 js-modal-open1">
-                <img src="./assets/images/common/price-pc.jpg" alt="">
+            <ul class="about-gallery__list gallery-list">
+              <li class="js-modal-open1 gallery-list__item">
+                <img src="./assets/images/common/price-pc.jpg" alt="赤い小魚と珊瑚が映っている様子">
               </li>
-              <li class="about-gallery__image2 js-modal-open2">
-                <img src="./assets/images/common/about-us-image2.jpg" alt="">
+              <li class="js-modal-open2 gallery-list__item">
+                <img src="./assets/images/common/about-us-image2.jpg" alt="綺麗な砂浜と船が映っている様子">
               </li>
-              <li class="about-gallery__image3 js-modal-open3">
-                <img src="./assets/images/common/aboutus-lower-gallery3-pc.jpg" alt="">
+              <li class="js-modal-open3 gallery-list__item">
+                <img src="./assets/images/common/aboutus-lower-gallery3-pc.jpg" alt="魚が２匹仲良く泳いでいる様子">
               </li>
-            </ul>
-
-            <ul class="about-gallery__imagesWrapper2">
-              <li class="about-gallery__image4 js-modal-open4">
-                <img src="./assets/images/common/aboutus-lower-gallery4-pc.jpg" alt="">
+              <li class="js-modal-open4 gallery-list__item">
+                <img src="./assets/images/common/aboutus-lower-gallery4-pc.jpg" alt="黄色い魚が泳いでいる様子">
               </li>
-              <li class="about-gallery__image5 js-modal-open5">
-                <img src="./assets/images/common/aboutus-lower-gallery5-pc.jpg" alt="">
+              <li class="js-modal-open5 gallery-list__item">
+                <img src="./assets/images/common/aboutus-lower-gallery5-pc.jpg" alt="小さな魚の魚群">
               </li>
-              <li class="about-gallery__image6 js-modal-open6">
-                <img src="./assets/images/common/aboutus-lower-gallery6-pc.jpg" alt="">
+              <li class="js-modal-open6 gallery-list__item">
+                <img src="./assets/images/common/aboutus-lower-gallery6-pc.jpg" alt="オレンジ色の魚と珊瑚が映っている様子">
               </li>
             </ul>
           </div>
@@ -213,26 +217,36 @@
 
         <!-- モーダル -->
         <dialog id="js-about-modal1" class="about-gallery__modal1 js-modal-close">
-          <div class="modal-content">
-            <img src="./assets/images/common/price-pc.jpg" alt="">
-
+          <div class="about-gallery__modal-bigImage">
+            <img src="./assets/images/common/price-pc.jpg" alt="赤い小魚と珊瑚が映っている様子">
           </div>
         </dialog>
         <dialog id="js-about-modal2" class="about-gallery__modal2 js-modal-close">
-              <img src="./assets/images/common/campaign_2.jpg" alt="">
+          <div class="about-gallery__modal-smallImage">
+            <img src="./assets/images/common/campaign_2.jpg" alt="綺麗な砂浜と船が映っている様子">
+          </div>
         </dialog>
         <dialog id="js-about-modal3" class="about-gallery__modal3 js-modal-close">
-              <img src="./assets/images/common/aboutus-lower-gallery3-pc.jpg" alt="">
+          <div class="about-gallery__modal-smallImage">
+            <img src="./assets/images/common/aboutus-lower-gallery3-pc.jpg" alt="魚が２匹仲良く泳いでいる様子">
+          </div>
         </dialog>
         <dialog id="js-about-modal4" class="about-gallery__modal4 js-modal-close">
-              <img src="./assets/images/common/aboutus-lower-gallery4-pc.jpg" alt="">
+          <div class="about-gallery__modal-smallImage">
+            <img src="./assets/images/common/aboutus-lower-gallery4-pc.jpg" alt="黄色い魚が泳いでいる様子">
+          </div>
         </dialog>
         <dialog id="js-about-modal5" class="about-gallery__modal5 js-modal-close">
-              <img src="./assets/images/common/aboutus-lower-gallery5-pc.jpg" alt="">
+          <div class="about-gallery__modal-smallImage">
+            <img src="./assets/images/common/aboutus-lower-gallery5-pc.jpg" alt="小さな魚の魚群">
+          </div>
         </dialog>
         <dialog id="js-about-modal6" class="about-gallery__modal6 js-modal-close">
-              <img src="./assets/images/common/aboutus-lower-gallery6-pc.jpg" alt="">
+          <div class="about-gallery__modal-bigImage">
+            <img src="./assets/images/common/aboutus-lower-gallery6-pc.jpg" alt="オレンジ色の魚と珊瑚が映っている様子">
+          </div>
         </dialog>
+      </div>
     </section>
 
     <section id="contact" class="contact contact-layout contact-layout--lower">
@@ -259,7 +273,7 @@
           </div>
           <div class="contact__form">
             <div class="contact__header section-header contact__header--lower">
-              <p class="section-header__main--large">contact</p>
+              <p class="section-header__main section-header__main--large">contact</p>
               <h2 class="section-header__sub section-header__sub--line1">お問合せ</h2>
               <p class="section-header__sub section-header__sub--line2">ご予約・お問い合わせはコチラ</p>
             </div>
@@ -274,25 +288,25 @@
     <div class="page-to-top js-page-top"></div>
 
   </main>
-  <footer class="footer footer-layout footer-layout--lower">
+  <footer class="footer footer-layout">
     <div class="footer__inner inner">
       <div class="footer__body">
         <div class="footer__head">
           <a class="footer__logo">
-            <img src="./assets/images/common/logo.png" alt="CodeUps">
+            <img src="./assets/images/common/CodeUps-footer.svg" alt="CodeUps">
           </a>
           <ul class="footer__sns">
-            <li class="footer__facebook"><a href="#" target="_blank"><img src="./assets/images/common/facebook.svg"
-                  alt="facebook"></a></li>
-            <li class="footer__instagram"><a href="#" target="_blank"><img src="./assets/images/common/instagram.svg"
-                  alt="instagram"></a></li>
+            <li class="footer__facebook"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                  src="./assets/images/common/facebook.svg" alt="facebook"></a></li>
+            <li class="footer__instagram"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                  src="./assets/images/common/instagram.svg" alt="instagram"></a></li>
           </ul>
         </div>
         <nav class="footer__nav footer-nav">
           <div class="footer-nav__left">
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">キャンペーン</a></li>
+                <li class="footer-nav__head"><a href="campaign.html">キャンペーン</a></li>
                 <li class="footer-nav__list"><a href="#">ライセンス取得</a></li>
                 <li class="footer-nav__list"><a href="#">貸切体験ダイビング</a></li>
                 <li class="footer-nav__list"><a href="#">ナイトダイビング</a></li>
@@ -300,12 +314,12 @@
             </div>
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">私たちについて</a></li>
+                <li class="footer-nav__head"><a href="aboutus.html">私たちについて</a></li>
               </ul>
             </div>
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">ダイビング情報</a></li>
+                <li class="footer-nav__head"><a href="information.html">ダイビング情報</a></li>
                 <li class="footer-nav__list"><a href="#">ライセンス講習</a></li>
                 <li class="footer-nav__list"><a href="#">体験ダイビング</a></li>
                 <li class="footer-nav__list"><a href="#">ファンダイビング</a></li>
@@ -313,19 +327,19 @@
             </div>
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">ブログ</a></li>
+                <li class="footer-nav__head"><a href="blog.html">ブログ</a></li>
               </ul>
             </div>
           </div>
           <div class="footer-nav__right">
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">お客様の声</a></li>
+                <li class="footer-nav__head"><a href="voice.html">お客様の声</a></li>
               </ul>
             </div>
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">料金一覧</a></li>
+                <li class="footer-nav__head"><a href="price.html">料金一覧</a></li>
                 <li class="footer-nav__list"><a href="#">ライセンス講習</a></li>
                 <li class="footer-nav__list"><a href="#">体験ダイビング</a></li>
                 <li class="footer-nav__list"><a href="#">ファンダイビング</a></li>
@@ -333,22 +347,22 @@
             </div>
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">よくある質問</a></li>
+                <li class="footer-nav__head"><a href="faq.html">よくある質問</a></li>
               </ul>
             </div>
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">プライバシー<br>ポリシー</a></li>
+                <li class="footer-nav__head"><a href="privacy-policy.html">プライバシー<br class="u-mobile">ポリシー</a></li>
               </ul>
             </div>
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">利用規約</a></li>
+                <li class="footer-nav__head"><a href="term-of-service.html">利用規約</a></li>
               </ul>
             </div>
             <div class="footer-nav__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">お問合せ</a></li>
+                <li class="footer-nav__head"><a href="contact.html">お問合せ</a></li>
               </ul>
             </div>
           </div>
@@ -360,4 +374,6 @@
       </div>
     </div>
   </footer>
-  </main>
+</body>
+
+</html>

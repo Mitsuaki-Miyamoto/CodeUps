@@ -32,8 +32,8 @@
     max-width: rem(300);
     position: absolute;
     width: rem(240);
-    top: rem(11);
     height: rem(80);
+    top: 0;
 
     @include mq("md") {
         right: rem(35);
@@ -50,7 +50,7 @@
 }
 
 .top-campaign {
-    .swiper-button-prev::after {
+    .swiper-button-prev {
         width: rem(80);
         height: rem(80);
         background: url(/assets/images/common/swiper-prev.png);
@@ -59,6 +59,8 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        top: 29%;
+        transition: .3s;
     }
 
     .swiper-button-prev,.swiper-button-next{
@@ -72,7 +74,7 @@
         }
     }
 
-    .swiper-button-next::after {
+    .swiper-button-next {
         width: rem(80);
         height: rem(80);
         background: url(/assets/images/common/swiper-next.png);
@@ -81,5 +83,25 @@
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
+        top: 29%;
+        transition: .3s;
     }
+    // .swiper-button-next::after {
+    //     width: rem(80);
+    //     height: rem(80);
+    //     background: url(/assets/images/common/swiper-next.png);
+    //     background-repeat: no-repeat;
+    //     background-size: 80px 80px;
+    //     background-position: center center;
+    //     background-size: cover;
+    //     background-repeat: no-repeat;
+    // }
 }
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    opacity: 0.6;
+    transition: .3s;
+    cursor: pointer;
+}
+

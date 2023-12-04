@@ -64,10 +64,6 @@
     z-index: 1;
 }
 
-// .button span:hover::before {
-//     display: none;
-// }
-
 .button span::after {
     background-image: url(/assets/images/common/button-active.png);
     background-position: center;
@@ -86,4 +82,13 @@
 
 .button:hover {
     color: $green;
+}
+
+.button.button--send {
+    padding-left: rem(48);
+    padding-right: rem(110);
+}
+
+.button--page {
+
 }

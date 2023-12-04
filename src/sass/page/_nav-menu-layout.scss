@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.nav-menu-layout {
+    margin-top: rem(52);
+
+    @include mq("md") {
+        margin-top: rem(145);
+    }
+}
+
+.nav-menu-layout.nav-menu-layout--terms {
+    margin-top: rem(48);
+
+    @include mq("md") {
+        margin-top: rem(144);
+    }
+}

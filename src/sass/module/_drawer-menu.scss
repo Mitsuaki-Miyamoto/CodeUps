@@ -3,7 +3,7 @@
 // ドロワー
 .drawer-menu {
     position: absolute;
-    z-index: 5000;
+    z-index: -1;
     top: 0;
     left: 0;
     display: none;
@@ -17,11 +17,12 @@
 .drawer-menu__inner {
     display: flex;
     flex-direction: column;
-    padding: 0 rem(38);
+    padding-left:rem(38);
+    // padding-right:rem(38);
     overflow-y: scroll;
     justify-content: center;
     width: 100%;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
 }
 
 .drawer-menu__image {
@@ -39,8 +40,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     margin-top: rem(105);
 }
 
@@ -85,7 +86,7 @@
 .drawer-menu__head::before {
     content: url(/assets/images/common/star-fish.png);
     transform: scale(0.5);
-    top: rem(-3);
+    top: rem(-6);
     left: rem(-29);
     width: rem(20);
     height: rem(20);

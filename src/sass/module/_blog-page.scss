@@ -1,13 +1,23 @@
 @use "global" as *;
 
-.blog-page {}
 
-.blog-page__body {
+
+.blog-page-body {}
+
+.blog-page-body__inner {
+    @include mq("md") {
+        grid-gap: 5rem;
+        display: grid;
+        gap: rem(85);
+        grid-template-columns: 65% 27%;
+    }
+}
+
+.blog-page-body__main {
     position: relative;
 }
 
-
-.blog-page__body::before {
+.blog-page-body__main::before {
     background-image: url(/assets/images/common/campaign-fish.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -17,16 +27,24 @@
     position: absolute;
     top: -2%;
     width: 7.5rem;
+
+    @include mq("md") {
+        height: 8%;
+        position: absolute;
+        top: -4%;
+        width: 18.5rem;
+        left: -11%;
+    }
 }
 
-.blog-page__date {
+.blog-page-body__date {
     font-family: Gotu;
     font-size: rem(14);
     font-style: normal;
     font-weight: $regular;
 }
 
-.blog-page__title {
+.blog-page-body__title {
     font-size: rem(24);
     font-style: normal;
     font-weight: $normal;
@@ -39,7 +57,7 @@
     }
 }
 
-.blog-page__cards {
+.blog-page-body__cards {
     margin-top: rem(24);
 
     @include mq("md") {
@@ -47,7 +65,7 @@
     }
 }
 
-.blog-page__card:not(:first-child) {
+.blog-page-body__card:not(:first-child) {
     margin-top: rem(24);
 
     @include mq("md") {
@@ -55,17 +73,31 @@
     }
 }
 
+.blog-page-body__image {
+    width: 100%;
+}
+.blog-page-body__image img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 345/231;
+    
+    @include mq("md") {
+        aspect-ratio: 700/468;
+    }
 
-.blog-page__image {}
+}
 
-.blog-page__text {
+
+
+.blog-page-body__text {
     margin-top: rem(24);
 
     @include mq("md") {
         margin-top: rem(40);
     }
 }
-.blog-page__text-bottom {
+
+.blog-page-body__text-bottom {
     margin-top: rem(24);
 
     @include mq("md") {
@@ -73,7 +105,7 @@
     }
 }
 
-.blog-page__lists {
+.blog-page-body__lists {
     margin-top: rem(24);
 
     @include mq("md") {
@@ -81,16 +113,36 @@
     }
 }
 
-.blog-page__list {
+.blog-page-body__list {
     margin-top: rem(7);
     line-height: 1.5;
 }
 
-.blog-page__list::before {
+.blog-page-body__list::before {
     content: "";
     background-image: url(/assets/images/common/hitode-icon.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     padding-left: 26px;
+}
+
+.blog-page-body__side {
+    margin-top: rem(80);
+
+    @include mq("md") {
+        margin-top: 0;
+    }
+}
+
+.blog-page-body__reviews {
+    margin-top: rem(80);
+}
+
+.blog-page-body__campaign {
+    margin-top: rem(80);
+}
+
+.blog-page-body__archive {
+    margin-top: rem(80);
 }

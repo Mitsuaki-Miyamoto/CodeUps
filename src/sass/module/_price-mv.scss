@@ -1,10 +1,14 @@
 @use "global" as *;
 
-.campaign-mv {
+.price-mv {
+    
+}
+
+.price-mv__inner {
     position: relative;
 }
 
-.campaign-mv-title {
+.price-mv__title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,13 +23,12 @@
     @include mq("md") {
         font-size: rem(80);
         line-height: 1;
-        top: 59%;
+        top: 60%;
     }
 
 }
 
-.campaign-mv__inner {}
+.price-mv__image {
 
-.campaign-mv__image {
-    width: 100%;
 }
+

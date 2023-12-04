@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.sub-mv-title {
+    position: absolute;
+    color: #fff;
+    font-family: Lato;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    left: 50%;
+    position: absolute;
+    text-transform: capitalize;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @include mq("md") {
+        font-size: 5rem;
+        line-height: 1;
+        top: 60%;
+    }
+}

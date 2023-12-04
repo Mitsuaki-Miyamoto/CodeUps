@@ -75,6 +75,8 @@
 .top-price__body dl {
     margin-top: rem(2);
     width: 100%;
+    display: grid;
+    grid-template-columns: 86% 13%;
 }
 
 .top-price__license {
@@ -111,7 +113,7 @@
 }
 
 .top-price__head {
-    width: calc(100% - min(24vw, 195px));
+    // width: calc(100% - min(24vw, 195px));
     font-size: rem(14);
     font-weight: $regular;
     line-height: 1.71429;
@@ -121,7 +123,7 @@
     margin-top: rem(6);
 
     @include mq("md") {
-        width: calc(100% - min(15vw, 195px));
+        // width: calc(100% - min(15vw, 195px));
         font-size: rem(16);
         max-width: rem(300);
         line-height: 1.5;
@@ -133,13 +135,11 @@
     font-weight: $regular;
     line-height: 1.71429;
     text-align: right;
-    width: 24.6666666667%;
-    // width: calc(100% - min(20vw, 200px));
     display: inline-block;
 
     @include mq("md") {
         font-size: rem(16);
-        width: 34%;
+        // width: 34%;
         display: inline-block;
     }
 }

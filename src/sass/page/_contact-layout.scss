@@ -13,6 +13,13 @@
 }
 
 .contact-layout--side {
-    margin-top: rem(170);
+    margin-top: rem(105);
 }
 
+
+.contact-layout--siteMap {
+    margin-top: rem(95);
+    @include mq("md") {
+        margin-top: rem(105);
+    }
+}

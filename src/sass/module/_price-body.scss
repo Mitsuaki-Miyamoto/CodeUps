@@ -1,10 +1,50 @@
 @use "global" as *;
 
 .price-body {
-    position: relative;
+    // position: relative;
 }
 
-.price-body::after{
+.price-body::after {
+    // background-image: url(/assets/images/common/campaign-fish.png);
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // content: "";
+    // position: absolute;
+    // width: 7.5rem;
+    // top: 2%;
+    // left: 6%;
+    // height: 10%;
+
+    // @include mq("md") {
+    //     top: 10%;
+    //     height: 14%;
+    //     width: 19.5rem;
+    //     left: 7%;
+    // }
+}
+
+.price-body__inner {
+    display: grid;
+}
+
+.price-body__breadcreamb {
+    margin-top: rem(5);
+}
+
+.price-body__wrap {
+    margin-top: rem(52);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+
+
+.price-body__wrap::after {
     background-image: url(/assets/images/common/campaign-fish.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -12,33 +52,55 @@
     content: "";
     position: absolute;
     width: 7.5rem;
-    top: -3%;
+    top: -5%;
+    left: -2%;
     height: 10%;
 
     @include mq("md") {
-        top: 6%;
-        height: 8%;
+        height: 14%;
         width: 19.5rem;
-        left: 7%;
+        left: calc(50% - min(49vw, 39.875rem));
+        top: -7%;
     }
 }
 
-.price-body__inner {
-    display: grid;
-}
 
-.price-body__table {
-    margin-top: rem(52);
-    margin-left: auto;
-    margin-right: auto;
+
+
+
+
+
+
+
+
+.price-body__table:not(:first-child) {
+    margin-top: rem(40);
 
     @include mq("md") {
-        margin-top: rem(150);
+        margin-top: rem(80);
     }
 }
+
+.table-pc__wrap {
+    margin-top: 0;
+}
+
+.price-body__table.price-body__table--head.table-pc {
+    margin-top: 0;
+}
+
+// .price-body__wrap:nth-child(1) {
+//     margin-top: rem(0);
+// }
 
 .price-body__image {
     margin-top: rem(100);
 }
 
+table.price-body__table.table-pc.u-desktop:first-child {
+    margin-top: 0;
+}
 
+.table-pc__wrap+.table-pc__body {
+    margin-top: 0;
+}

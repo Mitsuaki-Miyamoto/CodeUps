@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.aboutus-body-layout {
+    
+    @include mq("md") {
+        margin-top: rem(145);
+    }
+
+}

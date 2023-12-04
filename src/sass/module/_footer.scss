@@ -13,6 +13,13 @@
     }
 }
 
+.footer.footer--siteMap {
+    background: $white;
+    color: black;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .footer__inner {
 
     @include mq("md") {
@@ -73,6 +80,13 @@
 
 .footer__instagram a img:hover {
     opacity: 0.7;
+}
+
+.footer__nav {
+    margin-top: rem(30);
+    @include mq("md") {
+        margin-top: rem(10);
+    }
 }
 
 

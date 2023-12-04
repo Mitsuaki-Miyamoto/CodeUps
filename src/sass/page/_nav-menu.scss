@@ -1,0 +1,103 @@
+@use "global" as *;
+
+.nav-menu {
+    color: var(--green, #0D2936);
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+
+    @include mq("md") {
+        
+    }
+}
+
+.nav-menu__inner {
+    @include mq("md") {
+        width: 59%;
+    }
+}
+.nav-menu__introduction {
+    margin-top: rem(45);
+    line-height: 1.8;
+
+    @include mq("md") {
+        margin-top: rem(29);
+    }
+}
+
+.nav-menu__introduction.nav-menu__introduction--terms {
+    margin-top: rem(35);
+
+    @include mq("md") {
+        margin-top: rem(32);
+    }
+
+}
+
+.nav-menu__content {
+    margin-top: rem(35);
+}
+
+.nav-menu__title {
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: 500;
+    position: relative;
+
+    @include mq("md") {
+        font-size: rem(32);
+    }
+}
+
+.nav-menu__title::after {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 145%;
+    left: 0;
+    position: absolute;
+    top: -57%;
+    width: 7.5rem;
+
+    @include mq("md") {
+        height: 240%;
+        left: calc(50% - min(48.5vw, 38rem));
+        position: absolute;
+        top: -115%;
+        width: 18.5rem;
+    }
+}
+
+.nav-menu__content {
+
+}
+
+.nav-menu__number {
+    padding-left: rem(24);
+    text-indent: -1em;
+}
+
+.nav-menu__number.nav-menu__number--term {
+    margin-top: rem(32);
+}
+
+.nav-menu__description {
+    margin-top: rem(32);
+}
+
+.nav-menu__description.nav-menu__description--terms {
+    margin-top: 0;
+
+    @include mq("md") {
+        
+    }
+
+}
+
+.nav-menu__description li {
+    display: inline;
+}

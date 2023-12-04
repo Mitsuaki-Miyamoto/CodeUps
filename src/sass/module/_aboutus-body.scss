@@ -8,12 +8,6 @@
     margin-top: rem(10);
 }
 
-.aboutus-body__wrapper {
-    @include mq("md") {
-        margin-top: rem(145);
-    }
-}
-
 .aboutus-body__wrapper::before {
     @include mq("md") {
         position: absolute;
@@ -37,7 +31,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
-    height: 8%;
+    height: 11%;
     position: absolute;
     top: 6%;
     width: 7.5rem;

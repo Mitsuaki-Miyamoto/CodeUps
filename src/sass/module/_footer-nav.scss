@@ -4,21 +4,31 @@
     color: $white;
     display: flex;
     line-height: 1.125;
-    margin-top: rem(40);
-    justify-content: flex-end;
+    
+    justify-content: normal;
 
     @include mq("md") {
-        margin-top: rem(18);
+        
         justify-content: space-around;
+    }
+}
+
+.footer__nav.footer-nav--siteMap {
+    color: black;
+    margin-top: rem(45);
+    @include mq("md") {
+        margin-top: rem(143);
     }
 }
 
 .footer-nav__left {
     display: block;
-    width: 44%;
+    width: 50%;
+    column-gap: 20.5%;
 
     @include mq("md") {
-        column-gap: rem(41);
+        column-gap: rem(20);
+        // column-gap: 20.5%;
         flex-wrap: wrap;
         flex-direction: column;
         height: 15.125rem;
@@ -32,14 +42,31 @@
     display: block;
     width: 44%;
     margin-left: rem(10);
+    column-gap: 20.5%;
     @include mq("md") {
-        column-gap: rem(48);
+        // column-gap: rem(48);
+        // column-gap: 20.5%;
+        column-gap: 0;
         flex-direction: column;
         flex-wrap: wrap;
         height: 15.125rem;
         row-gap: rem(16);
         width: 48%;
         display: flex;
+        margin-left: 1%;
+    }
+}
+
+.footer-nav__right.footer-nav__right--siteMap {
+    margin-left: rem(24);
+
+    @include mq("md") {
+        column-gap: rem(145);
+        column-gap: 10%;
+        row-gap: rem(22);
+        row-gap: rem(22);
+        margin-left: rem(110);
+        margin-left: 5%;
     }
 }
 
@@ -51,19 +78,29 @@
     color: $white;
 }
 
+.footer-nav__head--siteMap {
+    color: black;
+}
+
 .footer-nav__head:not(:first-child) {
     margin-top: rem(40);
 }
 
 .footer-nav__head::before {
-    content: url(/assets/images/common/star-fish.png);
-    transform: scale(0.5);
-    top: rem(5.5);
-    left: rem(-29);
+    content: url(/assets/images/common/star-fish.svg);
+    transform: scale(1);
+    top: rem(6);
+    left: rem(-1);
     width: rem(20);
     height: rem(20);
     display: block;
     position: absolute;
+}
+
+.footer-nav__head--siteMap::before {
+    content: url(/assets/images/common/star-fish-black.svg);
+   
+
 }
 
 .footer-nav__list {
@@ -75,14 +112,15 @@
 }
 
 .footer-nav__head a {
-    padding-top: rem(10);
-    padding-bottom: rem(10);
+    padding-top: rem(9);
+    padding-bottom: rem(9);
+    padding-left: rem(24);
     display: inline-block;
     width: 100%;
 }
 .footer-nav__list a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: rem(13);
+    padding-bottom: rem(13);
     display: inline-block;
     width: 100%;
 }
@@ -90,12 +128,13 @@
 .footer-nav__item:nth-child(2),
 .footer-nav__item:nth-child(3),
 .footer-nav__item:nth-child(4),
+.footer-nav__item:nth-child(5),
 .footer-nav__item:nth-child(6),
 .footer-nav__item:nth-child(7),
 .footer-nav__item:nth-child(8),
 .footer-nav__item:nth-child(9),
 .footer-nav__item:nth-child(10) {
-  margin-top: 24px;
+  margin-top: 22px;
 
   @include mq("md") {
         margin-top: 0;
@@ -109,4 +148,62 @@
 
 .footer-nav__list a:hover {
     opacity: 0.7;
+}
+
+
+.footer-nav__head--siteMap a {
+    padding-left: rem(22);
+}
+
+.footer-nav__head--siteMap::before {
+    left: rem(0);
+}
+
+.footer-nav__list a {
+    padding-left: rem(22);
+}
+
+// .footer-nav__right.footer-nav__right--siteMap {
+    
+
+//     @include mq("md") {
+       
+//     }
+// }
+
+.footer-nav__left.footer-nav__left--siteMap {
+    width: 50%;
+    column-gap: 63px;
+
+    @include mq("md") {
+        // column-gap: 107px;
+        column-gap: 10%;
+        row-gap: 6%;
+    }
+}
+
+.footer-nav__left--siteMap {
+    position: relative;
+}
+
+.footer-nav__left--siteMap::before {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 12%;
+    left: 0;
+    position: absolute;
+    top: -4%;
+    width: 7.5rem;
+
+    @include mq("md") {
+        height: 54%;
+        left: calc(50% - min(23vw, 23.875rem));
+        top: -52%;
+        /* left: -69%; */
+        width: 17.5rem;
+    }
+
 }

@@ -8,6 +8,18 @@
     }
 }
 
-.footer-layout--lower {
-    margin-top: rem(78);
+.footer-layout--contact {
+    margin-top: rem(145);
+}
+
+.footer-layout.footer-layout--contact-error {
+    margin-top: rem(120);
+}
+.footer-layout.footer-layout--contact-thanks {
+    margin-top: rem(132);
+}
+
+.footer-layout.footer-layout--404 {
+    flex: 1;
+    margin-top: 0;
 }

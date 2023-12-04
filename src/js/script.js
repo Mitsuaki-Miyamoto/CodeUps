@@ -12,10 +12,12 @@ jQuery(function ($) {
     if ($(".js-hamburger").hasClass("is-active")) {
       // ドロワーが表示された場合
       $("body").css("overflow", "hidden");
+      $(".header__inner").css("background-color", "#408F95"); // 追加
       isDrawerOpen = true;
     } else {
       // ドロワーが閉じられ、他にスクロール無効化の要因がない場合、スクロールを有効にする
       $("body").css("overflow", "auto");
+      $(".header__inner").css("background-color", ""); // 追加
       isDrawerOpen = false;
     }
   });
@@ -42,6 +44,7 @@ $(function () {
   $(window).resize(function () {
     if (window.matchMedia("(min-width: 768px)").matches) {
       closeDrawer();
+      $(".header__inner").css("background-color", ""); // 追加
     }
   });
 
@@ -156,15 +159,14 @@ $(function () {
 
 //モーダル(About us下層ページ)
 $(function(){
-  if (window.matchMedia('(min-width:768px)').matches) {
+  // if (window.matchMedia('(min-width:768px)').matches) {
 		/* ウィンドウサイズ769以上の処理を記述 */
-
-
 
 jQuery(".js-modal-open1").on("click", function(e) {
   e.preventDefault();
-  
+
   jQuery("#js-about-modal1")[0].showModal();
+
   // モーダルを開いたときに背景を固定
   document.body.style.overflow = 'hidden';
 });
@@ -187,8 +189,6 @@ jQuery(".js-modal-close").on("click", function(e) {
   // モーダルを閉じたときに背景の固定を解除
   // document.body.style.overflow = '';
 });
-
-
 
 jQuery(".js-modal-open3").on("click", function(e) {
   e.preventDefault();
@@ -233,13 +233,12 @@ jQuery(".js-modal-close").on("click", function(e) {
   e.preventDefault();
   jQuery("#js-about-modal6")[0].close();
 });
+})
 
-}})
-
-// // タブ
+// タブ
 document.addEventListener('DOMContentLoaded', function(){
-  const tabList = document.querySelectorAll('.js-tab__item');
-  const tabContent = document.querySelectorAll('.js-tab__contents-item');
+  const tabList = document.querySelectorAll('.js-information-tab');
+  const tabContent = document.querySelectorAll('.js-information-contents');
 
   // 初期状態ではすべての.tab__contents-itemを非表示にする
   for (let i = 0; i < tabContent.length; i++) {
@@ -267,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function(){
     if (activeElements.length > 0) {
       activeElements[0].classList.remove('active');
     }
-    
+
     // クリックしたタブにactiveクラスを付与
     this.classList.add('active');
 
@@ -278,15 +277,44 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 
-
+//トグル(2カラム)
 jQuery(function ($) {
   // 最初にすべての兄弟要素を閉じる
-  $('.js-toggle').siblings().hide();
+  // $('.js-toggle').siblings().hide();
+
+   // 最初の .js-toggle の兄弟要素を表示する
+ $('.js-toggle').first().siblings().show();
 
   $('.js-toggle').on('click', function () {
     /* クリックでコンテンツを開閉 */
-    $(this).siblings().slideToggle(200);
+    $(this).siblings().slideToggle('300');
     /* 矢印の向きを変更 */
     $(this).toggleClass('open');
+  });
+});
+
+
+
+// アコーディオン(FAQ)
+$(function () {
+  // 最初のコンテンツは表示
+  $(".js-accordion-faq-item:first .js-accordion-faq-content").css("display", "block");
+  // 最初の矢印は開いた時の状態に
+  $(".js-accordion-faq-item:first .js-accordion-title").addClass("open");
+  // タイトルをクリックすると
+  $(".js-accordion-title").on("click", function () {
+   // クリックした次の要素を開閉
+   $(this).next().slideToggle(300);
+   // タイトルにopenクラスを付け外しして矢印の向きを変更
+   $(this).toggleClass("open", 300);
+  });
+  // 2つ目以降のコンテンツは非表示
+  $(".js-accordion-faq-item:not(:first) .js-accordion-faq-content").css("display", "none");
+ });
+
+
+$(function(){
+  $('#js-about-modal1, #js-about-modal2, #js-about-modal3, #js-about-modal4, #js-about-modal5, #js-about-modal6').one('focusin', function(){
+    $(this).blur();
   });
 });

@@ -1,44 +1,31 @@
 @use "global" as *;
 
-.side-archive {
-    position: relative;
+.side-menu-head {
     color: var(--green, #0D2936);
     font-size: rem(24);
     font-style: normal;
     font-weight: $regular;
     line-height: normal;
     border-left: rem(8) solid $green;
+    position: relative;
+    padding-left: rem(75);
     height: rem(50);
-
-    cursor: pointer;
+    display: flex;
+    align-items: center;
+    // margin-left: rem(10);
 }
 
-.side-archive__head::before {
+.side-menu-head::before {
     background-image: url(/assets/images/common/head-icon.svg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
     content: "";
+    // height: auto;
     height: 4.5rem;
-    left: clamp(1.188rem, -2.313rem + 3.13vw, 1.5rem);
+    left: clamp(0.96rem, -2.313rem + 3.13vw, 1.5rem);
     position: absolute;
     top: rem(-15);
-    width: rem(50);
-}
-
-.side-archive__head {
-    padding-left: rem(75);
-
-}
-
-.side-archive__wrap:first-child {
-    // margin-top: rem(40);
-}
-
-.side-archive__year {
-
-}
-
-.side-archive__month {
-
+    // width: 4rem;
+    width: rem(55);
 }

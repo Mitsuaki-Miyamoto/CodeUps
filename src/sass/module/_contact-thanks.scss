@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.contact-thanks {}
+
+.contact-thanks__message {
+    margin-top: rem(52);
+    text-align: center;
+    position: relative;
+
+    color: var(--green, #0D2936);
+    font-style: normal;
+    font-weight: $regular;
+    line-height: 1.12;
+    /* 112.5% */
+
+    @include mq("md") {
+        margin-top: rem(150);
+    }
+}
+
+.contact-thanks__message::after {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 27%;
+    left: 0;
+    position: absolute;
+    top: -12%;
+    width: 7.5rem;
+    z-index: -1;
+
+    @include mq("md") {
+        height: 110%;
+        left: calc(50% - min(49vw, 38.875rem));
+        top: -53%;
+        width: 19.5rem;
+    }
+}
+
+.contact-thanks__text1 {}
+
+.contact-thanks__text2 {
+    margin-top: rem(40);
+    line-height: normal;
+
+}

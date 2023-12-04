@@ -1,21 +1,22 @@
 @use "global" as *;
 
-.tab {}
+.tab-information {}
 
 
-.tab__items {
+.tab-information__items {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: rem(20);
+    row-gap: rem(20);
 
     @include mq("md") {
         column-gap: rem(90);
     }
 }
 
-.tab__item1,
-.tab__item2,
-.tab__item3 {
+.tab-information__item1,
+.tab-information__item2,
+.tab-information__item3 {
     background-color: $green-bg;
     padding: rem(10) rem(15);
     align-items: center;
@@ -25,87 +26,109 @@
     line-height: normal;
     color: $green;
     text-align: center;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.25);
 
     @include mq("md") {
         padding: rem(26) min(1.4vw, 1.25rem);
-        font-size: rem(24);
+        font-size: clamp(0.875rem, 0.648rem + 1.14vw, 1.5rem);
         position: relative;
         text-align: right;
-
+        cursor: pointer;
+        transition: 0.3s;
     }
 }
 
-.tab__item1::before,
-.tab__item2::before,
-.tab__item3::before {
+.tab-information__item1::before,
+.tab-information__item2::before,
+.tab-information__item3::before {
     @include mq("md") {
         content: "";
         position: absolute;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: rem(65);
         background-position: center center;
         width: rem(64);
         height: auto;
         width: 4.5rem;
         height: 4.5rem;
-        // left: rem(20);
-        left: clamp(0.188rem, -2.313rem + 3.13vw, 1.5rem);
+        left: clamp(0.188rem, -1.5rem + 3.13vw, 1.5rem);
         top: rem(7);
     }
 }
 
-.tab__item1::before {
+.tab-information__item1::before {
     @include mq("md") {
         background-image: url(/assets/images/common/tab1-.svg);
     }
 }
 
-.tab__item2::before {
+.tab-information__item2::before {
     @include mq("md") {
         background-image: url(/assets/images/common/tab2.svg);
     }
 
 }
 
-.tab__item3::before {
+.tab-information__item3::before {
     @include mq("md") {
         background-image: url(/assets/images/common/tab3.svg);
     }
 }
 
 
-
-.tab__item1.active,
-.tab__item2.active,
-.tab__item3.active {
-    background-color: $green;
-    color: $green-bg;
+.tab-information__item1:hover,
+.tab-information__item2:hover,
+.tab-information__item3:hover {
+    opacity: 0.7;
+    transition: 0.3s;
 }
 
-.tab__item1.active::before {
+
+.tab-information__item1.active,
+.tab-information__item2.active,
+.tab-information__item3.active {
+    background-color: $green;
+    color: $green-bg;
+    animation: fade 0.3s;
+}
+
+.tab-information__item1.active:hover,
+.tab-information__item2.active:hover,
+.tab-information__item3.active:hover {
+    opacity: 1;
+    cursor: auto;
+
+}
+
+// @keyframes fade {
+//     from {
+//         opacity: 0;
+//     }
+//     to {
+//         opacity: 1;
+//     }
+// }
+
+.tab-information__item1.active::before {
     @include mq("md") {
         background-image: url(/assets/images/common/tab-icon-active1.svg);
     }
 }
 
-.tab__item2.active::before {
+.tab-information__item2.active::before {
     @include mq("md") {
         background-image: url(/assets/images/common/tab-icon-active2--.svg);
     }
 }
 
-.tab__item3.active::before {
+.tab-information__item3.active::before {
     @include mq("md") {
         background-image: url(/assets/images/common/tab-icon-active3.svg);
     }
 
 }
 
-.tab-head {
-    position: relative;
-}
-
-.tab__contents {
+.tab-information__contents {
     margin-top: rem(10);
 
     @include mq("md") {
@@ -113,28 +136,30 @@
     }
 }
 
-.tab__contents-item {
+.tab-information__contents-item {
     display: none;
     opacity: 0;
     transition: opacity 0.8s;
     /* フェードインにかける時間を調整 */
 }
 
-.tab__contents-item.show {
+.tab-information__contents-item.show {
     display: block;
     opacity: 1;
 }
 
-.tab__inner {
+.tab-information__inner {
     margin-top: rem(15);
+
     @include mq("md") {
         margin-top: 0;
     }
 }
 
-.tab__body {
+.tab-information__body {
     border: 1px solid $green;
     padding: rem(22) rem(24);
+    animation: fade .3s;
 
     @include mq("md") {
         display: grid;
@@ -143,11 +168,11 @@
     }
 }
 
-.tab__wrap {
+.tab-information__wrap {
     margin: auto;
 }
 
-.tab__title {
+.tab-information__title {
     font-weight: $bold;
     line-height: 1.4;
     border-bottom: 1px solid $green;
@@ -159,11 +184,11 @@
     }
 }
 
-.tab__text {
+.tab-information__text {
     margin-top: rem(8);
 }
 
-.tab__image {
+.tab-information__image {
     margin-top: rem(9);
 
     @include mq("md") {

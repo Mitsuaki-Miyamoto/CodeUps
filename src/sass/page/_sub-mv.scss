@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.sub-mv {
+    height: rem(460);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include mq("md") {
+        height: rem(548);
+    }
+}
+
+.sub-mv.sub-mv--campaign {
+    background-image: url(/assets/images/common/lower-campaign-sp.jpg);
+
+    @include mq("md") {
+        background-image: url(/assets/images/common/lower-campaign-mv.jpg);
+    }
+
+}
+
+.sub-mv.sub-mv--aboutus {
+    background-image: url(/assets/images/common/aboutus-mv-sp.jpg);
+
+    @include mq("md") {
+        background-image: url(/assets/images/common/aboutus-lower-pc.jpg);
+    }
+}
+
+.sub-mv.sub-mv--information {
+    background-image: url(/assets/images/common/info-img.jpg);
+
+
+    @include mq("md") {
+        background-image: url(/assets/images/common/information-page-pc-mv.jpg);
+    }
+}
+
+.sub-mv.sub-mv--blog {
+    background-image: url(/assets/images/common/blog-mv-sp.jpg);
+
+    @include mq("md") {
+        background-image: url(/assets/images/common/blog-mv.jpg);
+    }
+
+}
+
+
+
+.sub-mv__inner {
+    position: relative;
+    height: inherit;
+}
+
+.sub-mv__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: capitalize;
+    font-family: Lato;
+    font-family: "Lato", sans-serif;
+    color: $white;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: $regular;
+
+    @include mq("md") {
+        font-size: rem(80);
+        line-height: 1;
+        top: 59%;
+        font-family: Lato;
+    }
+}
+
+.sub-mv__title.sub-mv__title--aboutus {
+    text-transform: none;
+}
+
+.sub-mv__image {
+    width: 100%;
+    height: inherit;
+}
