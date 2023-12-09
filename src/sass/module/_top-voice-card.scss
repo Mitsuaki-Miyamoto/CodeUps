@@ -5,9 +5,8 @@
 }
 
 .top-voice-card a {
-    padding: rem(24) rem(16);
+    padding: rem(24) rem(24);
     display: block;
-    // box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
 
     @include mq("md") {
         padding: rem(21) rem(19);
@@ -30,6 +29,10 @@
     @include mq("md") {
         margin-top: rem(40);
         line-height: 1.5;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: rem(470);
+        width: 100%;
     }
 }
 
@@ -52,6 +55,7 @@
 
     @include mq("md") {
         display: block;
+        margin-top: rem(30);
     }
 }
 
@@ -86,6 +90,12 @@
 
     @include mq("md") {
         font-size: rem(24);
+        margin-top: rem(10);
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        max-width: rem(264);
+        width: 100%;
     }
 }
 

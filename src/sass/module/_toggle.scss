@@ -18,7 +18,7 @@
     position: relative;
     margin: 0;
     cursor: pointer;
-    padding-left: rem(24);
+    padding-left: rem(30);
     transition: 0.5s;
 }
 
@@ -51,11 +51,21 @@
 .side-archive__wrap {
     margin-top: rem(12);
     width: 40%;
-    // margin-left: rem(10);
+    margin-left: rem(10);
+}
+
+.side-archive__head {
+    margin-left: rem(10);
+    @include mq("md") {
+        margin-left: 0;
+    }
 }
 
 .side-archive__head + * {
     margin-top: rem(25);
+    @include mq("md") {
+        margin-left: 0;
+    }
    }
 
 .toggle__year--first.open,

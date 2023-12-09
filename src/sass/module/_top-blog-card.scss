@@ -8,13 +8,13 @@
     display: block;
     height: 100%;
     padding-top: rem(16);
-    padding-left: rem(22);
-    padding-right: rem(22);
+    padding-left: rem(16);
+    padding-right: rem(16);
     padding-bottom: rem(24);
 
     @include mq("md") {
-        padding-left: rem(14);
-        padding-right: rem(14);
+        padding-left: rem(16);
+        padding-right: rem(16);
     }
 }
 
@@ -64,5 +64,6 @@
 
 .top-blog-card__text {
     margin-top: rem(16);
+    margin-right: rem(3);
 
 }

@@ -1,13 +1,20 @@
 @use "global" as *;
 
-
+.side-reviews__head {
+    margin-left: rem(10);
+    @include mq("md") {
+        margin-left: 0;
+    }
+}
 
 .side-reviews__wrap {
     margin-top: rem(23);
     margin-left: auto;
     margin-right: auto;
+    width: 94%;
     @include mq("md") {
         margin-top: rem(22);
+        width: 100%;
     }
 
 }

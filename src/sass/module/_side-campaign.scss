@@ -1,14 +1,29 @@
 @use "global" as *;
 
+.side-campaign__head {
+    margin-left: rem(10);
+    @include mq("md") {
+        margin-left: 0;
+    }
+}
+
+
 .side-campaign__cards {
     text-align: center;
-    margin-top: rem(21);
+    margin-top: rem(24);
     margin-left: auto;
     margin-right: auto;
+    width: 94%;
+    @include mq("md") {
+        width: 100%;
+    }
 }
 
 .side-campaign__card:not(:first-child) {
-    margin-top: rem(40);
+    margin-top: rem(38);
+    @include mq("md") {
+        margin-top: rem(40);
+    }
 }
 
 .side-campaign__card {
@@ -124,7 +139,7 @@ a .side-campaign__image img {
     flex-grow: 1;
 
     @include mq("md") {
-        margin-top: rem(20);
+        margin-top: rem(16);
         width: rem(248);
         margin-left: auto;
         margin-right: auto;

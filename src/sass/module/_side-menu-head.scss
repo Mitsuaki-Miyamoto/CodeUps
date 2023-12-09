@@ -8,7 +8,7 @@
     line-height: normal;
     border-left: rem(8) solid $green;
     position: relative;
-    padding-left: rem(75);
+    padding-left: rem(73);
     height: rem(50);
     display: flex;
     align-items: center;
@@ -25,7 +25,7 @@
     height: 4.5rem;
     left: clamp(0.96rem, -2.313rem + 3.13vw, 1.5rem);
     position: absolute;
-    top: rem(-15);
+    top: rem(-10);
     // width: 4rem;
     width: rem(55);
 }

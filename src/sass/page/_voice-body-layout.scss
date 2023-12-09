@@ -1,0 +1,11 @@
+@use "global" as *;
+
+// サンクスページのフッター下の余白を埋めるため
+.voice-body-layout {
+    margin-top: rem(54);
+
+    @include mq("md") {
+        margin-top: rem(152);
+    }
+
+}

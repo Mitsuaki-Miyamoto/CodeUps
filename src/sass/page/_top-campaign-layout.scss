@@ -5,5 +5,9 @@
 
     @include mq("md") {
         margin-top: rem(110);
+        
+        @-moz-document url-prefix() {
+            margin-top: 10.875rem;
+        }
     }
 }

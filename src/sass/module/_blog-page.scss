@@ -61,7 +61,7 @@
     margin-top: rem(24);
 
     @include mq("md") {
-        margin-top: rem(40);
+        margin-top: rem(37);
     }
 }
 
@@ -98,7 +98,7 @@
 }
 
 .blog-page-body__text-bottom {
-    margin-top: rem(24);
+    margin-top: rem(20);
 
     @include mq("md") {
         margin-top: rem(30);
@@ -141,8 +141,14 @@
 
 .blog-page-body__campaign {
     margin-top: rem(80);
+    @include mq("md") {
+        margin-top: rem(85);
+    }
 }
 
 .blog-page-body__archive {
     margin-top: rem(80);
+    @include mq("md") {
+        margin-top: rem(85);
+    }
 }

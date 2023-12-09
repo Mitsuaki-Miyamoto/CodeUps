@@ -47,6 +47,14 @@
 
 }
 
+.sub-mv.sub-mv--voice {
+    background-image: url(/assets/images/common/voice-mv-sp.jpg);
+    
+    @include mq("md") {
+        background-image: url(/assets/images/common/voice-mv-pc.jpg);
+    }
+}
+
 
 
 .sub-mv__inner {
