@@ -5,11 +5,12 @@
 }
 
 .top-voice-card a {
-    padding: rem(24) rem(24);
+    padding: rem(16) rem(14);
+    padding-bottom: rem(24);
     display: block;
 
     @include mq("md") {
-        padding: rem(21) rem(19);
+        padding: rem(24) rem(20);
     }
 }
 
@@ -22,15 +23,15 @@
 .top-voice-card__text {
     font-size: rem(16);
     font-weight: $regular;
-    margin-top: rem(16);
+    margin-top: rem(12);
+    padding-right: rem(1);
     display: flex;
     width: 100%;
+    line-height: 1.52;
 
     @include mq("md") {
-        margin-top: rem(40);
+        margin-top: rem(36);
         line-height: 1.5;
-        margin-left: auto;
-        margin-right: auto;
         max-width: rem(470);
         width: 100%;
     }
@@ -51,11 +52,10 @@
     width: 100%;
     font-size: rem(12);
     font-weight: $regular;
-    border-bottom: 1px solid #408F95;
 
     @include mq("md") {
         display: block;
-        margin-top: rem(30);
+        margin-top: rem(23);
     }
 }
 
@@ -75,11 +75,12 @@
 .top-voice-card__tag {
     color: $green;
     border: 1px solid $green;
-    padding: rem(4) rem(12);
+    padding: rem(5) rem(11);
     display: inline-block;
+    margin-top: rem(1);
 
     @include mq("md") {
-        padding: rem(4) rem(14);
+        padding: rem(6) rem(16);
     }
 
 }
@@ -87,12 +88,14 @@
 .top-voice-card__sub-title {
     display: inline-block;
     font-size: rem(16);
+    font-style: normal;
+    font-weight: $normal;
+    margin-top: rem(4);
+    border-bottom: 1px solid #408F95;
 
     @include mq("md") {
         font-size: rem(24);
         margin-top: rem(10);
-        margin-left: auto;
-        margin-right: auto;
         display: block;
         max-width: rem(264);
         width: 100%;
@@ -104,10 +107,27 @@
     overflow: hidden;
     width: 100%;
     margin-left: rem(13);
-
+    margin-top: rem(8);
+    position: relative;
+    height: auto;
+    position: relative;
+    height: auto;
+    aspect-ratio: 180/140;
+    overflow: hidden;
+    
     @include mq("md") {
         aspect-ratio: 180/140;
+        margin-top: 0;
         margin-left: rem(16);
         width: 67%;
     }
+    
+}
+
+.top-voice-card__image img {
+    width: 100%;
+    height: 100%;
+    background-color: $green;
+    display: block;
+    object-fit: cover;
 }

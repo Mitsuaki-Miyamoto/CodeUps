@@ -78,6 +78,7 @@
     @include mq("md") {
         text-align: left;
         padding-left: rem(15);
+        padding-right: rem(15);
         height: rem(60);
     }
 }
@@ -97,10 +98,9 @@
 
     @include mq("md") {
         padding-right: rem(17);
+        padding-left: rem(17);
+        padding-top: rem(10);
+        padding-bottom: rem(10);
     }
 
-}
-
-tbody {
-    // margin-top: rem(40);
 }

@@ -55,6 +55,16 @@
     }
 }
 
+.sub-mv.sub-mv--price {
+    background-image: url(/assets/images/common/price-mv-sp.jpg);
+    
+    @include mq("md") {
+        background-image: url(/assets/images/common/price-mv.jpg);
+        display: block;
+    }
+}
+
+
 
 
 .sub-mv__inner {

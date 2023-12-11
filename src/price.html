@@ -82,7 +82,7 @@
           <div class="drawer-menu__items">
             <div class="drawer-menu__left">
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head drawer-menu__head-top-campaign" href="#top-campaign">キャンペーン</a>
+                <a class="drawer-menu__head drawer-menu__head-top-campaign" href="campaign.html">キャンペーン</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス取得</a></li>
                   <li class="drawer-menu__list"><a href="#">貸切体験ダイビング</a></li>
@@ -90,10 +90,10 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-about">私たちについて</a>
+                <a class="drawer-menu__head" href="aboutus.html">私たちについて</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-information">ダイビング情報</a>
+                <a class="drawer-menu__head" href="information.html">ダイビング情報</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス講習</a></li>
                   <li class="drawer-menu__list"><a href="#">体験ダイビング</a></li>
@@ -101,17 +101,17 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-blog">ブログ</a>
+                <a class="drawer-menu__head" href="blog.html">ブログ</a>
               </div>
             </div>
             <div class="drawer-menu__right">
 
 
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head drawer-menu__head-top-voice" href="#top-voice">お客様の声</a>
+                <a class="drawer-menu__head drawer-menu__head-top-voice" href="voice.html">お客様の声</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-price">料金一覧</a>
+                <a class="drawer-menu__head" href="price.html">料金一覧</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス講習</a></li>
                   <li class="drawer-menu__list"><a href="#">体験ダイビング</a></li>
@@ -137,22 +137,33 @@
     </div>
   </header>
   <main>
-    <section class="price-mv">
-      <div class="price-mv__inner">
-        <h1 class="price-mv__title">price</h1>
-        <div class="price-mv__image">
-          <picture>
-            <source srcset="./assets/images/common/price-mv.jpg" media="(min-width:768px)">
-            <img src="./assets/images/common/price-mv-sp.jpg" alt="黄色い魚が2匹泳いでいる様子">
-          </picture>
-        </div>
+    <!-- 下層ページのメインビュー -->
+    <section class="sub-mv sub-mv--price">
+      <div class="sub-mv__inner">
+        <h1 class="sub-mv__title">price</h1>
       </div>
     </section>
 
-    <section class="price-body">
-      <div class="price-body__inner inner">
-        <div class="price-body__breadcreamb">TOP > 料金一覧</div>
+    <!-- パンくず -->
+    <div class="breadcrumb breadcrumb-layout">
+      <div class="breadcrumb__inner inner">
+        <!-- Breadcrumb NavXTで出力される部分 ここから -->
+        <span>
+          <a href="index.html">
+            <span>TOP</span>
+          </a>
+        </span>
+        &nbsp;&gt;&nbsp;
+        <span>
+          <span class="current-item">料金一覧</span>
+        </span>
+        <!-- Breadcrumb NavXTで出力される部分 ここまで -->
+      </div>
+    </div>
 
+    <!-- メインコンテンツ -->
+    <section class="price-body price-body-layout">
+      <div class="price-body__inner inner">
         <div class="price-body__wrap">
           <!-- テーブル(SP) -->
           <table class="price-body__table table-sp u-mobile">
@@ -208,7 +219,7 @@
             <tbody class="table-sp__body">
               <tr>
                 <td class="table-sp__category" colspan="2">
-                  <p class="table-sp__head">ライセンス講習</p>
+                  <p class="table-sp__head">ファインダイビング</p>
                 </td>
               </tr>
               <tr>

@@ -48,10 +48,11 @@
 .page {
     cursor: pointer;
 }
+
 .pagenavi__inner a:first-child {
     margin-right: rem(28);
     @include mq("md") {
-        margin-right: rem(50);
+        // margin-right: rem(50);
     }
 }
 .pagenavi__inner a:last-child {

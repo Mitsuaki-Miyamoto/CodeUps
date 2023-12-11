@@ -4,7 +4,7 @@
     position: relative;
 }
 
-.voice-body::after{
+.voice-body::after {
     background-image: url(/assets/images/common/campaign-fish.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -12,70 +12,23 @@
     content: "";
     position: absolute;
     width: 7.5rem;
-    top: -1%;
+    top: -1.3%;
     left: 4%;
     height: 3%;
 
     @include mq("md") {
-        top: -4%;
+        top: -4.5%;
         height: 8%;
         width: 19.5rem;
         left: 7%;
     }
 }
 
-
-.voice-body__tabs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: rem(14);
-    column-gap: rem(21);
-    place-items: center;
-
-    @include mq("md") {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: rem(32);
-        max-width: rem(730);
-    }
-}
-
-.voice-body__tab {
-    width: rem(162);
-    color: $green;
-    border: 1px solid;
-    font-size: rem(14);
-    font-style: normal;
-    font-weight: $regular;
-    display: inline;
-    cursor: pointer;
-    text-align: center;
-    padding: rem(6.5);
-    transition: 0.3s;
-}
-
-.voice-body__tab:hover{
-    color: $white;
-    background-color: $green;
-    transition: 0.3s;
-}
-
-.voice-body__tab--active {
-    width: rem(162);
-    background-color: $green;
-    color: $white;
-    font-size: rem(14);
-    font-style: normal;
-    font-weight: $regular;
-    display: inline;
-    cursor: pointer;
-    text-align: center;
-}
-
 .voice-body__cards {
     margin-top: rem(40);
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: rem(40);
+    row-gap: rem(39);
     column-gap: rem(40);
     position: relative;
 

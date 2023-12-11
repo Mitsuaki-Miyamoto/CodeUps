@@ -11,3 +11,9 @@
         margin-top: rem(80);
     }
 }
+
+.pagenavi-layout.pagenavi-layout--voice {
+    @include mq("md") {
+        margin-top: rem(75);
+    }
+}

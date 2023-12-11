@@ -83,7 +83,7 @@ $(function () {
 
   // top-campaignスライダー
   let topCampaign__body = new Swiper(".js-swiper-container", {
-    slidesPerView: 1.2,
+    slidesPerView: "auto",
     spaceBetween: 24,
     loop: true,
     speed: 800,

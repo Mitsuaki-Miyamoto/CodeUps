@@ -7,7 +7,7 @@
 }
 
 
-.campaign-body__tabs {
+.campaign-body__category {
     margin-top: rem(52);
     margin-left: auto;
     margin-right: auto;
@@ -25,32 +25,6 @@
         max-width: rem(730);
         margin-left: 0;
     }
-}
-
-.campaign-body__tab {
-    width: rem(162);
-    color: $green;
-    border: 1px solid;
-    font-size: rem(14);
-    font-style: normal;
-    font-weight: $regular;
-    display: inline;
-    cursor: pointer;
-    text-align: center;
-    padding: rem(6) 0;
-}
-
-.campaign-body__tab--active {
-    width: rem(162);
-    background-color: $green;
-    color: $white;
-    font-size: rem(14);
-    font-style: normal;
-    font-weight: $regular;
-    display: inline;
-    cursor: pointer;
-    text-align: center;
-    z-index: 1;
 }
 
 .campaign-body__cards {

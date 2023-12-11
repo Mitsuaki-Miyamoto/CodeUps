@@ -32,16 +32,27 @@
 .top-price__image {
     overflow: hidden;
     width: 100%;
+    position: relative;
+    height: auto;
 
     @include mq("md") {
         margin-left: rem(90);
     }
 }
 
+.top-price__imagePc {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .top-price__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: $green;
+    display: block;
 }
 
 .top-price__body {
