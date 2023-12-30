@@ -171,6 +171,15 @@
 .tab-information__wrap {
     margin: auto;
 }
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+
+}
 
 .tab-information__title {
     font-weight: $bold;

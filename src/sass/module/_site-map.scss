@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.site-map {
+    background: #fff;
+    color: black;
+    padding-bottom: 0;
+    padding-top: 0;
+    position: relative;
+}
+
+.site-map::after {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 10%;
+    left: -2%;
+    position: absolute;
+    top: -3%;
+    width: 10.5rem;
+
+    @include mq("md") {
+        height: 46%;
+        left: calc(50% - min(49vw, 39.875rem));
+        top: -45%;
+        width: 19.5rem;
+    }
+
+}
+
+.site-map__nav {
+    color: black;
+}

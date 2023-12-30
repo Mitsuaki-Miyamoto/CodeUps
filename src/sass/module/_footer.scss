@@ -27,10 +27,6 @@
     }
 }
 
-.footer__body {
-
-}
-
 .footer__head {
     @include mq("md") {
         display: flex;
@@ -43,10 +39,6 @@
     @include mq("md") {
         max-width: rem(200);
     }
-}
-
-.footer__logo img {
-   
 }
 
 .footer__sns {

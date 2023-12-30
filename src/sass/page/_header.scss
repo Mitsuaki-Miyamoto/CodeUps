@@ -27,7 +27,7 @@
     // background: $green;
     @include mq("md") {
         padding-left: rem(40);
-        padding-right: min(40rem, 0.5vw);
+        padding-right: min(40rem, 1.5vw);
     }
 }
 

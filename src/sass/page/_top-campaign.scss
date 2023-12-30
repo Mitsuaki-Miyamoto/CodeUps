@@ -7,7 +7,7 @@
 .top-campaign__inner {
     margin: auto;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .top-campaign__body {
@@ -27,8 +27,6 @@
 
 .top-campaign__card:not(:first-child) {}
 
-.top-campaign-card__image img {}
-
 .top-campaign__swiper-buttons {
     max-width: rem(300);
     position: absolute;
@@ -40,6 +38,15 @@
         right: rem(35);
     }
 }
+
+@-moz-document url-prefix(){
+    .top-campaign__swiper-buttons{
+        @include mq("md") {
+            top: 1px;
+        }
+    }
+}
+
 
 .top-campaign__button {
     text-align: center;

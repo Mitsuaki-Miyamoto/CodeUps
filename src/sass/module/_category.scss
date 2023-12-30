@@ -17,7 +17,8 @@
 }
 
 .category__list {
-    width: rem(162);
+    // width: rem(162);
+    width: 100%;
     color: $green;
     border: 1px solid;
     font-size: rem(14);
@@ -26,9 +27,9 @@
     display: inline;
     cursor: pointer;
     text-align: center;
-    padding: rem(6.5);
     transition: 0.3s;
     background-color: $white;
+    padding: rem(6.5);
 }
 
 .category__list:hover {
@@ -38,7 +39,8 @@
 }
 
 .category__list--active {
-    width: rem(162);
+    // width: rem(162);
+    width: 100%;
     background-color: $green;
     color: $white;
     font-size: rem(14);

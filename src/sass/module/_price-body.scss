@@ -1,18 +1,18 @@
 @use "global" as *;
 
 .price-body__inner {
-    display: grid;
+
 }
 
 
 .price-body__wrap {
-    // margin-top: rem(52);
     margin-left: auto;
     margin-right: auto;
     position: relative;
 
     @include mq("md") {
-        // margin-top: rem(150);
+        position: relative;
+        width: 43.75rem;
     }
 }
 

@@ -14,7 +14,7 @@
 }
 
 
-.blog-cards__card.top-blog-card:nth-of-type(n+4) {
+.blog-cards__card.blog-card:nth-of-type(n+4) {
     @include mq("md") {
         margin-top: 34px;
     }
@@ -28,4 +28,9 @@
         margin-top: 0;
     }
 
+}
+
+
+.blog-card--opacity1.blog-cards__card a:hover img{
+    opacity: 1;
 }

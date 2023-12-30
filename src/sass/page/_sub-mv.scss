@@ -64,6 +64,30 @@
     }
 }
 
+.sub-mv.sub-mv--faq {
+    background-image: url(/assets/images/common/faq-sp.jpg);
+    
+    @include mq("md") {
+        background-image: url(/assets/images/common/faq-pc.jpg);
+    }
+
+}
+
+.sub-mv.sub-mv--contact {
+    background-image: url(/assets/images/common/contact-page.jpg);
+    @include mq("md") {
+        background-image: url(/assets/images/common/contact-page-pc.jpg);
+    }
+
+}
+
+.sub-mv.sub-mv--site-map {
+    background-image: url(/assets/images/common/site-map-sp.jpg);
+
+    @include mq("md") {
+        background-image: url(/assets/images/common/site-map-pc.jpg);
+    }
+}
 
 
 
@@ -100,4 +124,22 @@
 .sub-mv__image {
     width: 100%;
     height: inherit;
+}
+
+.sub-mv__title.sub-mv__title--faq {
+    text-transform: uppercase;
+}
+
+.sub-mv.sub-mv--privacy-policy {
+    background-image: url(/assets/images/common/privacy-policy-sp.jpg);
+    @include mq("md") {
+        background-image: url(/assets/images/common/privacy-policy-pc.jpg);
+    }
+}
+
+.sub-mv.sub-mv--terms {
+    background-image: url(/assets/images/common/privacy-policy-sp.jpg);
+    @include mq("md") {
+        background-image: url(/assets/images/common/privacy-policy-pc.jpg);
+    }
 }

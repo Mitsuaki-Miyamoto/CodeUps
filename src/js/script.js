@@ -83,7 +83,7 @@ $(function () {
 
   // top-campaignスライダー
   let topCampaign__body = new Swiper(".js-swiper-container", {
-    slidesPerView: "auto",
+    slidesPerView: 1.2,
     spaceBetween: 24,
     loop: true,
     speed: 800,
@@ -277,17 +277,18 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 
-//トグル(2カラム)
+//トグル
 jQuery(function ($) {
-  // 最初にすべての兄弟要素を閉じる
-  // $('.js-toggle').siblings().hide();
+
+  // 最初にすべての .js-toggle の兄弟要素を隠す
+  $('.js-toggle').siblings().hide();
 
    // 最初の .js-toggle の兄弟要素を表示する
  $('.js-toggle').first().siblings().show();
 
   $('.js-toggle').on('click', function () {
     /* クリックでコンテンツを開閉 */
-    $(this).siblings().slideToggle('300');
+    $(this).siblings().slideToggle('600');
     /* 矢印の向きを変更 */
     $(this).toggleClass('open');
   });
@@ -304,9 +305,9 @@ $(function () {
   // タイトルをクリックすると
   $(".js-accordion-title").on("click", function () {
    // クリックした次の要素を開閉
-   $(this).next().slideToggle(300);
+   $(this).next().slideToggle(600);
    // タイトルにopenクラスを付け外しして矢印の向きを変更
-   $(this).toggleClass("open", 300);
+   $(this).toggleClass("open", 600);
   });
   // 2つ目以降のコンテンツは非表示
   $(".js-accordion-faq-item:not(:first) .js-accordion-faq-content").css("display", "none");
@@ -318,3 +319,4 @@ $(function(){
     $(this).blur();
   });
 });
+

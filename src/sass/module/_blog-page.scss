@@ -57,7 +57,7 @@
     }
 }
 
-.blog-page-body__cards {
+.blog-page-body__contents {
     margin-top: rem(24);
 
     @include mq("md") {
@@ -65,7 +65,7 @@
     }
 }
 
-.blog-page-body__card:not(:first-child) {
+.blog-page-body__contents figure:not(:first-child) {
     margin-top: rem(24);
 
     @include mq("md") {
@@ -73,23 +73,18 @@
     }
 }
 
-.blog-page-body__image {
+.blog-page-body__contents figure img {
     width: 100%;
-}
-.blog-page-body__image img{
     width: 100%;
     object-fit: cover;
     aspect-ratio: 345/231;
-    
+
     @include mq("md") {
         aspect-ratio: 700/468;
     }
-
 }
 
-
-
-.blog-page-body__text {
+.blog-page-body__contents p {
     margin-top: rem(24);
 
     @include mq("md") {
@@ -97,34 +92,68 @@
     }
 }
 
-.blog-page-body__text-bottom {
-    margin-top: rem(20);
-
-    @include mq("md") {
-        margin-top: rem(30);
-    }
-}
-
-.blog-page-body__lists {
+.blog-page-body__contents ul {
     margin-top: rem(24);
 
     @include mq("md") {
         margin-top: rem(40);
+        margin-left: rem(20);
     }
 }
 
-.blog-page-body__list {
+.blog-page-body__contents li {
     margin-top: rem(7);
     line-height: 1.5;
+    text-indent: rem(-25);
 }
 
-.blog-page-body__list::before {
+.blog-page-body__contents li::before {
     content: "";
     background-image: url(/assets/images/common/hitode-icon.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
-    padding-left: 26px;
+    background-position:rem(-10) center;
+    padding-left: rem(30);
+}
+
+.blog-page-body__button-area {
+    margin-top: rem(40);
+
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+
+.blog-page-body__button-inner {
+    margin: auto;
+    max-width: rem(334);
+    width: 100%;
+    grid-gap: 0.75rem;
+    display: grid;
+    gap: rem(10);
+    grid-auto-rows: minmax(2.375rem, auto);
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 21.5rem;
+
+    @include mq(md){
+        max-width: rem(450);
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+.blog-page-body__button-inner a{
+    transition: 0.3s ease-in-out;
+}
+
+.blog-page-body__button-inner a:hover{
+    transition: 0.3s ease-in-out;
+    background-color: $green;
+    color: $white;
+}
+
+.blog-page-body__button-inner.pagenavi__inner--prev-next{
+    grid-template-columns: repeat(2, 1fr);
+    max-width: rem(230);
 }
 
 .blog-page-body__side {
@@ -141,6 +170,7 @@
 
 .blog-page-body__campaign {
     margin-top: rem(80);
+
     @include mq("md") {
         margin-top: rem(85);
     }
@@ -148,6 +178,7 @@
 
 .blog-page-body__archive {
     margin-top: rem(80);
+
     @include mq("md") {
         margin-top: rem(85);
     }

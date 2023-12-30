@@ -57,7 +57,7 @@
           <li class="header-nav__item"><a href="blog.html">blog<span>ブログ</span></a></li>
           <li class="header-nav__item"><a href="voice.html">voice<span>お客様の声</span></a></li>
           <li class="header-nav__item"><a href="price.html">price<span>料金一覧</span></a></li>
-          <li class="header-nav__item header-nav__item--faq"><a href="#contact">faq<span>よくある質問</span></a>
+          <li class="header-nav__item header-nav__item--faq"><a href="faq.html">faq<span>よくある質問</span></a>
           </li>
           <li class="header-nav__item"><a href="">contact<span>お問合せ</span></a></li>
         </ul>
@@ -73,12 +73,6 @@
 
       <!-- ドロワー -->
       <div class="header__drawer drawer-menu js-drawer u-mobile">
-        <div class="header__drawer-header">
-          <div class="drawer-menu__image">
-            <a href=""><img src="./assets/images/common/logo.png" alt="CodeUps"></a>
-          </div>
-
-        </div>
         <div class="drawer-menu__inner">
           <div class="drawer-menu__items">
             <div class="drawer-menu__left">
@@ -129,7 +123,10 @@
                 <a class="drawer-menu__head" href="terms.html">利用規約</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">お問い合わせ</a>
+                <a class="drawer-menu__head" href="#">お問合せ</a>
+              </div>
+              <div class="drawer-menu__item">
+                <a class="drawer-menu__head" href="site-map.html">サイトマップ</a>
               </div>
             </div>
           </div>
@@ -172,39 +169,32 @@
         <div class="blog-page-body__main">
           <time class="blog-page-body__date" datetime="2023-11-17">2023.11.17</time>
           <h2 class="blog-page-body__title">ライセンス取得</h2>
-          <ul class="blog-page-body__cards">
-            <li class="blog-page-body__card">
-              <div class="blog-page-body__image">
-                <img src="./assets/images/common/blog--page.jpg" alt="イソギンチャクが写っている様子">
-              </div>
+          <div class="blog-page-body__contents">
+            <figure>
+              <img src="./assets/images/common/blog--page.jpg" alt="イソギンチャクが写っている様子">
               <p class="blog-page-body__text">
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
               </p>
-            </li>
-            <li class="blog-page-body__card">
-              <div class="blog-page-body__image">
-                <img src="./assets/images/common/blog--page.jpg" alt="イソギンチャクが写っている様子">
-              </div>
-              <p class="blog-page-body__text">
+            </figure>
+            <figure>
+              <img src="./assets/images/common/blog--page.jpg" alt="イソギンチャクが写っている様子">
+              <p>
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
               </p>
-            </li>
-          </ul>
-
-          <ul class="blog-page-body__lists">
-            <li class="blog-page-body__list">リスト1</li>
-            <li class="blog-page-body__list">リスト2</li>
-            <li class="blog-page-body__list">リスト3</li>
-          </ul>
-
-          <div class="blog-page-body__text-bottom">
+            </figure>
+            <ul>
+              <li>リスト1</li>
+              <li>リスト2</li>
+              <li>リスト3</li>
+            </ul>
             <p>
               ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
             </p>
+
           </div>
-          <!-- ページネーション -->
-          <div class="pagenavi pagenavi-layout pagenavi-layout--blogPage">
-            <div class="pagenavi__inner pagenavi__inner--prev-next">
+          <!-- 前後ページ -->
+          <div class="blog-page-body__button-area">
+            <div class="blog-page-body__button-inner pagenavi__inner--prev-next">
               <a class="previouspostslink" rel="prev" href="前のページへ"></a>
               <a class="nextpostslink" rel="next" href="次のページへ"></a>
             </div>
@@ -225,7 +215,7 @@
                   </div>
                   <div class="side-popular__texts">
                     <time class="side-popular__date" datetime="2023-11-17">2023.11.17</time>
-                    <div class="side-popular__title">ライセンス取得</div>
+                    <p class="side-popular__title">ライセンス取得</p>
                   </div>
                 </a>
               </li>
@@ -234,7 +224,7 @@
                   <div class="side-popular__image"><img src="./assets/images/common/blog2.jpg" alt="ウミガメと泳ぐ"></div>
                   <div class="side-popular__texts">
                     <time class="side-popular__date" datetime="2023-11-17">2023.11.17</time>
-                    <div class="side-popular__title">ウミガメと泳ぐ</div>
+                    <p class="side-popular__title">ウミガメと泳ぐ</p>
                   </div>
                 </a>
               </li>
@@ -243,7 +233,7 @@
                   <div class="side-popular__image"><img src="./assets/images/common/blog3.jpg" alt="カクレクマノミ"></div>
                   <div class="side-popular__texts">
                     <time class="side-popular__date" datetime="2023-11-17">2023.11.17</time>
-                    <div class="side-popular__title">カクレクマノミ</div>
+                    <p class="side-popular__title">カクレクマノミ</p>
                   </div>
                 </a>
               </li>
@@ -254,18 +244,16 @@
             <div class="side-reviews__head side-menu-head">口コミ</div>
             <ul class="side-reviews__wrap">
               <li class="side-reviews__card reviews-card">
-                <a href="#">
-                  <div class="reviews-card__body">
-                    <div class="reviews-card__image">
-                      <img src="./assets/images/common/side-reviews.jpg" alt="30代のカップルが腕を組んでいる様子">
-                    </div>
-                    <div class="reviews-card__age">30代(カップル)</div>
-                    <h3 class="reviews-card__title">ここにタイトルが入ります。ここにタイトル</h3>
-                    <div class="reviews-card__button">
-                      <a href="#" class="button"><span>View more</span></a>
-                    </div>
+                <div class="reviews-card__body">
+                  <div class="reviews-card__image">
+                    <img src="./assets/images/common/side-reviews.jpg" alt="30代のカップルが腕を組んでいる様子">
                   </div>
-                </a>
+                  <p class="reviews-card__age">30代(カップル)</p>
+                  <h3 class="reviews-card__title">ここにタイトルが入ります。ここにタイトル</h3>
+                  <div class="reviews-card__button">
+                    <a href="voice.html" class="button"><span>View more</span></a>
+                  </div>
+                </div>
               </li>
             </ul>
             <!-- キャンペーン -->
@@ -273,42 +261,42 @@
               <div class="side-campaign__head side-menu-head">キャンペーン</div>
               <ul class="side-campaign__cards">
                 <li class="side-campaign__card">
-                  <a class="side-campaign__container" href="#">
+                  <div class="side-campaign__container" href="#">
                     <div class="side-campaign__image">
                       <img src="./assets/images/common/campaign_1.jpg" alt="海中を綺麗な魚が泳いでいる様子">
                     </div>
                     <div class="side-campaign__body">
                       <h3 class="side-campaign__title">ライセンス取得</h3>
                       <div class="side-campaign__content">
-                        <div class="side-campaign__kinds">全部コミコミ(お一人様)</div>
+                        <p class="side-campaign__kinds">全部コミコミ(お一人様)</p>
                         <div class="side-campaign__price price">
                           <div class="price__before price__before--blog">¥56,000</div>
                           <div class="price__after price__after--blog">¥46,000</div>
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 </li>
                 <li class="side-campaign__card">
-                  <a class="side-campaign__container" href="#">
+                  <div class="side-campaign__container" href="#">
                     <div class="side-campaign__image">
                       <img src="./assets/images/common/campaign_2.jpg" alt="海中を綺麗な魚が泳いでいる様子">
                     </div>
                     <div class="side-campaign__body">
                       <h3 class="side-campaign__title">貸切体験ダイビング</h3>
                       <div class="side-campaign__content">
-                        <div class="side-campaign__kinds">全部コミコミ(お一人様)</div>
+                        <p class="side-campaign__kinds">全部コミコミ(お一人様)</p>
                         <div class="side-campaign__price price">
                           <div class="price__before price__before--blog">¥24,000</div>
                           <div class="price__after price__after--blog">¥18,000</div>
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </div>
                 </li>
               </ul>
               <div class="side-campaign__button">
-                <a href="#" class="button"><span>View more</span></a>
+                <a href="campaign.html" class="button"><span>View more</span></a>
               </div>
             </div>
 
@@ -387,67 +375,72 @@
                   src="./assets/images/common/instagram.svg" alt="instagram"></a></li>
           </ul>
         </div>
-        <nav class="footer__nav footer-nav">
-          <div class="footer-nav__left">
-            <div class="footer-nav__item">
+        <nav class="footer__nav nav-menu">
+          <div class="nav-menu__left">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">キャンペーン</a></li>
-                <li class="footer-nav__list"><a href="#">ライセンス取得</a></li>
-                <li class="footer-nav__list"><a href="#">貸切体験ダイビング</a></li>
-                <li class="footer-nav__list"><a href="#">ナイトダイビング</a></li>
+                <li class="nav-menu__head"><a href="#">キャンペーン</a></li>
+                <li class="nav-menu__list"><a href="#">ライセンス取得</a></li>
+                <li class="nav-menu__list"><a href="#">貸切体験ダイビング</a></li>
+                <li class="nav-menu__list"><a href="#">ナイトダイビング</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">私たちについて</a></li>
+                <li class="nav-menu__head"><a href="#">私たちについて</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">ダイビング情報</a></li>
-                <li class="footer-nav__list"><a href="#">ライセンス講習</a></li>
-                <li class="footer-nav__list"><a href="#">体験ダイビング</a></li>
-                <li class="footer-nav__list"><a href="#">ファンダイビング</a></li>
+                <li class="nav-menu__head"><a href="#">ダイビング情報</a></li>
+                <li class="nav-menu__list"><a href="#">ライセンス講習</a></li>
+                <li class="nav-menu__list"><a href="#">体験ダイビング</a></li>
+                <li class="nav-menu__list"><a href="#">ファンダイビング</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">ブログ</a></li>
+                <li class="nav-menu__head"><a href="#">ブログ</a></li>
               </ul>
             </div>
           </div>
-          <div class="footer-nav__right">
-            <div class="footer-nav__item">
+          <div class="nav-menu__right">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">お客様の声</a></li>
+                <li class="nav-menu__head"><a href="#">お客様の声</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">料金一覧</a></li>
-                <li class="footer-nav__list"><a href="#">ライセンス講習</a></li>
-                <li class="footer-nav__list"><a href="#">体験ダイビング</a></li>
-                <li class="footer-nav__list"><a href="#">ファンダイビング</a></li>
+                <li class="nav-menu__head"><a href="#">料金一覧</a></li>
+                <li class="nav-menu__list"><a href="#">ライセンス講習</a></li>
+                <li class="nav-menu__list"><a href="#">体験ダイビング</a></li>
+                <li class="nav-menu__list"><a href="#">ファンダイビング</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">よくある質問</a></li>
+                <li class="nav-menu__head"><a href="#">よくある質問</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">プライバシー<br>ポリシー</a></li>
+                <li class="nav-menu__head"><a href="#">プライバシー<br>ポリシー</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">利用規約</a></li>
+                <li class="nav-menu__head"><a href="#">利用規約</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">お問合せ</a></li>
+                <li class="nav-menu__head"><a href="#">お問合せ</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="site-map.html">サイトマップ</a></li>
               </ul>
             </div>
           </div>

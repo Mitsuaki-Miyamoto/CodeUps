@@ -56,7 +56,7 @@
           <li class="header-nav__item"><a href="blog.html">blog<span>ブログ</span></a></li>
           <li class="header-nav__item"><a href="voice.html">voice<span>お客様の声</span></a></li>
           <li class="header-nav__item"><a href="price.html">price<span>料金一覧</span></a></li>
-          <li class="header-nav__item header-nav__item--faq"><a href="#contact">faq<span>よくある質問</span></a>
+          <li class="header-nav__item header-nav__item--faq"><a href="faq.html">faq<span>よくある質問</span></a>
           </li>
           <li class="header-nav__item"><a href="">contact<span>お問合せ</span></a></li>
         </ul>
@@ -72,17 +72,11 @@
 
       <!-- ドロワー -->
       <div class="header__drawer drawer-menu js-drawer u-mobile">
-        <div class="header__drawer-header">
-          <div class="drawer-menu__image">
-            <a href=""><img src="./assets/images/common/logo.png" alt="CodeUps"></a>
-          </div>
-
-        </div>
         <div class="drawer-menu__inner">
           <div class="drawer-menu__items">
             <div class="drawer-menu__left">
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head drawer-menu__head-top-campaign" href="#top-campaign">キャンペーン</a>
+                <a class="drawer-menu__head drawer-menu__head-top-campaign" href="campaign.html">キャンペーン</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス取得</a></li>
                   <li class="drawer-menu__list"><a href="#">貸切体験ダイビング</a></li>
@@ -90,10 +84,10 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-about">私たちについて</a>
+                <a class="drawer-menu__head" href="aboutus.html">私たちについて</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-information">ダイビング情報</a>
+                <a class="drawer-menu__head" href="information.html">ダイビング情報</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス講習</a></li>
                   <li class="drawer-menu__list"><a href="#">体験ダイビング</a></li>
@@ -101,17 +95,17 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-blog">ブログ</a>
+                <a class="drawer-menu__head" href="blog.html">ブログ</a>
               </div>
             </div>
             <div class="drawer-menu__right">
 
 
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head drawer-menu__head-top-voice" href="#top-voice">お客様の声</a>
+                <a class="drawer-menu__head drawer-menu__head-top-voice" href="voice.html">お客様の声</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#top-price">料金一覧</a>
+                <a class="drawer-menu__head" href="price.html">料金一覧</a>
                 <ul>
                   <li class="drawer-menu__list"><a href="#">ライセンス講習</a></li>
                   <li class="drawer-menu__list"><a href="#">体験ダイビング</a></li>
@@ -119,16 +113,19 @@
                 </ul>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">よくある質問</a>
+                <a class="drawer-menu__head" href="faq.html">よくある質問</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">プライバシー<br class="u-mobile">ポリシー</a>
+                <a class="drawer-menu__head" href="privacy-policy.html">プライバシー<br class="u-mobile">ポリシー</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">利用規約</a>
+                <a class="drawer-menu__head" href="terms.html">利用規約</a>
               </div>
               <div class="drawer-menu__item">
-                <a class="drawer-menu__head" href="#">お問い合わせ</a>
+                <a class="drawer-menu__head" href="contact.html">お問合せ</a>
+              </div>
+              <div class="drawer-menu__item">
+                <a class="drawer-menu__head" href="site-map.html">サイトマップ</a>
               </div>
             </div>
           </div>
@@ -137,115 +134,109 @@
     </div>
   </header>
   <main>
-    <div class="site-map-mv sub-mv">
-      <div class="site-map-mv__inner">
-        <h1 class="site-map-mv__title sub-mv-title">Site MAP</h1>
-        <div class="site-map-mv__image">
-          <picture>
-            <source srcset="./assets/images/common/site-map-pc.jpg" media="(min-width:768px)">
-            <img src="./assets/images/common/site-map-sp.jpg" alt="綺麗な砂浜が映っている様子">
-          </picture>
-        </div>
+
+    <!-- 下層ページのメインビュー -->
+    <section class="sub-mv sub-mv--site-map">
+      <div class="sub-mv__inner">
+        <h1 class="sub-mv__title">Site MAP</h1>
+      </div>
+    </section>
+    <!-- パンくず -->
+    <div class="breadcrumb breadcrumb-layout">
+      <div class="breadcrumb__inner inner">
+        <!-- Breadcrumb NavXTで出力される部分 ここから -->
+        <span>
+          <a href="index.html">
+            <span>TOP</span>
+          </a>
+        </span>
+        &nbsp;&gt;&nbsp;
+        <span>
+          <span class="current-item">サイトマップ</span>
+        </span>
+        <!-- Breadcrumb NavXTで出力される部分 ここまで -->
       </div>
     </div>
-    <!-- パンくず -->
-    <div class="breadcrumb  breadcrumb-layout">
-      <div class="breadcrumb__inner inner">TOP > サイトマップ</div>
-    </div>
 
-
-
-    <section class="footer footer--siteMap">
-      <div class="footer__inner inner">
-        <div class="footer__body">
-          <nav class="footer__nav footer-nav footer-nav--siteMap">
-            <div class="footer-nav__left footer-nav__left--siteMap">
-              <div class="footer-nav__item">
+    <!-- サイトマップ -->
+    <section class="site-map site-map-layout">
+      <div class="site-map__inner inner">
+        <div class="site-map__body">
+          <nav class="site-map__nav nav-menu">
+            <div class="nav-menu__left nav-menu__left--gap">
+              <div class="nav-menu__item">
                 <ul>
-                  <li class="footer-nav__head footer-nav__head--siteMap"><a href="#">キャンペーン</a></li>
-                  <li class="footer-nav__list"><a href="#">ライセンス取得</a></li>
-                  <li class="footer-nav__list"><a href="#">貸切体験ダイビング</a></li>
-                  <li class="footer-nav__list"><a href="#">ナイトダイビング</a></li>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="campaign.html">キャンペーン</a></li>
+                  <li class="nav-menu__list"><a href="#">ライセンス取得</a></li>
+                  <li class="nav-menu__list"><a href="#">貸切体験ダイビング</a></li>
+                  <li class="nav-menu__list"><a href="#">ナイトダイビング</a></li>
                 </ul>
               </div>
-              <div class="footer-nav__item">
+              <div class="nav-menu__item">
                 <ul>
-                  <li class="footer-nav__head footer-nav__head--siteMap"><a href="#">私たちについて</a></li>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="aboutus.html">私たちについて</a></li>
                 </ul>
               </div>
-              <div class="footer-nav__item">
+              <div class="nav-menu__item">
                 <ul>
-                  <li class="footer-nav__head footer-nav__head--siteMap"><a href="#">ダイビング情報</a></li>
-                  <li class="footer-nav__list"><a href="#">ライセンス講習</a></li>
-                  <li class="footer-nav__list"><a href="#">体験ダイビング</a></li>
-                  <li class="footer-nav__list"><a href="#">ファンダイビング</a></li>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="information.html">ダイビング情報</a></li>
+                  <li class="nav-menu__list"><a href="#">ライセンス講習</a></li>
+                  <li class="nav-menu__list"><a href="#">体験ダイビング</a></li>
+                  <li class="nav-menu__list"><a href="#">ファンダイビング</a></li>
                 </ul>
               </div>
-              <div class="footer-nav__item">
+              <div class="nav-menu__item">
                 <ul>
-                  <li class="footer-nav__head footer-nav__head--siteMap"><a href="#">ブログ</a></li>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="blog.html">ブログ</a></li>
                 </ul>
               </div>
             </div>
-            <div class="footer-nav__right footer-nav__right--siteMap">
-              <div class="footer-nav__item">
+            <div class="nav-menu__right nav-menu__right--margin">
+              <div class="nav-menu__item">
                 <ul>
-                  <li class="footer-nav__head footer-nav__head--siteMap"><a href="#">お客様の声</a></li>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="voice.html">お客様の声</a></li>
                 </ul>
               </div>
-              <div class="footer-nav__item">
+              <div class="nav-menu__item">
                 <ul>
-                  <li class="footer-nav__head footer-nav__head--siteMap"><a href="#">料金一覧</a></li>
-                  <li class="footer-nav__list"><a href="#">ライセンス講習</a></li>
-                  <li class="footer-nav__list"><a href="#">体験ダイビング</a></li>
-                  <li class="footer-nav__list"><a href="#">ファンダイビング</a></li>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="price.html">料金一覧</a></li>
+                  <li class="nav-menu__list"><a href="#">ライセンス講習</a></li>
+                  <li class="nav-menu__list"><a href="#">体験ダイビング</a></li>
+                  <li class="nav-menu__list"><a href="#">ファンダイビング</a></li>
                 </ul>
               </div>
-              <div class="footer-nav__item">
+              <div class="nav-menu__item">
                 <ul>
-                  <li class="footer-nav__head footer-nav__head--siteMap"><a href="#">よくある質問</a></li>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="faq.html">よくある質問</a></li>
                 </ul>
               </div>
-              <div class="footer-nav__item">
+              <div class="nav-menu__item">
                 <ul>
-                  <li class="footer-nav__head footer-nav__head--siteMap"><a href="#">プライバシー<br class="u-mobile">ポリシー</a>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="privacy-policy.html">プライバシー<br
+                        class="u-mobile">ポリシー</a>
                   </li>
                 </ul>
               </div>
-              <div class="footer-nav__item">
+              <div class="nav-menu__item">
                 <ul>
-                  <li class="footer-nav__head footer-nav__head--siteMap"><a href="#">利用規約</a></li>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="terms.html">利用規約</a></li>
                 </ul>
               </div>
-              <div class="footer-nav__item">
+              <div class="nav-menu__item">
                 <ul>
-                  <li class="footer-nav__head footer-nav__head--siteMap"><a href="#">お問合せ</a></li>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="contact.html">お問合せ</a></li>
+                </ul>
+              </div>
+              <div class="nav-menu__item">
+                <ul>
+                  <li class="nav-menu__head nav-menu__head--color"><a href="site-map.html">サイトマップ</a></li>
                 </ul>
               </div>
             </div>
-
           </nav>
         </div>
-        <!-- <div class="footer__copyright">
-          <small>Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
-        </div> -->
       </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <section id="contact" class="contact contact-layout contact-layout--siteMap">
       <div class="contact__inner inner">
@@ -300,72 +291,151 @@
                   src="./assets/images/common/instagram.svg" alt="instagram"></a></li>
           </ul>
         </div>
-        <nav class="footer__nav footer-nav">
-          <div class="footer-nav__left">
-            <div class="footer-nav__item">
+
+        <nav class="footer__nav nav-menu">
+          <div class="nav-menu__left">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">キャンペーン</a></li>
-                <li class="footer-nav__list"><a href="#">ライセンス取得</a></li>
-                <li class="footer-nav__list"><a href="#">貸切体験ダイビング</a></li>
-                <li class="footer-nav__list"><a href="#">ナイトダイビング</a></li>
+                <li class="nav-menu__head"><a href="campaign.html">キャンペーン</a></li>
+                <li class="nav-menu__list"><a href="#">ライセンス取得</a></li>
+                <li class="nav-menu__list"><a href="#">貸切体験ダイビング</a></li>
+                <li class="nav-menu__list"><a href="#">ナイトダイビング</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">私たちについて</a></li>
+                <li class="nav-menu__head"><a href="aboutus.html">私たちについて</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">ダイビング情報</a></li>
-                <li class="footer-nav__list"><a href="#">ライセンス講習</a></li>
-                <li class="footer-nav__list"><a href="#">体験ダイビング</a></li>
-                <li class="footer-nav__list"><a href="#">ファンダイビング</a></li>
+                <li class="nav-menu__head"><a href="information.html">ダイビング情報</a></li>
+                <li class="nav-menu__list"><a href="#">ライセンス講習</a></li>
+                <li class="nav-menu__list"><a href="#">体験ダイビング</a></li>
+                <li class="nav-menu__list"><a href="#">ファンダイビング</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">ブログ</a></li>
+                <li class="nav-menu__head"><a href="blog.html">ブログ</a></li>
               </ul>
             </div>
           </div>
-          <div class="footer-nav__right">
-            <div class="footer-nav__item">
+          <div class="nav-menu__right">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">お客様の声</a></li>
+                <li class="nav-menu__head"><a href="voice.html">お客様の声</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">料金一覧</a></li>
-                <li class="footer-nav__list"><a href="#">ライセンス講習</a></li>
-                <li class="footer-nav__list"><a href="#">体験ダイビング</a></li>
-                <li class="footer-nav__list"><a href="#">ファンダイビング</a></li>
+                <li class="nav-menu__head"><a href="price.html">料金一覧</a></li>
+                <li class="nav-menu__list"><a href="#">ライセンス講習</a></li>
+                <li class="nav-menu__list"><a href="#">体験ダイビング</a></li>
+                <li class="nav-menu__list"><a href="#">ファンダイビング</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">よくある質問</a></li>
+                <li class="nav-menu__head"><a href="faq.html">よくある質問</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">プライバシー<br class="u-mobile">ポリシー</a></li>
+                <li class="nav-menu__head"><a href="privacy-policy.html">プライバシー<br
+                      class="u-mobile">ポリシー</a>
+                </li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">利用規約</a></li>
+                <li class="nav-menu__head"><a href="terms.html">利用規約</a></li>
               </ul>
             </div>
-            <div class="footer-nav__item">
+            <div class="nav-menu__item">
               <ul>
-                <li class="footer-nav__head"><a href="#">お問合せ</a></li>
+                <li class="nav-menu__head"><a href="contact.html">お問合せ</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="site-map.html">サイトマップ</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- <nav class="footer__nav nav-menu">
+          <div class="nav-menu__left">
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="campaign.html">キャンペーン</a></li>
+                <li class="nav-menu__list"><a href="#">ライセンス取得</a></li>
+                <li class="nav-menu__list"><a href="#">貸切体験ダイビング</a></li>
+                <li class="nav-menu__list"><a href="#">ナイトダイビング</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="aboutus.html">私たちについて</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="information.html">ダイビング情報</a></li>
+                <li class="nav-menu__list"><a href="#">ライセンス講習</a></li>
+                <li class="nav-menu__list"><a href="#">体験ダイビング</a></li>
+                <li class="nav-menu__list"><a href="#">ファンダイビング</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="blog.html">ブログ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="nav-menu__right">
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="voice.html">お客様の声</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="price.html">料金一覧</a></li>
+                <li class="nav-menu__list"><a href="#">ライセンス講習</a></li>
+                <li class="nav-menu__list"><a href="#">体験ダイビング</a></li>
+                <li class="nav-menu__list"><a href="#">ファンダイビング</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="faq.html">よくある質問</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="privacy-policy.html">プライバシー<br class="u-mobile">ポリシー</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="terms.html">利用規約</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="contact.html">お問合せ</a></li>
+              </ul>
+            </div>
+            <div class="nav-menu__item">
+              <ul>
+                <li class="nav-menu__head"><a href="site-map.html">サイトマップ</a></li>
               </ul>
             </div>
           </div>
 
-        </nav>
+        </nav> -->
       </div>
       <div class="footer__copyright">
         <small>Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>

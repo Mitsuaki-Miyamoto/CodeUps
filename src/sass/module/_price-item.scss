@@ -1,14 +1,14 @@
 @use "global" as *;
 
 
-.table-sp {
-    border-collapse: collapse;
-    display: grid;
+.price-item {
 
-    @include mq("md") {}
+    @include mq("md") {
+        display: flex;
+    }
 }
 
-.table-sp__body:not(:first-child) {
+.price-item:not(:first-child) {
     margin-top: rem(40);
 
     @include mq("md") {
@@ -16,28 +16,42 @@
     }
 }
 
-.table-sp__category {
+.price-item__category {
     background-color: $green;
     color: $white;
     text-align: center;
     padding: rem(8) 0;
-    
+    position: relative;
+    z-index: 1;
 
     @include mq("md") {
-        padding: rem(40);
-        height: rem(178);
+        width: 28.49%;
+        // padding: rem(40);
+        height: auto;
         vertical-align: baseline;
-        
     }
 }
 
-.table-sp__head {
+.price-item__title {
     position: relative;
     padding-left: rem(30);
     display: inline-block;
+    font-family: Noto Sans JP;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.5;
+    
+    @include mq("md") {
+        padding-left: 0;
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
 }
 
-.table-sp__head::before {
+.price-item__title::before {
     background-image: url(/assets/images/common/tab-icon-active1.svg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -50,42 +64,62 @@
     width: rem(24);
     height: rem(24);
     display: inline;
-    padding-left: rem(24);
+    // padding-left: rem(24);
 
     @include mq("md") {
         width: rem(64);
         height: rem(64);
         position: absolute;
-        top: 50%;
+        top: 270%;
         left: 50%;
         transform: translate(-50%, -50%);
+        // padding-left: 0;
     }
 }
 
-.table-sp__image img {
+.price-item__menu {
+
+    @include mq("md") {
+        width: 71.51%;
+    }
+}
+
+.price-item__image img {
     width: auto;
 }
 
-.table-sp__course {
+.price-item__menu-wrap {
+    display: flex;
+}
+
+.price-item__course {
+    width: 70%;
     border: 1px solid $green;
-    border-collapse: collapse;
-    width: clamp(15rem, 12.727rem + 19.36vw, 21.25rem);
     text-align: center;
     font-size: rem(16);
     font-style: normal;
     font-weight: $regular;
     color: #0D2936;
     line-height: 1.5;
-    height: rem(60);
+    min-height: rem(61);
     padding: rem(5);
+    margin: 0 0 -1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mq("md") {
+        justify-content: start;
+        padding-left: rem(15);
+        width: 68%;
+    }
 }
 
-.table-sp__price {
+.price-item__price {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
     border: 1px solid $green;
-    border-collapse: collapse;
-    padding: 3px;
-    width: clamp(6.625rem, 5.352rem + 6.36vw, 10.125rem);
-    // width: calc(105/345*100%);
     text-align: right;
     font-size: rem(16);
     font-style: normal;
@@ -94,8 +128,9 @@
     line-height: 1.5;
     padding-right: rem(13);
     padding-left: rem(13);
-}
+    margin: 0 -1px -1px;
 
-tbody {
-    // margin-top: rem(40);
+    @include mq("md") {
+        width: 32%;
+    }
 }

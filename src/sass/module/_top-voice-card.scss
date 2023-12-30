@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.top-voice-card {
+.voice-card {
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.top-voice-card a {
+.voice-card a {
     padding: rem(16) rem(14);
     padding-bottom: rem(24);
     display: block;
@@ -14,13 +14,23 @@
     }
 }
 
-.top-voice-card a:hover {
+.voice-card.voice-card--voicePage {
+    padding: rem(16) rem(14);
+    padding-bottom: rem(24);
+    display: block;
+
+    @include mq("md") {
+        padding: rem(24) rem(20);
+    }
+}
+
+.voice-card a:hover {
     opacity: 0.6;
     transition: 0.3s;
 }
 
 
-.top-voice-card__text {
+.voice-card__text {
     font-size: rem(16);
     font-weight: $regular;
     margin-top: rem(12);
@@ -37,18 +47,18 @@
     }
 }
 
-.top-voice-card__age {
+.voice-card__age {
     line-height: 1.2;
 }
 
 
-.top-voice-card__upper {
+.voice-card__upper {
     display: flex;
     // place-items: flex-end;
     width: 100%;
 }
 
-.top-voice-card__info {
+.voice-card__info {
     width: 100%;
     font-size: rem(12);
     font-weight: $regular;
@@ -59,7 +69,7 @@
     }
 }
 
-.top-voice-card__wrap {
+.voice-card__wrap {
     display: block;
 
 
@@ -70,9 +80,9 @@
     }
 }
 
-.top-voice-card__age {}
+.voice-card__age {}
 
-.top-voice-card__tag {
+.voice-card__tag {
     color: $green;
     border: 1px solid $green;
     padding: rem(5) rem(11);
@@ -85,7 +95,7 @@
 
 }
 
-.top-voice-card__sub-title {
+.voice-card__sub-title {
     display: inline-block;
     font-size: rem(16);
     font-style: normal;
@@ -102,7 +112,7 @@
     }
 }
 
-.top-voice-card__image {
+.voice-card__image {
     aspect-ratio: 151/117;
     overflow: hidden;
     width: 100%;
@@ -124,7 +134,7 @@
     
 }
 
-.top-voice-card__image img {
+.voice-card__image img {
     width: 100%;
     height: 100%;
     background-color: $green;

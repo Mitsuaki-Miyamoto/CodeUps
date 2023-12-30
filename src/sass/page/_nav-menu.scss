@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.nav-menu {
+.document {
     color: var(--green, #0D2936);
     font-family: Noto Sans JP;
     font-size: 16px;
@@ -13,13 +13,13 @@
     }
 }
 
-.nav-menu__inner {
+.inner.document__inner {
     @include mq("md") {
-        width: 59%;
+        max-width: rem(850);
     }
 }
-.nav-menu__introduction {
-    margin-top: rem(45);
+.document__introduction {
+    margin-top: rem(36);
     line-height: 1.8;
 
     @include mq("md") {
@@ -27,20 +27,11 @@
     }
 }
 
-.nav-menu__introduction.nav-menu__introduction--terms {
-    margin-top: rem(35);
-
-    @include mq("md") {
-        margin-top: rem(32);
-    }
-
-}
-
-.nav-menu__content {
+.document__content {
     margin-top: rem(35);
 }
 
-.nav-menu__title {
+.document__title {
     font-size: rem(24);
     font-style: normal;
     font-weight: 500;
@@ -51,7 +42,7 @@
     }
 }
 
-.nav-menu__title::after {
+.document__title::after {
     background-image: url(/assets/images/common/campaign-fish.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -72,24 +63,24 @@
     }
 }
 
-.nav-menu__content {
+.document__content {
 
 }
 
-.nav-menu__number {
+.document__number {
     padding-left: rem(24);
     text-indent: -1em;
 }
 
-.nav-menu__number.nav-menu__number--term {
+.document__number.document__number--term {
     margin-top: rem(32);
 }
 
-.nav-menu__description {
+.document__description {
     margin-top: rem(32);
 }
 
-.nav-menu__description.nav-menu__description--terms {
+.document__description.document__description--terms {
     margin-top: 0;
 
     @include mq("md") {
@@ -98,6 +89,6 @@
 
 }
 
-.nav-menu__description li {
+.document__description li {
     display: inline;
 }

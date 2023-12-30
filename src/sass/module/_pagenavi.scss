@@ -12,7 +12,6 @@
     max-width: 21.5rem;
     
     @include mq(md){
-        // pdding: 0 rem(25);
         max-width: rem(450);
         grid-template-columns: repeat(8, 1fr);
     }
@@ -51,10 +50,8 @@
 
 .pagenavi__inner a:first-child {
     margin-right: rem(28);
-    @include mq("md") {
-        // margin-right: rem(50);
-    }
 }
+
 .pagenavi__inner a:last-child {
     margin-left: rem(28);
 }

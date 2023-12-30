@@ -34,10 +34,13 @@
     border-color: transparent transparent transparent $green;
     width: rem(24);
     height: rem(24);
-    top: rem(5);
-    left: rem(0);
     content: "";
     position: absolute;
+
+    transform: rotate(0);
+    transition: all 0.5s ease 0s;
+    top: rem(5);
+    left: rem(-10);
 }
 
 /* クリック時のスタイル */
@@ -45,13 +48,20 @@
     border-width: rem(20.8) rem(12) 0 rem(12);
     border-color: $green transparent transparent transparent;
     top: rem(8);
+    transition: 0.3s;
+    // transform: rotate(90deg);
+
+    // transform: rotate(150deg);
+    transform: rotate(0);
+    transition: all 0.5s ease 0s;
 }
 
-
-.side-archive__wrap {
+.side-archive__list {
     margin-top: rem(12);
     width: 40%;
-    margin-left: rem(10);
+}
+
+.side-archive__wrap {
 }
 
 .side-archive__head {
@@ -73,22 +83,32 @@
     padding-left: rem(30);
 }
 
-.toggle__month {
-    display: none;
-    padding-left: rem(56);
+// .toggle__month {
+//     display: none;
+//     position: relative;
+//     line-height: 1.5;
+//     transition: 0.5s;
+// }
+
+// .toggle__month a{
+//     padding-left: rem(56);
+//     transition: all 0.5s;
+// }
+
+.toggle__month a {
     position: relative;
-    line-height: 1.5;
-    transition: 0.5s;
+    padding-left: rem(56);
 }
 
-.toggle__month::before {
+.toggle__month a::before {
     border-style: solid;
     border-width: rem(12) 0 rem(12) rem(16);
     border-color: transparent transparent transparent $green;
     width: rem(24);
     height: rem(24);
-    top: rem(5);
-    left: rem(30);
     content: "";
     position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translate(-50%, -50%);
 }

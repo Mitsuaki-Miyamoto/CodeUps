@@ -6,6 +6,7 @@
     margin-top: rem(2);
     font-family: Lato;
     align-items: baseline;
+    justify-content: center;
     line-height: 1;
 }
 
@@ -18,11 +19,12 @@
     font-weight: $bold;
     line-height: 1;
     text-decoration: line-through;
-    text-decoration-style:solid;
+    text-decoration-style: solid;
     text-decoration-color: red;
     text-decoration-thickness: rem(2);
     padding: rem(16) 0;
     font-family: Lato;
+
     @include mq("md") {
         font-size: rem(24);
         font-weight: $bold;
@@ -46,6 +48,7 @@
     font-weight: $bold;
     font-family: Lato;
     margin-left: rem(19);
+
     @include mq("md") {
         font-size: rem(40);
         // font-size: clamp(23px, 3vw, 40px);
@@ -61,4 +64,3 @@
         margin-left: rem(14);
     }
 }
-

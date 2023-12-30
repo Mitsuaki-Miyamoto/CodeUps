@@ -13,7 +13,7 @@ $back-cr: #fff; //input（テキスト系）の背景色
 
 /*サイズ等の指定*/
 $fz: rem(16); //入力するときのfont-size
-$padding-und: rem(8); //paddingの指定（上下） inputの内側の余白で使う
+$padding-und: rem(7); //paddingの指定（上下） inputの内側の余白で使う
 $padding-lnr: rem(16); //paddingの指定（左右） inputの内側の余白で使う
 $border-r: rem(6); //border-radius（テキスト系）
 
@@ -171,12 +171,12 @@ button,
         line-height: 1;
         cursor: pointer;
         transition: 0.3s ease;
-        letter-spacing: 0;
+        letter-spacing: 0.15em;
 
         &::before {
             position: absolute;
             content: "";
-            top: 21%;
+            top: 50%;
             left: 0;
             transform: translateY(-50%);
             background: $check-bg-cr;
@@ -196,7 +196,7 @@ button,
         &::after {
             content: "";
             position: absolute;
-            top: 23%;
+            top: 37%;
             left: 0;
             display: block;
             opacity: 1;
@@ -236,6 +236,9 @@ select {
     background-repeat: no-repeat;
     &:focus {
         border: 1px solid $border-cr;
+    }
+    @include mq("md") {
+        padding: rem(3) rem(7);
     }
 }
 

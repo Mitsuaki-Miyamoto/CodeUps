@@ -1,13 +1,11 @@
 @use "global" as *;
 
 .layout-page-contact {
-    margin-top: rem(50);
+    margin-top: rem(53);
     position: relative;
 
     @include mq("md") {
-        margin-top: rem(132);
-        margin-right: auto;
-        margin-left: auto;
+        margin-top: rem(135);
     }
 }
 
@@ -37,5 +35,10 @@
 }
 
 .layout-page-contact.layout-page-contact__error {
-    margin-top: rem(28);
+    margin-top: rem(41);
+    margin-inline: auto;
+
+    @include mq("md") {
+        margin-top: rem(25);
+    }
 }

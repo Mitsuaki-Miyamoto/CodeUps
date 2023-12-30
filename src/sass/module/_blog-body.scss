@@ -50,7 +50,10 @@
 .blog-body__card {
     background-color: $white;
     z-index: 1;
+}
 
+.blog-body__pagenavi {
+    margin-top: rem(80);
 }
 
 .blog-body__side {

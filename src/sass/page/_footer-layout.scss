@@ -13,13 +13,20 @@
 }
 
 .footer-layout.footer-layout--contact-error {
-    margin-top: rem(120);
+    margin-top: rem(148);
 }
 .footer-layout.footer-layout--contact-thanks {
-    margin-top: rem(132);
+    margin-top: rem(144);
+    @include mq("md") {
+        margin-top: rem(120);
+    }
 }
 
 .footer-layout.footer-layout--404 {
     flex: 1;
     margin-top: 0;
+    padding-top: rem(9);
+    @include mq("md") {
+        margin-top: rem(130);
+    }
 }

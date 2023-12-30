@@ -1,76 +1,66 @@
 @use "global" as *;
 
-.footer-nav {
+.nav-menu {
     color: $white;
     display: flex;
     line-height: 1.125;
-    
     justify-content: normal;
-
-    @include mq("md") {
-        
-        justify-content: space-around;
-    }
 }
 
-.footer__nav.footer-nav--siteMap {
+.footer__nav.nav-menu--siteMap {
     color: black;
     margin-top: rem(45);
+
     @include mq("md") {
         margin-top: rem(143);
     }
 }
 
-.footer-nav__left {
-    display: block;
+.nav-menu__left {
     width: 50%;
+    display: block;
     column-gap: 20.5%;
 
     @include mq("md") {
         column-gap: rem(20);
-        // column-gap: 20.5%;
         flex-wrap: wrap;
         flex-direction: column;
         height: 15.125rem;
         row-gap: rem(16);
         display: flex;
-        width: 48%;
+        width: 49%;
     }
 }
 
-.footer-nav__right {
+.nav-menu__left.nav-menu__left--gap {
+    column-gap: rem(80);
+}
+
+.nav-menu__right {
     display: block;
     width: 44%;
-    margin-left: rem(10);
+    margin-left: rem(11);
     column-gap: 20.5%;
+
     @include mq("md") {
-        // column-gap: rem(48);
-        // column-gap: 20.5%;
-        column-gap: 0;
+        column-gap: 19%;
         flex-direction: column;
         flex-wrap: wrap;
         height: 15.125rem;
-        row-gap: rem(16);
-        width: 48%;
+        row-gap: rem(11);
+        width: 45%;
         display: flex;
-        margin-left: 1%;
+        margin-left: 2%;
     }
 }
 
-.footer-nav__right.footer-nav__right--siteMap {
-    margin-left: rem(24);
-
+.nav-menu__right.nav-menu__right--margin {
     @include mq("md") {
-        column-gap: rem(145);
-        column-gap: 10%;
-        row-gap: rem(22);
-        row-gap: rem(22);
-        margin-left: rem(110);
-        margin-left: 5%;
+        margin-left: rem(80);
     }
 }
 
-.footer-nav__head {
+.nav-menu__head {
     font-size: rem(16);
     font-weight: $bold;
     line-height: 1.12;
@@ -78,115 +68,107 @@
     color: $white;
 }
 
-.footer-nav__head--siteMap {
+.nav-menu__head--color {
     color: black;
 }
 
-.footer-nav__head:not(:first-child) {
+.nav-menu__head:not(:first-child) {
     margin-top: rem(40);
 }
 
-.footer-nav__head::before {
+.nav-menu__head::before {
     content: url(/assets/images/common/star-fish.svg);
     transform: scale(1);
-    top: rem(6);
-    left: rem(-1);
+    top: rem(10);
+    left: rem(2);
     width: rem(20);
     height: rem(20);
     display: block;
     position: absolute;
 }
 
-.footer-nav__head--siteMap::before {
+.nav-menu__head--color::before {
     content: url(/assets/images/common/star-fish-black.svg);
-   
+
 
 }
 
-.footer-nav__list {
+.nav-menu__list {
     font-weight: $regular;
+    font-size: 1rem;
 
-    @include mq("md") {
-
-    }
+    @include mq("md") {}
 }
 
-.footer-nav__head a {
+.nav-menu__head a {
     padding-top: rem(9);
     padding-bottom: rem(9);
     padding-left: rem(24);
     display: inline-block;
     width: 100%;
 }
-.footer-nav__list a {
-    padding-top: rem(13);
-    padding-bottom: rem(13);
+
+.nav-menu__list a {
+    padding-top: rem(12);
+    padding-bottom: rem(12);
     display: inline-block;
     width: 100%;
 }
 
-.footer-nav__item:nth-child(2),
-.footer-nav__item:nth-child(3),
-.footer-nav__item:nth-child(4),
-.footer-nav__item:nth-child(5),
-.footer-nav__item:nth-child(6),
-.footer-nav__item:nth-child(7),
-.footer-nav__item:nth-child(8),
-.footer-nav__item:nth-child(9),
-.footer-nav__item:nth-child(10) {
-  margin-top: 22px;
-
-  @include mq("md") {
-        margin-top: 0;
-  }
-}
-
-
-.footer-nav__item a:hover {
-    opacity: 0.7;
-}
-
-.footer-nav__list a:hover {
-    opacity: 0.7;
-}
-
-
-.footer-nav__head--siteMap a {
-    padding-left: rem(22);
-}
-
-.footer-nav__head--siteMap::before {
-    left: rem(0);
-}
-
-.footer-nav__list a {
-    padding-left: rem(22);
-}
-
-// .footer-nav__right.footer-nav__right--siteMap {
-    
-
-//     @include mq("md") {
-       
-//     }
-// }
-
-.footer-nav__left.footer-nav__left--siteMap {
-    width: 50%;
-    column-gap: 63px;
+.nav-menu__item:nth-child(2),
+.nav-menu__item:nth-child(3),
+.nav-menu__item:nth-child(4),
+.nav-menu__item:nth-child(5),
+.nav-menu__item:nth-child(6),
+.nav-menu__item:nth-child(7),
+.nav-menu__item:nth-child(8),
+.nav-menu__item:nth-child(9),
+.nav-menu__item:nth-child(10) {
+    margin-top: rem(22);
 
     @include mq("md") {
-        // column-gap: 107px;
-        column-gap: 10%;
-        row-gap: 6%;
+        margin-top: 0;
     }
 }
 
-.footer-nav__left--siteMap {
+.nav-menu__right>.nav-menu__item:nth-of-type(2) {
+    @include mq("md") {
+        margin-top: rem(10);
+    }
+}
+
+.nav-menu__item a:hover {
+    opacity: 0.6;
+}
+
+.nav-menu__head--siteMap a {
+    padding-left: rem(22);
+}
+
+.nav-menu__head--siteMap::before {
+    left: rem(0);
+}
+
+.nav-menu__list a {
+    padding-left: rem(22);
+}
+
+
+.nav-menu__left.nav-menu__left--siteMap {
+    width: 50%;
+    column-gap: rem(63);
+
+    @include mq("md") {
+        column-gap: 15%;
+        row-gap: 9%;
+    }
+}
+
+.nav-menu__left--siteMap {
     position: relative;
 }
 
-.footer-nav__left--siteMap::before {
+.nav-menu__left--siteMap::before {
     background-image: url(/assets/images/common/campaign-fish.png);
     background-position: center center;
     background-repeat: no-repeat;

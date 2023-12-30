@@ -3,19 +3,13 @@
 .contact-thanks {}
 
 .contact-thanks__message {
-    margin-top: rem(52);
     text-align: center;
     position: relative;
-
     color: var(--green, #0D2936);
     font-style: normal;
     font-weight: $regular;
     line-height: 1.12;
     /* 112.5% */
-
-    @include mq("md") {
-        margin-top: rem(150);
-    }
 }
 
 .contact-thanks__message::after {
@@ -42,7 +36,6 @@
 .contact-thanks__text1 {}
 
 .contact-thanks__text2 {
-    margin-top: rem(40);
-    line-height: normal;
-
+    margin-top: rem(38);
+    line-height: 1.45;
 }

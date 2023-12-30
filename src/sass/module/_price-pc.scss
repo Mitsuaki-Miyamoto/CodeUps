@@ -64,7 +64,9 @@
 
 .table-pc__course {
     border: 1px solid $green;
-    border-collapse: collapse;
+    background-color: $white;
+    position: relative;
+    z-index: 1;
     padding: 3px;
     width: clamp(15rem, 12.727rem + 11.36vw, 21.25rem);
     text-align: center;

@@ -38,10 +38,8 @@
 
 .drawer-menu__items {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    // margin-left: auto;
-    // margin-right: auto;
     margin-top: rem(105);
 }
 

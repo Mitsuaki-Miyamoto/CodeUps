@@ -38,6 +38,12 @@
     }
 }
 
+.voice-body__pagenavi {
+    @include mq("md") {
+        margin-top: rem(75);
+    }
+}
+
 
 .voice__cards::before {
     background-image: url(/assets/images/common/campaign-fish.png);

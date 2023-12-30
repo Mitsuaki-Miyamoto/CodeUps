@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.faq-body {}
+
+.faq-body__inner {
+    position: relative;
+}
+
+.faq-body__inner::after {
+    background-image: url(/assets/images/common/campaign-fish.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    width: 7.5rem;
+    height: 3rem;
+    position: absolute;
+    top: -2rem;
+
+    @include mq("md") {
+        height: 9rem;
+        left: calc(50% - min(49vw, 39.875rem));
+        top: -4.3rem;
+        width: 20.5rem;
+    }
+}
+
+.faq-body__accordion {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
