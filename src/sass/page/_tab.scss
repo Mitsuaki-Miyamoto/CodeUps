@@ -58,20 +58,20 @@
 
 .tab-information__item1::before {
     @include mq("md") {
-        background-image: url(/assets/images/common/tab1-.svg);
+        background-image: url(../images/common/tab1-.svg);
     }
 }
 
 .tab-information__item2::before {
     @include mq("md") {
-        background-image: url(/assets/images/common/tab2.svg);
+        background-image: url(../images/common/tab2.svg);
     }
 
 }
 
 .tab-information__item3::before {
     @include mq("md") {
-        background-image: url(/assets/images/common/tab3.svg);
+        background-image: url(../images/common/tab3.svg);
     }
 }
 
@@ -111,19 +111,19 @@
 
 .tab-information__item1.active::before {
     @include mq("md") {
-        background-image: url(/assets/images/common/tab-icon-active1.svg);
+        background-image: url(../images/common/tab-icon-active1.svg);
     }
 }
 
 .tab-information__item2.active::before {
     @include mq("md") {
-        background-image: url(/assets/images/common/tab-icon-active2--.svg);
+        background-image: url(../images/common/tab-icon-active2--.svg);
     }
 }
 
 .tab-information__item3.active::before {
     @include mq("md") {
-        background-image: url(/assets/images/common/tab-icon-active3.svg);
+        background-image: url(../images/common/tab-icon-active3.svg);
     }
 
 }

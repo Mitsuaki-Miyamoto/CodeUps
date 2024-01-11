@@ -27,7 +27,7 @@
     @include mq("md") {
         position: absolute;
         content: "";
-        background-image: url(/assets/images/common/blog-bg.jpg);
+        background-image: url(../images/common/blog-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -44,7 +44,7 @@
     @include mq("md") {
         position: absolute;
         content: "";
-        background-image: url(/assets/images/common/blog-bg-fish1.png);
+        background-image: url(../images/common/blog-bg-fish1.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 20% center;

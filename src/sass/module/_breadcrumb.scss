@@ -9,7 +9,7 @@
 }
 
 
-.breadcrumb--white {
+.breadcrumb.breadcrumb--white {
     color: $white;
     margin-top: rem(88);
     @include mq("md") {

@@ -13,7 +13,7 @@
     @include mq("md") {
         content: "";
         position: absolute;
-        background-image: url(/assets/images/common/voice-fish.png);
+        background-image: url(../images/common/voice-fish.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
@@ -27,7 +27,7 @@
 .top-voice::after {
     content: "";
     position: absolute;
-    background-image: url(/assets/images/common/voice-tatsu.png);
+    background-image: url(../images/common/voice-tatsu.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;

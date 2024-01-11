@@ -12,7 +12,7 @@
 .page-404::before {
     position: absolute;
     content: "";
-    background-image: url(/assets/images/common/404-sp.svg);
+    background-image: url(../images/common/404-sp.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -24,7 +24,7 @@
     height: 91%;
     
     @include mq("md") {
-        background-image: url(/assets/images/common/404-pc.svg);
+        background-image: url(../images/common/404-pc.svg);
         top: 53%;
         left: 37%;
         height: 115%;
@@ -47,7 +47,7 @@
     letter-spacing: rem(40);
     text-align: center;
     text-indent: 0.5em;
-    margin-top: rem(54);
+    padding-top: rem(54);
     position: relative;
     z-index: 1;
     

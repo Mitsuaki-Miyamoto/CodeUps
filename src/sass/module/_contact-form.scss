@@ -151,7 +151,6 @@
 }
 
 .contact-form__submit {
-    margin-top: rem(24);
     text-align: center;
     color: $white;
     display: inline-block;
@@ -161,13 +160,13 @@
     max-width: rem(202);
 
     @include mq("md") {
-        margin-top: rem(42);
         width: 28.9%;
     }
 }
 
 .contact-form__submit:hover {
     color: $green;
+    border: 1px solid $green;
 }
 
 .contact-form__submit input {
@@ -190,6 +189,11 @@
 
 .contact-form__wrap {
     text-align: center;
+    margin-top: rem(24);
+
+    @include mq("md") {
+        margin-top: rem(42);
+    }
 }
 
 .contact-form__item.contact-form__item--layout {

@@ -7,7 +7,7 @@
 }
 
 .faq-body__inner::after {
-    background-image: url(/assets/images/common/campaign-fish.png);
+    background-image: url(../images/common/campaign-fish.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -15,7 +15,6 @@
     position: absolute;
     width: 7.5rem;
     height: 3rem;
-    position: absolute;
     top: -2rem;
 
     @include mq("md") {

@@ -68,7 +68,7 @@
 
 .top-price__body::after {
     @include mq("md") {
-        background-image: url(/assets/images/common/price-bg.png);
+        background-image: url(../images/common/price-bg.png);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;

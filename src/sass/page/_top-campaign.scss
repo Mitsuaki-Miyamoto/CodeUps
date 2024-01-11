@@ -2,12 +2,12 @@
 
 .top-campaign {
     position: relative;
+    overflow: hidden;
 }
 
 .top-campaign__inner {
     margin: auto;
     position: relative;
-    // overflow: hidden;
 }
 
 .top-campaign__body {
@@ -32,17 +32,17 @@
     position: absolute;
     width: rem(240);
     height: rem(80);
-    top: 0;
+    top: rem(5);
 
     @include mq("md") {
         right: rem(35);
     }
 }
 
-@-moz-document url-prefix(){
-    .top-campaign__swiper-buttons{
+@-moz-document url-prefix() {
+    .top-campaign__swiper-buttons {
         @include mq("md") {
-            top: 1px;
+            top: rem(1);
         }
     }
 }
@@ -61,22 +61,24 @@
     .swiper-button-prev {
         width: rem(80);
         height: rem(80);
-        background: url(/assets/images/common/swiper-prev.png);
+        background: url(../images/common/swiper-prev.png);
         background-repeat: no-repeat;
         background-size: 80px 80px;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        top: 29%;
+        top: 34%;
         transition: .3s;
     }
 
-    .swiper-button-prev,.swiper-button-next{
+    .swiper-button-prev,
+    .swiper-button-next {
         color: transparent;
         width: rem(80);
     }
 
-    .swiper-button-next, .swiper-rtl .swiper-button-prev {
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
         @include mq("md") {
             left: auto;
         }
@@ -85,25 +87,15 @@
     .swiper-button-next {
         width: rem(80);
         height: rem(80);
-        background: url(/assets/images/common/swiper-next.png);
+        background: url(../images/common/swiper-next.png);
         background-repeat: no-repeat;
         background-size: 80px 80px;
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        top: 29%;
+        top: 34%;
         transition: .3s;
     }
-    // .swiper-button-next::after {
-    //     width: rem(80);
-    //     height: rem(80);
-    //     background: url(/assets/images/common/swiper-next.png);
-    //     background-repeat: no-repeat;
-    //     background-size: 80px 80px;
-    //     background-position: center center;
-    //     background-size: cover;
-    //     background-repeat: no-repeat;
-    // }
 }
 
 .swiper-button-prev:hover,
@@ -112,4 +104,3 @@
     transition: .3s;
     cursor: pointer;
 }
-

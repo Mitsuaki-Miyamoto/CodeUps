@@ -13,79 +13,79 @@
 }
 
 .sub-mv.sub-mv--campaign {
-    background-image: url(/assets/images/common/lower-campaign-sp.jpg);
+    background-image: url(../images/common/lower-campaign-sp.jpg);
 
     @include mq("md") {
-        background-image: url(/assets/images/common/lower-campaign-mv.jpg);
+        background-image: url(../images/common/lower-campaign-mv.jpg);
     }
 
 }
 
 .sub-mv.sub-mv--aboutus {
-    background-image: url(/assets/images/common/aboutus-mv-sp.jpg);
+    background-image: url(../images/common/aboutus-mv-sp.jpg);
 
     @include mq("md") {
-        background-image: url(/assets/images/common/aboutus-lower-pc.jpg);
+        background-image: url(../images/common/aboutus-lower-pc.jpg);
     }
 }
 
 .sub-mv.sub-mv--information {
-    background-image: url(/assets/images/common/info-img.jpg);
+    background-image: url(../images/common/info-img.jpg);
 
 
     @include mq("md") {
-        background-image: url(/assets/images/common/information-page-pc-mv.jpg);
+        background-image: url(../images/common/information-page-pc-mv.jpg);
     }
 }
 
 .sub-mv.sub-mv--blog {
-    background-image: url(/assets/images/common/blog-mv-sp.jpg);
+    background-image: url(../images/common/blog-mv-sp.jpg);
 
     @include mq("md") {
-        background-image: url(/assets/images/common/blog-mv.jpg);
+        background-image: url(../images/common/blog-mv.jpg);
     }
 
 }
 
 .sub-mv.sub-mv--voice {
-    background-image: url(/assets/images/common/voice-mv-sp.jpg);
+    background-image: url(../images/common/voice-mv-sp.jpg);
     
     @include mq("md") {
-        background-image: url(/assets/images/common/voice-mv-pc.jpg);
+        background-image: url(../images/common/voice-mv-pc.jpg);
     }
 }
 
 .sub-mv.sub-mv--price {
-    background-image: url(/assets/images/common/price-mv-sp.jpg);
+    background-image: url(../images/common/price-mv-sp.jpg);
     
     @include mq("md") {
-        background-image: url(/assets/images/common/price-mv.jpg);
+        background-image: url(../images/common/price-mv.jpg);
         display: block;
     }
 }
 
 .sub-mv.sub-mv--faq {
-    background-image: url(/assets/images/common/faq-sp.jpg);
-    
+    background-image: url(../images/common/faq-sp.jpg);
+
     @include mq("md") {
-        background-image: url(/assets/images/common/faq-pc.jpg);
+        background-image: url(../images/common/faq-pc.jpg);
     }
 
 }
 
 .sub-mv.sub-mv--contact {
-    background-image: url(/assets/images/common/contact-page.jpg);
+    background-image: url(../images/common/contact-page.jpg);
     @include mq("md") {
-        background-image: url(/assets/images/common/contact-page-pc.jpg);
+        background-image: url(../images/common/contact-page-pc.jpg);
     }
 
 }
 
 .sub-mv.sub-mv--site-map {
-    background-image: url(/assets/images/common/site-map-sp.jpg);
+    background-image: url(../images/common/site-map-sp.jpg);
 
     @include mq("md") {
-        background-image: url(/assets/images/common/site-map-pc.jpg);
+        background-image: url(../images/common/site-map-pc.jpg);
     }
 }
 
@@ -131,15 +131,15 @@
 }
 
 .sub-mv.sub-mv--privacy-policy {
-    background-image: url(/assets/images/common/privacy-policy-sp.jpg);
+    background-image: url(../images/common/privacy-policy-sp.jpg);
     @include mq("md") {
-        background-image: url(/assets/images/common/privacy-policy-pc.jpg);
+        background-image: url(../images/common/privacy-policy-pc.jpg);
     }
 }
 
 .sub-mv.sub-mv--terms {
-    background-image: url(/assets/images/common/privacy-policy-sp.jpg);
+    background-image: url(../images/common/privacy-policy-sp.jpg);
     @include mq("md") {
-        background-image: url(/assets/images/common/privacy-policy-pc.jpg);
+        background-image: url(../images/common/privacy-policy-pc.jpg);
     }
 }
